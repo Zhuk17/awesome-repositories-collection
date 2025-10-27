@@ -1,7 +1,14 @@
 # 🚀 Awesome Utilities and Programs Collection
+
 A curated collection of awesome utilities and repositories organized by category. This is a living document showcasing interesting tools, utilities, and projects from across the GitHub ecosystem.
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+## Languages / Языки / 语言
+
+- [English](README.md)
+- [Русский](README.ru.md)
+- [简体中文](README.zh-CN.md)
 
 ## 📑 Table of Contents
 
@@ -48,36 +55,63 @@ Tools and frameworks for artificial intelligence and machine learning.
 
 - **[ollama](https://github.com/ollama/ollama)** - 🦙 Get up and running with large language models locally
   - Run Llama 2, Mistral, and other models locally
-  - Simple API for model interaction
+  - Simple API and command-line interface
+
+- **[langchain](https://github.com/langchain-ai/langchain)** - ⛓️ Building applications with LLMs through composability
+  - Framework for developing applications powered by language models
+  - Python and JavaScript/TypeScript libraries available
 
 ---
 
 ## 🌐 Web Tools
 
-Useful web development and browsing tools.
+Utilities for web development and testing.
 
-- **[HTTPie](https://github.com/httpie/httpie)** - 🌐 Modern, user-friendly command-line HTTP client
-  - Intuitive syntax for API testing
-  - JSON support by default
+- **[httpie](https://github.com/httpie/httpie)** - 🌐 Modern, user-friendly command-line HTTP client
+  - Intuitive syntax
+  - JSON support
+  - Built for testing, debugging, and interaction with APIs
+
+- **[curl](https://github.com/curl/curl)** - 📡 Command line tool and library for transferring data with URLs
+  - Support for HTTP, HTTPS, FTP, and many other protocols
+  - Widely used and battle-tested
 
 ---
 
-## 📦 Other
+## 📚 Other
 
 Miscellaneous tools and utilities that don't fit into other categories.
 
-- **[jq](https://github.com/jqlang/jq)** - 📝 Command-line JSON processor
-  - Like sed for JSON data
-  - Powerful filtering and transformation
+- **[jq](https://github.com/jqlang/jq)** - ⚡ Command-line JSON processor
+  - Lightweight and flexible
+  - Powerful query language for JSON
+
+- **[bat](https://github.com/sharkdp/bat)** - 🦇 A cat clone with wings
+  - Syntax highlighting
+  - Git integration
+  - Automatic paging
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) first.
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- All the contributors to the open-source projects listed above
+- The community for suggesting and testing these amazing tools
 
 ---
 
-## 📜 License
-
-MIT
+⭐ If you like this project, please give it a star on GitHub!
