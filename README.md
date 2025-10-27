@@ -1,21 +1,20 @@
-# 🚀 Awesome Utilities Collection
-
+# 🚀 Awesome Utilities and Programs Collection
 A curated collection of awesome utilities and repositories organized by category. This is a living document showcasing interesting tools, utilities, and projects from across the GitHub ecosystem.
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 ## 📑 Table of Contents
 
-- [CLI Utilities](#-cli-utilities)
+- [CLI Utilities and Programs](#-cli-utilities-and-programs)
 - [System Tools](#-system-tools)
-- [AI/ML Utilities](#-aiml-utilities)
+- [AI/ML Utilities and Programs](#-aiml-utilities-and-programs)
 - [Web Tools](#-web-tools)
 - [Other](#-other)
 - [Contributing](#-contributing)
 
 ---
 
-## 🖥️ CLI Utilities
+## 🖥️ CLI Utilities and Programs
 
 Command-line tools that make your terminal life easier.
 
@@ -43,7 +42,7 @@ Powerful utilities for system administration and monitoring.
 
 ---
 
-## 🤖 AI/ML Utilities
+## 🤖 AI/ML Utilities and Programs
 
 Tools and frameworks for artificial intelligence and machine learning.
 
@@ -51,37 +50,25 @@ Tools and frameworks for artificial intelligence and machine learning.
   - Run Llama 2, Mistral, and other models locally
   - Simple API for model interaction
 
-- **[whisper](https://github.com/openai/whisper)** - 🎤 Robust speech recognition via large-scale weak supervision
-  - Multilingual speech recognition
-  - Speech translation and language identification
-
 ---
 
 ## 🌐 Web Tools
 
-Utilities for web development and testing.
+Useful web development and browsing tools.
 
-- **[httpie](https://github.com/httpie/cli)** - 🌈 Modern, user-friendly command-line HTTP client
-  - Intuitive syntax with colored output
-  - JSON support, form and file uploads
-
-- **[Postman](https://github.com/postmanlabs)** - 📮 API development environment
-  - Complete API development ecosystem
-  - Testing, documentation, and monitoring
+- **[HTTPie](https://github.com/httpie/httpie)** - 🌐 Modern, user-friendly command-line HTTP client
+  - Intuitive syntax for API testing
+  - JSON support by default
 
 ---
 
 ## 📦 Other
 
-Miscellaneous utilities that don't fit other categories.
+Miscellaneous tools and utilities that don't fit into other categories.
 
-- **[awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)** - 🏠 A list of Free Software network services and web applications
-  - Comprehensive list of self-hostable applications
-  - Organized by category
-
-- **[the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge)** - 📚 A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools
-  - Massive resource collection for sysadmins and developers
-  - Security, networking, and development resources
+- **[jq](https://github.com/jqlang/jq)** - 📝 Command-line JSON processor
+  - Like sed for JSON data
+  - Powerful filtering and transformation
 
 ---
 
@@ -89,19 +76,8 @@ Miscellaneous utilities that don't fit other categories.
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
-### Guidelines
-
-- Ensure the utility/repository is actively maintained
-- Add a brief description of what makes it awesome
-- Keep descriptions concise and informative
-- Follow the existing format
-
 ---
 
 ## 📜 License
 
-This collection is available under the CC0 license. The individual projects listed have their own licenses.
-
----
-
-**⭐ Star this repository if you find it helpful!**
+MIT
