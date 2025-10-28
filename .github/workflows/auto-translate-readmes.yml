@@ -1,0 +1,201 @@
+name: Auto-Translate READMEs
+
+# Workflow для автоматической синхронизации локализаций README
+# Автоматически запускается при изменении основных README файлов
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'README.md'
+      - 'README.ru.md'
+      - 'README.zh-CN.md'
+      - 'ci_cd/README.md'
+      - 'telegram/README.md'
+      - 'video_utils/README.md'
+  workflow_dispatch:
+    inputs:
+      source_language:
+        description: 'Source language (en, ru, zh-CN)'
+        required: true
+        default: 'en'
+        type: choice
+        options:
+          - en
+          - ru
+          - zh-CN
+      target_languages:
+        description: 'Target languages (comma-separated: en,ru,zh-CN)'
+        required: true
+        default: 'ru,zh-CN'
+
+jobs:
+  translate-readmes:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install openai anthropic requests python-dotenv pyyaml
+      
+      - name: Run translation script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          # Создаем скрипт синхронизации если его нет
+          if [ ! -f scripts/translate_readmes.py ]; then
+            mkdir -p scripts
+            cat > scripts/translate_readmes.py << 'EOF'
+#!/usr/bin/env python3
+"""
+Автоматическая синхронизация переводов README файлов
+Использует OpenAI API или Anthropic API для машинного перевода
+"""
+
+import os
+import sys
+import re
+from pathlib import Path
+
+try:
+    import openai
+except ImportError:
+    print("Установите библиотеку: pip install openai")
+    sys.exit(1)
+
+# Конфигурация языков
+LANGUAGE_CODES = {
+    'en': 'English',
+    'ru': 'Russian (Русский)',
+    'zh-CN': 'Simplified Chinese (简体中文)'
+}
+
+README_FILES = {
+    'en': 'README.md',
+    'ru': 'README.ru.md',
+    'zh-CN': 'README.zh-CN.md'
+}
+
+def translate_text(text, target_language, source_language='en'):
+    """
+    Переводит текст с помощью OpenAI API
+    """
+    api_key = os.getenv('OPENAI_API_KEY')
+    if not api_key:
+        print("Ошибка: OPENAI_API_KEY не установлен")
+        return None
+    
+    client = openai.OpenAI(api_key=api_key)
+    
+    prompt = f"""Translate the following markdown document from {LANGUAGE_CODES[source_language]} to {LANGUAGE_CODES[target_language]}.
+
+IMPORTANT RULES:
+1. Keep all markdown formatting intact (headers, links, lists, code blocks, etc.)
+2. Do NOT translate:
+   - URLs and links
+   - GitHub repository names
+   - Code blocks and technical commands
+   - File paths and filenames
+   - Tags (e.g., *Tags: Python, AI, Docker*)
+3. Translate only:
+   - Text descriptions
+   - Headers and titles
+   - Regular paragraphs
+4. Preserve the exact structure and formatting
+
+Document to translate:
+
+{text}"""
+    
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4-turbo-preview",
+            messages=[
+                {"role": "system", "content": "You are a professional technical translator specializing in software documentation. You preserve markdown formatting and technical terms."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.3
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        print(f"Ошибка при переводе: {e}")
+        return None
+
+def sync_translations(source_lang='en', target_langs=None):
+    """
+    Синхронизирует переводы README файлов
+    """
+    if target_langs is None:
+        target_langs = ['ru', 'zh-CN']
+    
+    repo_root = Path(__file__).parent.parent
+    source_file = repo_root / README_FILES[source_lang]
+    
+    if not source_file.exists():
+        print(f"Ошибка: {source_file} не найден")
+        return False
+    
+    print(f"Читаем исходный файл: {source_file}")
+    with open(source_file, 'r', encoding='utf-8') as f:
+        source_text = f.read()
+    
+    for target_lang in target_langs:
+        if target_lang == source_lang:
+            continue
+        
+        target_file = repo_root / README_FILES[target_lang]
+        print(f"\nПереводим на {LANGUAGE_CODES[target_lang]}...")
+        
+        translated = translate_text(source_text, target_lang, source_lang)
+        if translated:
+            print(f"Сохраняем в {target_file}")
+            with open(target_file, 'w', encoding='utf-8') as f:
+                f.write(translated)
+            print(f"✓ Успешно создан {target_file}")
+        else:
+            print(f"✗ Ошибка перевода для {target_lang}")
+    
+    return True
+
+if __name__ == '__main__':
+    # Определяем параметры из аргументов командной строки или переменных окружения
+    source = os.getenv('SOURCE_LANG', 'en')
+    targets = os.getenv('TARGET_LANGS', 'ru,zh-CN').split(',')
+    
+    print(f"Синхронизация переводов")
+    print(f"Исходный язык: {LANGUAGE_CODES[source]}")
+    print(f"Целевые языки: {', '.join([LANGUAGE_CODES[t] for t in targets])}")
+    print("="*60)
+    
+    success = sync_translations(source, targets)
+    sys.exit(0 if success else 1)
+EOF
+            chmod +x scripts/translate_readmes.py
+          fi
+          
+          # Запускаем скрипт синхронизации
+          export SOURCE_LANG="${{ github.event.inputs.source_language || 'en' }}"
+          export TARGET_LANGS="${{ github.event.inputs.target_languages || 'ru,zh-CN' }}"
+          python scripts/translate_readmes.py
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.*.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-sync README translations" && git push)
