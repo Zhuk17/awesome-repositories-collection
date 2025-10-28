@@ -22,6 +22,9 @@
 ### Docker/Cloud/Storage
 - **[Twake Drive](https://github.com/linagora/twake-drive)** — Open-source alternative to Google Drive. Encrypted, cloud, or self-hosted file storage for business and teams, Docker-compose supported, MongoDB backend  
 - *Tags: Storage, Docker, Cloud*
+## Language/Runtime
+- **[GraalVM](https://github.com/oracle/graal)** — High-performance JDK and polyglot runtime for Java, JavaScript, Python, Ruby, R, LLVM and native code; includes Graal compiler and native image builder for fast application startup.  
+- *Tags: Java, JDK, Runtime*
 ## Dev/Cloud IDE/Automation
 - **[Visual-Code-Space](https://github.com/Visual-Code-Space/Visual-Code-Space)** — Browser-based IDE workspace, integrates with GitHub Codespaces, VSCode extensions, supports cloud development, automation, collaboration and sharing.  
 - *Tags: IDE, Cloud, Automation*
