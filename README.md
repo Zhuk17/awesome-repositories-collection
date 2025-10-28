@@ -16,6 +16,9 @@
 ### Docker/Cloud/Storage
 - **[Twake Drive](https://github.com/linagora/twake-drive)** — Open-source alternative to Google Drive. Encrypted, cloud, or self-hosted file storage for business and teams, Docker-compose supported, MongoDB backend
   - *Tags: Storage, Docker, Cloud*
+## Dev/Cloud IDE/Automation
+- **[Visual-Code-Space](https://github.com/Visual-Code-Space/Visual-Code-Space)** — Browser-based IDE workspace, integrates with GitHub Codespaces, VSCode extensions, supports cloud development, automation, collaboration and sharing.
+  - *Tags: IDE, Cloud, Automation*
 ## CI/CD
 *This section will contain CI/CD tools and utilities. See [ci_cd/README.md](ci_cd/README.md) for more details.*
 ## Telegram
@@ -49,4 +52,4 @@ Contributions are welcome! Please follow the format:
 - **[repository-name](https://github.com/user/repo)** - Brief description
   - *Tags: tag1, tag2, tag3*
 ```
-Please feel free to submit a Pull Request.https://www.opensourceprojects.dev/post/1982113748405059846
+Please feel free to submit a Pull Request.
