@@ -1,4 +1,56 @@
 # Awesome Repositories Collection ⚡
+
+## About This Collection
+
+This repository is a carefully curated multilingual collection of essential tools, utilities, and technical resources for developers, system administrators, and researchers. It brings together battle-tested open-source projects spanning AI/ML, containerization, development environments, security, media processing, and automation.
+
+### Purpose and Goals
+
+The primary goal is to provide a structured, categorized catalog of production-ready repositories that solve real-world technical challenges. Each entry includes:
+
+- **Direct GitHub link** to the source repository
+- **Concise description** highlighting key features and use cases  
+- **Technology tags** for quick filtering and discovery
+- **Practical context** - why this tool matters and when to use it
+
+### Categories
+
+The collection is organized into logical sections:
+
+- **ML/AI** - Language models, frameworks, APIs, interfaces, and multimedia AI tools
+- **Docker & Containers** - Container runtimes, Kubernetes tools, orchestration
+- **Development Environments** - Cloud IDEs, automation platforms, language runtimes
+- **CI/CD** - Continuous integration and deployment pipelines
+- **Messaging** - Telegram bots and communication utilities
+- **Media Processing** - Audio, video, and format conversion tools
+- **Security** - Encryption, authentication, and security utilities
+- **Performance** - Benchmarking and optimization tools
+
+### Adding New Repositories
+
+**Quality criteria:**
+
+- Active maintenance and community support
+- Clear documentation and setup instructions
+- Production-ready or widely adopted in development
+- Open-source with permissive licensing
+- Solves a specific, well-defined problem
+
+**Submission format:**
+
+```markdown
+- **[Repository Name](https://github.com/user/repo)** — Brief description highlighting key features, tech stack, and main use cases  
+- *Tags: Technology, Category, Keywords*
+```
+
+### Language Versions
+
+- [English](README.md) (this file)
+- [Русский](README.ru.md)
+- [中文](README.zh-CN.md)
+
+---
+
 ## ML/AI
 - **[FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise)** - Visual LLM workflow builder. Drag-and-drop UI for constructing AI agents and pipelines  
 - *Tags: TypeScript, Docker, AI*
@@ -47,5 +99,3 @@
 - **[hyperfine](https://github.com/sharkdp/hyperfine)** - Command-line benchmarking tool
 ## Security
 - **[age](https://github.com/FiloSottile/age)** - Simple, modern file encryption tool
-### Security/OSINT
-- **[deepdarkCTI](https://github.com/fastfire/deepdarkCTI/)** — Advanced threat intelligence tool for collecting and analyzing data from deep/dark web. Dark web monitoring, threat indicators, OSINT tools for cybersecurity research.  
