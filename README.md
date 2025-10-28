@@ -28,6 +28,9 @@
 *This section will contain Telegram bots and utilities. See [telegram/README.md](telegram/README.md) for more details.*
 ## Video Utils
 *This section will contain video processing tools. See [video_utils/README.md](video_utils/README.md) for more details.*
+## Media/Audio
+- **[ebook2audiobook](https://github.com/DrewThomasson/ebook2audiobook)** — Multilingual CPU/GPU converter from eBooks to audiobooks with chapters/metadata, >1100 languages, voice cloning, TTS engines, Docker support.
+  - *Tags: Audio, TTS, Multilingual*
 ## Utils/Conversion
 - **[VERT](https://github.com/VERT-sh/VERT)** — Local file converter built on WebAssembly, runs entirely in browser, privacy-focused, supports dozens of formats, no size limits; live demo at vert.sh.
   - *Tags: Conversion, Privacy, Web*
@@ -38,3 +41,24 @@
 ### Security/OSINT
 - **[deepdarkCTI](https://github.com/fastfire/deepdarkCTI/)** — Advanced threat intelligence tool for collecting and analyzing data from deep/dark web. Dark web monitoring, threat indicators, OSINT tools for cybersecurity research.
   - *Tags: Security, OSINT, Threat-Intelligence*
+## Education
+- **[Free-Certifications](https://github.com/cloudcommunity/Free-Certifications)** — Curated list of free online courses and certifications across tech, security, databases, and more. Regularly updated, newsletter and website available.
+  - *Tags: Education, Certification, Learning*
+## Theses
+A collection of technical theses and analysis articles. See [theses/README.md](theses/README.md) for the full catalog.
+## Other Awesome Collections
+- **[awesome](https://github.com/sindresorhus/awesome)** - Awesome lists about all kinds of interesting topics
+- **[awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps)** - A curated list of command line apps
+## How to Contribute
+Contributions are welcome! Please follow the format:
+**Repository Format:**
+- **Name**: Repository name
+- **Link**: URL to the repository
+- **Description**: Brief description of what it does
+- **Tags**: 1-3 tags (minimum 1, maximum 3)
+**Example:**
+```markdown
+- **[repository-name](https://github.com/user/repo)** - Brief description
+  - *Tags: tag1, tag2, tag3*
+```
+Please feel free to submit a Pull Request.
