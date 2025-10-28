@@ -13,6 +13,9 @@
   - *Tags: Docker, Kubernetes, Containers*
 - **[Podman Desktop](https://github.com/containers/podman-desktop)** — Daemonless secure alternative to Docker Desktop. CLI/GUI for managing containers; rootless, integrates with Kubernetes
   - *Tags: Docker, Containers, Security*
+### Docker/Cloud/Storage
+- **[Twake Drive](https://github.com/linagora/twake-drive)** — Open-source alternative to Google Drive. Encrypted, cloud, or self-hosted file storage for business and teams, Docker-compose supported, MongoDB backend
+  - *Tags: Storage, Docker, Cloud*
 ## CI/CD
 *This section will contain CI/CD tools and utilities. See [ci_cd/README.md](ci_cd/README.md) for more details.*
 ## Telegram
