@@ -11,6 +11,9 @@
 ### ML/AI/API
 - **[GPT_API_free](https://github.com/chatanywhere/GPT_API_free)** — Free API keys for ChatGPT, DeepSeek, Gemini, Grok, Claude models; simple REST API access for personal, non-commercial use. Supports main open-source and closed LLM APIs, Python backend.  
 - *Tags: AI, API, NLP*
+### ML/AI/Video
+- **[AnimateAnyone](https://github.com/HumanAIGC/AnimateAnyone)** — Diffusion-based model (and AnimateAnyone2) for consistent, controllable image-to-video synthesis and character animation; handles diverse poses and environment context.  
+- *Tags: AI, Animation, Diffusion*
 ## Docker
 - **[Rancher Desktop](https://github.com/rancher-sandbox/rancher-desktop)** — Kubernetes-centric desktop app for local container dev. Native Kubernetes, supports Docker, containerd, cross-platform  
 - *Tags: Docker, Kubernetes, Containers*
@@ -47,4 +50,23 @@
 - **[WinBoat](https://github.com/WinBoat/WinBoat)** — Electron/VM app to run Windows apps natively on Linux. Docker-based, seamless integration, filesystem sharing, multi-monitor support, actively developed.  
 - *Tags: Windows, Linux, VM*
 ## Education
-- **[Free-Certifications](https://github.com/cloudcommunity/Free-Certifications)** — Curated list of free online courses and certifications across tech, security, databases, and more. Regularly updated, newsletter and website available.
+- **[Free-Certifications](https://github.com/cloudcommunity/Free-Certifications)** — Curated list of free online courses and certifications across tech, security, databases, and more. Regularly updated, newsletter and website available.  
+- *Tags: Education, Certification, Learning*
+## Theses
+A collection of technical theses and analysis articles. See [theses/README.md](theses/README.md) for the full catalog.
+## Other Awesome Collections
+- **[awesome](https://github.com/sindresorhus/awesome)** - Awesome lists about all kinds of interesting topics
+- **[awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps)** - A curated list of command line apps
+## How to Contribute
+Contributions are welcome! Please follow the format:
+**Repository Format:**
+- **Name**: Repository name
+- **Link**: URL to the repository
+- **Description**: Brief description of what it does
+- **Tags**: 1-3 tags (minimum 1, maximum 3)
+**Example:**
+```markdown
+- **[repository-name](https://github.com/user/repo)** - Brief description
+  - *Tags: tag1, tag2, tag3*
+```
+Please feel free to submit a Pull Request.
