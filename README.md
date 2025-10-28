@@ -26,6 +26,9 @@
 - **[hyperfine](https://github.com/sharkdp/hyperfine)** - Command-line benchmarking tool
 ## Security
 - **[age](https://github.com/FiloSottile/age)** - Simple, modern file encryption tool
+### Security/OSINT
+- **[deepdarkCTI](https://github.com/fastfire/deepdarkCTI/)** — Advanced threat intelligence tool for collecting and analyzing data from deep/dark web. Dark web monitoring, threat indicators, OSINT tools for cybersecurity research.
+  - *Tags: Security, OSINT, Threat-Intelligence*
 ## Education
 - **[Free-Certifications](https://github.com/cloudcommunity/Free-Certifications)** — Curated list of free online courses and certifications across tech, security, databases, and more. Regularly updated, newsletter and website available.
   - *Tags: Education, Certification, Learning*
