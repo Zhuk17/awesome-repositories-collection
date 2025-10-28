@@ -11,6 +11,9 @@
 ### ML/AI/API
 - **[GPT_API_free](https://github.com/chatanywhere/GPT_API_free)** — Free API keys for ChatGPT, DeepSeek, Gemini, Grok, Claude models; simple REST API access for personal, non-commercial use. Supports main open-source and closed LLM APIs, Python backend.  
 - *Tags: AI, API, NLP*
+### ML/AI/Video
+- **[AnimateAnyone](https://github.com/HumanAIGC/AnimateAnyone)** — Diffusion-based model (and AnimateAnyone2) for consistent, controllable image-to-video synthesis and character animation; handles diverse poses and environment context.  
+- *Tags: AI, Animation, Diffusion*
 ## Docker
 - **[Rancher Desktop](https://github.com/rancher-sandbox/rancher-desktop)** — Kubernetes-centric desktop app for local container dev. Native Kubernetes, supports Docker, containerd, cross-platform  
 - *Tags: Docker, Kubernetes, Containers*
@@ -47,6 +50,8 @@
 ## System/OS
 - **[Atlas OS](https://github.com/Atlas-OS/Atlas)** — Optimized Windows mod, privacy- and latency-focused, removes bloat, speeds up gaming and desktop experience. Open-source ISO, feature set for enthusiasts.  
 - *Tags: Windows, OS, Optimization*
+- **[WinBoat](https://github.com/WinBoat/WinBoat)** — Electron/VM app to run Windows apps natively on Linux. Docker-based, seamless integration, filesystem sharing, multi-monitor support, actively developed.  
+- *Tags: Windows, Linux, VM*
 ## Education
 - **[Free-Certifications](https://github.com/cloudcommunity/Free-Certifications)** — Curated list of free online courses and certifications across tech, security, databases, and more. Regularly updated, newsletter and website available.  
 - *Tags: Education, Certification, Learning*
