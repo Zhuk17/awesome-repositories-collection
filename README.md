@@ -26,6 +26,9 @@
 - **[hyperfine](https://github.com/sharkdp/hyperfine)** - Command-line benchmarking tool
 ## Security
 - **[age](https://github.com/FiloSottile/age)** - Simple, modern file encryption tool
+## Education
+- **[Free-Certifications](https://github.com/cloudcommunity/Free-Certifications)** — Curated list of free online courses and certifications across tech, security, databases, and more. Regularly updated, newsletter and website available.
+  - *Tags: Education, Certification, Learning*
 ## Theses
 A collection of technical theses and analysis articles. See [theses/README.md](theses/README.md) for the full catalog.
 ## Other Awesome Collections
