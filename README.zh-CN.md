@@ -43,12 +43,12 @@
 - **[htop](https://github.com/htop-dev/htop)** - 交互式进程查看器
 - **[glances](https://github.com/nicolargo/glances)** - 跨平台系统监控工具
 - **[bottom](https://github.com/ClementTsang/bottom)** - 图形化进程和系统监视器
-- **[ncdu](https://dev.yorhel.nl/ncdu)** - 磁盘使用情况分析器
+- **[ncdu](https://dev.yorhel.nl/ncdu)** - 磁盘使用分析器
 
 ## 网络
 
-- **[httpie](https://github.com/httpie/httpie)** - 用于API测试的用户友好HTTP客户端
-- **[curlie](https://github.com/rs/curlie)** - 具有改进httpie接口的curl
+- **[httpie](https://github.com/httpie/httpie)** - 用户友好的HTTP客户端，用于API测试
+- **[curlie](https://github.com/rs/curlie)** - 具有httpie改进界面的curl
 - **[dog](https://github.com/ogham/dog)** - dig DNS客户端的现代替代品
 
 ## 开发工具
@@ -108,6 +108,10 @@
 
 - 所有上述开源项目的贡献者
 - 社区为建议和测试这些优秀工具所做的贡献
+
+## 论文
+
+[theses](theses) 文件夹包含学术论文分析和关于开发与系统管理各种主题的分析材料。
 
 ---
 
