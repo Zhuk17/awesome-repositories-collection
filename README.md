@@ -41,6 +41,9 @@
 ### Security/OSINT
 - **[deepdarkCTI](https://github.com/fastfire/deepdarkCTI/)** — Advanced threat intelligence tool for collecting and analyzing data from deep/dark web. Dark web monitoring, threat indicators, OSINT tools for cybersecurity research.
   - *Tags: Security, OSINT, Threat-Intelligence*
+## System/OS
+- **[Atlas OS](https://github.com/Atlas-OS/Atlas)** — Optimized Windows mod, privacy- and latency-focused, removes bloat, speeds up gaming and desktop experience. Open-source ISO, feature set for enthusiasts.
+  - *Tags: Windows, OS, Optimization*
 ## Education
 - **[Free-Certifications](https://github.com/cloudcommunity/Free-Certifications)** — Curated list of free online courses and certifications across tech, security, databases, and more. Regularly updated, newsletter and website available.
   - *Tags: Education, Certification, Learning*
