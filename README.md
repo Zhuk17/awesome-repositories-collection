@@ -64,86 +64,119 @@ This repository includes automated translation synchronization. See the `.github
 - *Tags: TypeScript, Docker, AI*
 
 - **[LangChain](https://github.com/hwchase17/langchain)** — Modular framework for building context-aware AI chatbots and assistants. Integrates with LLaMA and other LLMs; active plugin ecosystem
-- *Tags: Python, AI, LLM*
+- *Tags: Python, LLM, NLP*
 
-- **[ebook2audiobook](https://github.com/DrewThomasson/ebook2audiobook)** — Multilingual CPU/GPU converter from eBooks to audiobooks with chapters/metadata, >1100 languages, voice cloning, TTS engines, Docker support
-- *Tags: Audio, TTS, Multilingual*
+- **[Ollama](https://github.com/ollama/ollama)** — Easy-to-use local LLM runner supporting multiple models (Llama 2, Mistral, etc.)
+- *Tags: Go, LLM, CLI*
 
-- **[fpgaminer/joycaption](https://github.com/fpgaminer/joycaption)** — AI-powered automatic video captioning and subtitle generation. Creates accurate captions using speech recognition, supports multiple languages, and exports to various subtitle formats
-- *Tags: Video, Captioning, AI*
+- **[jan](https://github.com/janhq/jan)** — Desktop GUI for running open-source LLMs locally. Alternative to ChatGPT with privacy control
+- *Tags: Electron, Typescript, AI*
+
+- **[GPT4ALL](https://github.com/nomic-ai/gpt4all)** — Run LLMs locally on consumer hardware with minimal RAM; includes data ingestion and retrieval tools
+- *Tags: Python, C++, LLM*
+
+- **[MergeKit](https://github.com/cg123/mergekit)** — Efficiently merge large language models using various strategies (linear, TIES, etc.)
+- *Tags: Python, LLM, Tools*
+
+- **[ImageBind](https://github.com/facebookresearch/ImageBind)** — Unified embedding space for images, text, audio, depth, thermal, and IMU data
+- *Tags: Python, Computer Vision, AI*
 
 ## OS
 
-- **[darlinghq/darling](https://github.com/darlinghq/darling)** — Darwin/macOS emulation layer for Linux. Allows running macOS applications on Linux systems, similar to Wine for Windows apps. Translation layer for macOS binaries and system calls
-- *Tags: macOS, Linux, Emulation*
+- **[darlinghq/darling](https://github.com/darlinghq/darling)** — macOS compatibility layer for Linux. Run macOS applications and libraries on Linux
+- *Tags: C++, Emulation, macOS*
 
-- **[opensourceprojects.dev](https://opensourceprojects.dev)** — Comprehensive directory of Windows development and system tools, including virtualization platforms, container tools, EXE utilities, and Windows-specific open source projects
-- *Tags: Windows, Virtualization, Tools*
+- **[opensourceprojects.dev](https://opensourceprojects.dev/)** — Comprehensive hub for discovering open-source projects, tools, and resources across all categories
+- *Tags: Discovery, Community, Resources*
+
+- **[Open Source Projects](https://www.opensourceprojects.dev/post/1969996177648332826)** — Curated collection of high-quality open-source projects with community reviews and recommendations
+- *Tags: Community, Discovery, Tools*
 
 ## Security
 
-- **[age](https://github.com/FiloSottile/age)** — Simple, modern file encryption tool
-- *Tags: Encryption, Security, CLI*
+- **[mitmproxy](https://github.com/mitmproxy/mitmproxy)** — Interactive man-in-the-middle proxy. Debug, analyze, and modify HTTP/HTTPS traffic in real-time
+- *Tags: Python, Security, Proxy*
 
-- **[The-Osint-Toolbox/Telegram-OSINT](https://github.com/The-Osint-Toolbox/Telegram-OSINT)** — Open Source Intelligence toolkit for Telegram. Collection of tools and techniques for gathering publicly available information from Telegram, including user analysis, group monitoring, and data collection
-- *Tags: OSINT, Telegram, Security*
+- **[OWASP/juice-shop](https://github.com/OWASP/juice-shop)** — Deliberately vulnerable web application for learning web security and penetration testing
+- *Tags: Node.js, Security, Training*
 
-- **[Brandon7CC/mac-monitor](https://github.com/Brandon7CC/mac-monitor)** — Advanced macOS system monitoring and security tool. Real-time tracking of system activities, process monitoring, network connections, and security event detection for macOS systems
-- *Tags: macOS, Security, Monitoring*
+- **[hashicorp/vault](https://github.com/hashicorp/vault)** — Secrets management and identity-based access control system for infrastructure
+- *Tags: Go, Security, DevOps*
 
 ## Media
 
-- **[aandrew-me/ytDownloader](https://github.com/aandrew-me/ytDownloader)** — Fast, simple YouTube video downloader with GUI. Supports multiple formats, quality selection, playlist downloads, and batch processing. Cross-platform desktop application
-- *Tags: Video, Downloader, YouTube*
+- **[yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp)** — Advanced YouTube downloader. Extract video, audio, playlists; supports 1500+ sites
+- *Tags: Python, Media, CLI*
 
-- **[VERT](https://github.com/VERT-sh/VERT)** — Local file converter built on WebAssembly, runs entirely in browser, privacy-focused, supports dozens of formats, no size limits; live demo at vert.sh
-- *Tags: Conversion, Privacy, Web*
+- **[ModelScope](https://github.com/modelscope/modelscope)** — Community-driven model hub featuring diffusion models, text-to-image, and more
+- *Tags: Python, ML, Video*
 
-- **[joye61/pic-smaller](https://github.com/joye61/pic-smaller)** — Smart image compression tool that significantly reduces file sizes while maintaining visual quality. Batch processing, multiple format support, and intelligent optimization algorithms
-- *Tags: Images, Compression, Optimization*
+- **[SpeechRecognition](https://github.com/Uberi/speech_recognition)** — Python library for speech recognition with support for multiple APIs
+- *Tags: Python, Audio, AI*
 
-*For video processing tools, see [video_utils/README.md](video_utils/README.md) for more details.*
+- **[Blender](https://www.blender.org/)** — Free and open-source 3D computer graphics software for modeling, animation, and rendering
+- *Tags: C++, 3D, Creative*
+
+- **[FFmpeg](https://github.com/FFmpeg/FFmpeg)** — Powerful multimedia framework for handling video, audio, and image processing
+- *Tags: C, Media, CLI*
 
 ## Bots
 
-*This section contains Telegram bots and utilities. See [telegram/README.md](telegram/README.md) for more details.*
+- **[python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)** — Python wrapper for Telegram Bot API. Simple, async, user-friendly
+- *Tags: Python, Telegram, Bots*
+
+- **[TwitchIO](https://github.com/TwitchIO/TwitchIO)** — Feature-rich Python framework for Twitch bot development with extension support
+- *Tags: Python, Twitch, Bots*
 
 ## Utils
 
-- **[hyperfine](https://github.com/sharkdp/hyperfine)** — Command-line benchmarking tool
-- *Tags: Performance, Benchmarking, CLI*
+- **[PowerToys](https://github.com/microsoft/PowerToys)** — Advanced Windows system utilities: keyboard shortcuts, file renaming, color picker, and more
+- *Tags: C++, Windows, Utilities*
+
+- **[Magick](https://imagemagick.org/)** — Command-line tool and library for powerful image processing and manipulation
+- *Tags: C, CLI, Image Processing*
+
+- **[Ghostscript](https://www.ghostscript.com/)** — Interpreter for PostScript and PDF; supports document conversion and rendering
+- *Tags: PostScript, PDF, Utilities*
+
+- **[Inkscape](https://github.com/inkscape/inkscape)** — Cross-platform open-source vector graphics editor with professional-grade tools
+- *Tags: C++, Graphics, Creative*
 
 ## Business
 
-*This section will contain ERP systems and business management tools.*
+- **[Odoo](https://github.com/odoo/odoo)** — Full-featured ERP and CRM system. Covers accounting, sales, inventory, HR, and more
+- *Tags: Python, ERP, Business*
+
+- **[Frappe/ERPNext](https://github.com/frappe/erpnext)** — Customizable open-source ERP for small and medium businesses built on Python
+- *Tags: Python, ERP, Accounting*
 
 ## Mobile
 
-- **[droidrun/droidrun](https://github.com/droidrun/droidrun)** — Android automation framework for testing and task automation. Provides scriptable control over Android devices, UI interaction, and automated testing workflows
-- *Tags: Android, Automation, Testing*
+- **[React Native](https://github.com/facebook/react-native)** — Cross-platform mobile app framework using JavaScript/TypeScript and React patterns
+- *Tags: JavaScript, Mobile, Framework*
+
+- **[Appium](https://github.com/appium/appium)** — Cross-platform mobile automation framework supporting iOS and Android testing
+- *Tags: Node.js, Testing, Mobile*
 
 ## Performance
 
-- **[hyperfine](https://github.com/sharkdp/hyperfine)** — Command-line benchmarking tool
-- *Tags: Performance, Benchmarking, CLI*
+- **[k6](https://github.com/grafana/k6)** — Modern load testing tool supporting HTTP, WebSocket, and gRPC with real-time metrics
+- *Tags: Go, Performance, Testing*
+
+- **[ApacheBench](https://httpd.apache.org/docs/current/programs/ab.html)** — Simple HTTP server benchmarking tool for testing web application performance
+- *Tags: C, Performance, CLI*
 
 ## CI/CD
 
-*This section contains CI/CD tools and utilities. See [ci_cd/README.md](ci_cd/README.md) for more details.*
+- **[HashiCorp Consul](https://github.com/hashicorp/consul)** — Distributed service mesh and configuration platform. Multi-datacenter support with health checking, service discovery, and load balancing
+- *Tags: Go, Service Mesh, Infrastructure*
+
+See ci_cd/README.md for more details.
 
 ## Social
 
-- **[BandarHL/BHTwitter](https://github.com/BandarHL/BHTwitter)** — Enhanced Twitter client for iOS with advanced features. Adds download capabilities, UI customization, extended functionality, and privacy enhancements to the Twitter experience
-- *Tags: iOS, Twitter, Social Media*
+- **[Mastodon](https://github.com/mastodon/mastodon)** — Open-source decentralized social media platform. Self-hostable alternative to Twitter
+- *Tags: Ruby, Social Media, Decentralized*
 
-## Docker
-
-*This section will contain Docker and containerization tools.*
-
-## Language/Runtime
-
-*This section will contain programming language runtimes and development tools.*
-
-## Dev/Cloud IDE
-
-*This section will contain cloud IDEs and development automation platforms.*
+- **[Pixelfed](https://github.com/pixelfed/pixelfed)** — Decentralized photo-sharing social network; federated with ActivityPub protocol
+- *Tags: PHP, Social Media, Photos*
