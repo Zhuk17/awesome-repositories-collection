@@ -1,7 +1,7 @@
 name: Auto-Translate READMEs
 
-# Workflow для автоматической синхронизации локализаций README
-# Автоматически запускается при изменении основных README файлов
+# Автоматический перевод README.md на русский и китайский языки
+# Запускается при изменении основного README.md файла
 
 on:
   push:
@@ -9,11 +9,6 @@ on:
       - main
     paths:
       - 'README.md'
-      - 'README.ru.md'
-      - 'README.zh-CN.md'
-      - 'ci_cd/README.md'
-      - 'telegram/README.md'
-      - 'video_utils/README.md'
   workflow_dispatch:
     inputs:
       source_language:
@@ -41,30 +36,27 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: 'pip'
       
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install openai anthropic requests python-dotenv pyyaml
       
-      - name: Run translation script
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Create translation script
         run: |
-          # Создаем скрипт синхронизации если его нет
-          if [ ! -f scripts/translate_readmes.py ]; then
-            mkdir -p scripts
-            cat > scripts/translate_readmes.py << 'EOF'
+          mkdir -p scripts
+          cat > scripts/translate_readmes.py << 'EOF'
 #!/usr/bin/env python3
 """
 Автоматическая синхронизация переводов README файлов
-Использует OpenAI API или Anthropic API для машинного перевода
+Использует OpenAI API для машинного перевода с сохранением markdown форматирования
 """
 
 import os
@@ -75,7 +67,8 @@ from pathlib import Path
 try:
     import openai
 except ImportError:
-    print("Установите библиотеку: pip install openai")
+    print("❌ Ошибка: Установите библиотеку openai")
+    print("   pip install openai")
     sys.exit(1)
 
 # Конфигурация языков
@@ -94,108 +87,205 @@ README_FILES = {
 def translate_text(text, target_language, source_language='en'):
     """
     Переводит текст с помощью OpenAI API
+    
+    Args:
+        text: Исходный текст для перевода
+        target_language: Целевой язык (en, ru, zh-CN)
+        source_language: Исходный язык (по умолчанию en)
+    
+    Returns:
+        Переведенный текст или None в случае ошибки
     """
     api_key = os.getenv('OPENAI_API_KEY')
     if not api_key:
-        print("Ошибка: OPENAI_API_KEY не установлен")
+        print("❌ Ошибка: OPENAI_API_KEY не установлен")
+        print("   Установите переменную окружения или GitHub Secret")
         return None
     
     client = openai.OpenAI(api_key=api_key)
     
     prompt = f"""Translate the following markdown document from {LANGUAGE_CODES[source_language]} to {LANGUAGE_CODES[target_language]}.
 
-IMPORTANT RULES:
-1. Keep all markdown formatting intact (headers, links, lists, code blocks, etc.)
-2. Do NOT translate:
-   - URLs and links
-   - GitHub repository names
-   - Code blocks and technical commands
-   - File paths and filenames
-   - Tags (e.g., *Tags: Python, AI, Docker*)
-3. Translate only:
-   - Text descriptions
-   - Headers and titles
-   - Regular paragraphs
-4. Preserve the exact structure and formatting
+CRITICAL RULES - FOLLOW EXACTLY:
+
+1. PRESERVE ALL MARKDOWN FORMATTING:
+   - Keep all headers (# ## ###)
+   - Keep all links [text](url)
+   - Keep all lists (- * 1.)
+   - Keep all code blocks ``` ```
+   - Keep all emphasis (* ** ___)
+   - Keep all tables
+   - Keep all HTML tags
+
+2. DO NOT TRANSLATE (keep exactly as is):
+   - URLs and hyperlinks (entire https://... addresses)
+   - GitHub repository names (e.g., "neovim/neovim")
+   - Code blocks and their contents
+   - Technical commands (e.g., git commit, npm install)
+   - File paths and filenames (e.g., README.md, scripts/translate.py)
+   - Tags and labels (e.g., *Tags: Python, Docker, AI*)
+   - Programming language names (Python, JavaScript, Rust, etc.)
+   - Tool names when they are proper nouns (GitHub, Docker, Kubernetes)
+   - Badge URLs and image sources
+
+3. TRANSLATE:
+   - All descriptive text and explanations
+   - Headers and section titles
+   - Paragraphs and sentences
+   - List item descriptions (but not the tool names in bold)
+   - Table contents (but not code or URLs)
+
+4. SPECIAL HANDLING:
+   - For tool descriptions like "**[tool](url)** — description", translate ONLY the description part after —
+   - Keep emoji exactly as they are
+   - Preserve line breaks and spacing
+   - Keep alignment and indentation
 
 Document to translate:
 
 {text}"""
     
     try:
+        print(f"   🤖 Вызов OpenAI API (модель: gpt-4-turbo-preview)...")
         response = client.chat.completions.create(
             model="gpt-4-turbo-preview",
             messages=[
-                {"role": "system", "content": "You are a professional technical translator specializing in software documentation. You preserve markdown formatting and technical terms."},
-                {"role": "user", "content": prompt}
+                {
+                    "role": "system", 
+                    "content": "You are a professional technical translator specializing in software documentation. You preserve ALL markdown formatting, URLs, code blocks, and technical terms exactly as they appear. You translate only natural language text while keeping technical elements untouched."
+                },
+                {
+                    "role": "user", 
+                    "content": prompt
+                }
             ],
-            temperature=0.3
+            temperature=0.3,
+            max_tokens=16000
         )
-        return response.choices[0].message.content
+        
+        translated = response.choices[0].message.content
+        print(f"   ✅ Перевод получен ({len(translated)} символов)")
+        return translated
+        
+    except openai.APIError as e:
+        print(f"❌ Ошибка OpenAI API: {e}")
+        return None
     except Exception as e:
-        print(f"Ошибка при переводе: {e}")
+        print(f"❌ Неожиданная ошибка: {e}")
         return None
 
 def sync_translations(source_lang='en', target_langs=None):
     """
     Синхронизирует переводы README файлов
+    
+    Args:
+        source_lang: Исходный язык (по умолчанию en)
+        target_langs: Список целевых языков (по умолчанию ['ru', 'zh-CN'])
+    
+    Returns:
+        True если успешно, False в случае ошибки
     """
     if target_langs is None:
         target_langs = ['ru', 'zh-CN']
     
+    # Определяем корневую директорию репозитория
     repo_root = Path(__file__).parent.parent
     source_file = repo_root / README_FILES[source_lang]
     
     if not source_file.exists():
-        print(f"Ошибка: {source_file} не найден")
+        print(f"❌ Ошибка: Файл {source_file} не найден")
         return False
     
-    print(f"Читаем исходный файл: {source_file}")
+    print(f"\n📖 Читаем исходный файл: {source_file}")
     with open(source_file, 'r', encoding='utf-8') as f:
         source_text = f.read()
     
+    print(f"   Размер: {len(source_text)} символов")
+    
+    success_count = 0
+    
     for target_lang in target_langs:
         if target_lang == source_lang:
+            print(f"\n⏭️  Пропуск {target_lang} (совпадает с исходным языком)")
             continue
         
         target_file = repo_root / README_FILES[target_lang]
-        print(f"\nПереводим на {LANGUAGE_CODES[target_lang]}...")
+        
+        print(f"\n🌍 Перевод на {LANGUAGE_CODES[target_lang]}...")
+        print(f"   Целевой файл: {target_file}")
         
         translated = translate_text(source_text, target_lang, source_lang)
+        
         if translated:
-            print(f"Сохраняем в {target_file}")
+            print(f"   💾 Сохранение перевода...")
             with open(target_file, 'w', encoding='utf-8') as f:
                 f.write(translated)
-            print(f"✓ Успешно создан {target_file}")
+            print(f"   ✅ Успешно создан {target_file}")
+            success_count += 1
         else:
-            print(f"✗ Ошибка перевода для {target_lang}")
+            print(f"   ❌ Ошибка перевода для {target_lang}")
     
-    return True
+    print(f"\n{'='*60}")
+    print(f"📊 Результаты: {success_count}/{len(target_langs)} переводов выполнено")
+    
+    return success_count > 0
 
 if __name__ == '__main__':
-    # Определяем параметры из аргументов командной строки или переменных окружения
-    source = os.getenv('SOURCE_LANG', 'en')
-    targets = os.getenv('TARGET_LANGS', 'ru,zh-CN').split(',')
-    
-    print(f"Синхронизация переводов")
-    print(f"Исходный язык: {LANGUAGE_CODES[source]}")
-    print(f"Целевые языки: {', '.join([LANGUAGE_CODES[t] for t in targets])}")
+    print("="*60)
+    print("🌍 Система автоматического перевода README")
     print("="*60)
     
+    # Определяем параметры из переменных окружения
+    source = os.getenv('SOURCE_LANG', 'en')
+    targets_str = os.getenv('TARGET_LANGS', 'ru,zh-CN')
+    targets = [t.strip() for t in targets_str.split(',') if t.strip()]
+    
+    print(f"\n📋 Конфигурация:")
+    print(f"   Исходный язык: {LANGUAGE_CODES.get(source, source)}")
+    print(f"   Целевые языки: {', '.join([LANGUAGE_CODES.get(t, t) for t in targets])}")
+    
+    # Проверка API ключа
+    if not os.getenv('OPENAI_API_KEY'):
+        print("\n❌ КРИТИЧЕСКАЯ ОШИБКА: OPENAI_API_KEY не установлен!")
+        print("   Установите переменную окружения:")
+        print("   export OPENAI_API_KEY='your-api-key-here'")
+        sys.exit(1)
+    
+    # Запуск синхронизации
     success = sync_translations(source, targets)
-    sys.exit(0 if success else 1)
+    
+    if success:
+        print("\n✨ Все переводы успешно завершены!")
+        sys.exit(0)
+    else:
+        print("\n❌ Произошли ошибки при переводе")
+        sys.exit(1)
 EOF
-            chmod +x scripts/translate_readmes.py
-          fi
-          
-          # Запускаем скрипт синхронизации
-          export SOURCE_LANG="${{ github.event.inputs.source_language || 'en' }}"
-          export TARGET_LANGS="${{ github.event.inputs.target_languages || 'ru,zh-CN' }}"
+          chmod +x scripts/translate_readmes.py
+      
+      - name: Run translation
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SOURCE_LANG: ${{ github.event.inputs.source_language || 'en' }}
+          TARGET_LANGS: ${{ github.event.inputs.target_languages || 'ru,zh-CN' }}
+        run: |
+          echo "🚀 Запуск перевода..."
           python scripts/translate_readmes.py
       
-      - name: Commit and push changes
+      - name: Commit and push translations
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add README.*.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-sync README translations" && git push)
+          
+          # Добавляем переведенные файлы
+          git add README.ru.md README.zh-CN.md
+          
+          # Проверяем, есть ли изменения
+          if git diff --staged --quiet; then
+            echo "✨ Нет изменений для коммита"
+          else
+            echo "📝 Коммит переводов..."
+            git commit -m "🌍 chore: auto-update README translations [skip ci]"
+            git push
+            echo "✅ Переводы успешно загружены!"
+          fi

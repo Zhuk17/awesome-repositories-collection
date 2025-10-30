@@ -1,259 +1,570 @@
-# Автоматизация переводов / Translation Automation
+# Translation Automation Guide
 
-## Обзор / Overview
+## 📖 Overview
 
-Этот репозиторий включает автоматическую систему синхронизации переводов README файлов на несколько языков (английский, русский, китайский). Система работает через GitHub Actions и использует AI для машинного перевода.
+This repository includes an **automated translation synchronization system** for README files across multiple languages (English, Russian, Chinese). The system works via **GitHub Actions** and uses **AI** (OpenAI GPT-4) for high-quality machine translation.
 
-This repository includes an automated translation synchronization system for README files across multiple languages (English, Russian, Chinese). The system works via GitHub Actions and uses AI for machine translation.
+### How It Works
 
-## Архитектура / Architecture
+1. ✍️ You edit `README.md` (English version)
+2. 🚀 Push to `main` branch
+3. 🤖 GitHub Actions automatically translates to Russian and Chinese
+4. ✅ Translated files are committed back to the repository
 
-### Компоненты / Components
+---
 
-1. **GitHub Actions Workflow** (`.github/workflows/auto-translate-readmes.yml`)
-   - Автоматически запускается при изменении README файлов
-   - Может быть запущен вручную через workflow_dispatch
-   - Включает встроенный Python скрипт для перевода
+## 🏗️ Architecture
 
-2. **Python Translation Script** (встроенный в workflow / embedded in workflow)
-   - Использует OpenAI API или Anthropic API
-   - Сохраняет markdown форматирование
-   - Не переводит технические термины, ссылки и теги
+### Components
 
-## Настройка / Setup
+#### 1. GitHub Actions Workflow
 
-### 1. Добавление API ключей / Adding API Keys
+**Location:** `.github/workflows/auto-translate-readmes.yml`
 
-Добавьте секреты в настройках репозитория:
+**Triggers:**
+- Automatically on push to `main` when `README.md` changes
+- Manually via `workflow_dispatch` for custom translations
 
-Add secrets in repository settings:
+**Features:**
+- Embedded Python translation script
+- Support for multiple AI providers (OpenAI, Anthropic)
+- Automatic commit and push of translations
+
+#### 2. Python Translation Script
+
+**Embedded in workflow** (lines 63-187)
+
+**Capabilities:**
+- Uses OpenAI API (GPT-4 Turbo Preview)
+- Preserves markdown formatting
+- Doesn't translate technical terms, URLs, code blocks
+- Smart handling of repository names and file paths
+
+---
+
+## ⚙️ Setup
+
+### 1. Add API Keys
+
+Navigate to your repository settings:
 
 ```
 Settings → Secrets and variables → Actions → New repository secret
 ```
 
-**Необходимые секреты / Required secrets:**
-
-- `OPENAI_API_KEY` - ключ OpenAI API (для GPT-4)
-- `ANTHROPIC_API_KEY` - ключ Anthropic API (опционально, для Claude)
-
-### 2. Настройка разрешений / Setting Permissions
-
-Убедитесь, что GitHub Actions имеет права на запись:
-
-Ensure GitHub Actions has write permissions:
+**Required Secret:**
 
 ```
-Settings → Actions → General → Workflow permissions → Read and write permissions
+Name: OPENAI_API_KEY
+Value: sk-... (your OpenAI API key)
 ```
 
-## Использование / Usage
+**Optional Secret (for fallback):**
 
-### Автоматический запуск / Automatic Trigger
+```
+Name: ANTHROPIC_API_KEY
+Value: sk-ant-... (your Anthropic API key)
+```
 
-Workflow автоматически запускается при:
+### 2. Configure GitHub Actions Permissions
 
-The workflow automatically triggers when:
+Ensure GitHub Actions can commit changes:
 
-- Изменении любого из следующих файлов / Changes to any of these files:
-  - `README.md`
-  - `README.ru.md`
-  - `README.zh-CN.md`
-  - `ci_cd/README.md`
-  - `telegram/README.md`
-  - `video_utils/README.md`
+```
+Settings → Actions → General → Workflow permissions
+→ Select "Read and write permissions"
+→ Check "Allow GitHub Actions to create and approve pull requests"
+→ Save
+```
 
-### Ручной запуск / Manual Trigger
+### 3. Verify Workflow File
 
-Для ручного запуска перевода:
+Check that `.github/workflows/auto-translate-readmes.yml` exists and is properly configured.
 
-To manually trigger translation:
+---
 
-1. Перейдите в **Actions** → **Auto-Translate READMEs**
-2. Нажмите **Run workflow**
-3. Выберите параметры:
-   - **Source language**: исходный язык (en/ru/zh-CN)
-   - **Target languages**: целевые языки через запятую (en,ru,zh-CN)
-4. Нажмите **Run workflow**
+## 🚀 Usage
 
-## Локальное использование / Local Usage
+### Automatic Translation (Recommended)
 
-Для локального запуска перевода:
+**Simple workflow:**
 
-To run translation locally:
+1. Edit `README.md` (English version only)
+2. Commit and push to `main` branch:
+   ```bash
+   git add README.md
+   git commit -m "Update README with new tools"
+   git push origin main
+   ```
+3. GitHub Actions automatically:
+   - Detects the change
+   - Translates to Russian (`README.ru.md`)
+   - Translates to Chinese (`README.zh-CN.md`)
+   - Commits translations back to `main`
 
-### 1. Установка зависимостей / Install dependencies
+**Check progress:**
+- Go to **Actions** tab in your repository
+- Click on the latest "Auto-Translate READMEs" workflow run
+- Monitor the progress and check for any errors
+
+### Manual Translation
+
+For special cases (translating from Russian source, selective languages, etc.):
+
+1. Go to **Actions** → **Auto-Translate READMEs**
+2. Click **Run workflow** button
+3. Configure options:
+   - **Source language:** `en`, `ru`, or `zh-CN`
+   - **Target languages:** Comma-separated list (e.g., `ru,zh-CN`)
+4. Click **Run workflow**
+
+**Example use cases:**
+- Translate Russian version to English and Chinese: `source: ru`, `target: en,zh-CN`
+- Update only Chinese version: `source: en`, `target: zh-CN`
+
+---
+
+## 🖥️ Local Development
+
+### Prerequisites
 
 ```bash
+# Install required Python packages
 pip install openai anthropic requests python-dotenv pyyaml
 ```
 
-### 2. Создание .env файла / Create .env file
+### Setup
+
+Create a `.env` file in the repository root:
 
 ```bash
-echo "OPENAI_API_KEY=your_api_key_here" > .env
+OPENAI_API_KEY=sk-your-openai-api-key-here
 ```
 
-### 3. Извлечение скрипта / Extract the script
+### Extract Translation Script
 
-Скрипт встроен в workflow файл. Для извлечения:
-
-The script is embedded in the workflow file. To extract:
+The script is embedded in the workflow file. Extract it:
 
 ```bash
-# Создать директорию для скриптов
 mkdir -p scripts
-
-# Скопировать Python код из секции workflow (между EOF маркерами)
-# Copy the Python code from the workflow section (between EOF markers)
 ```
 
-Или создайте `scripts/translate_readmes.py` вручную с содержимым из workflow файла.
+Then copy the Python code from `.github/workflows/auto-translate-readmes.yml` (between `EOF` markers, lines 64-187) to `scripts/translate_readmes.py`.
 
-Or create `scripts/translate_readmes.py` manually with content from the workflow file.
+Or run the workflow once — it will auto-create the script.
 
-### 4. Запуск / Run
+### Run Locally
 
 ```bash
-# Перевести с английского на русский и китайский
 # Translate from English to Russian and Chinese
 export SOURCE_LANG=en
 export TARGET_LANGS=ru,zh-CN
 python scripts/translate_readmes.py
+```
 
-# Или указать другой исходный язык
-# Or specify different source language
+```bash
+# Translate from Russian to English only
 export SOURCE_LANG=ru
-export TARGET_LANGS=en,zh-CN
+export TARGET_LANGS=en
 python scripts/translate_readmes.py
 ```
 
-## Конфигурация / Configuration
-
-### Добавление новых языков / Adding New Languages
-
-Для добавления поддержки нового языка:
-
-To add support for a new language:
-
-1. Обновите `LANGUAGE_CODES` в Python скрипте
-2. Добавьте соответствие в `README_FILES`
-3. Обновите `workflow_dispatch.inputs.source_language.options` в workflow
-
-### Модель перевода / Translation Model
-
-По умолчанию используется `gpt-4-turbo-preview`. Для изменения модели отредактируйте параметр `model` в функции `translate_text()`.
-
-By default, `gpt-4-turbo-preview` is used. To change the model, edit the `model` parameter in the `translate_text()` function.
-
-## Правила перевода / Translation Rules
-
-Скрипт следует следующим правилам:
-
-The script follows these rules:
-
-### Не переводится / Not Translated:
-- URLs и ссылки / URLs and links
-- Имена репозиториев GitHub / GitHub repository names
-- Блоки кода и технические команды / Code blocks and technical commands
-- Пути к файлам / File paths and filenames
-- Теги (например, `*Tags: Python, AI, Docker*`)
-
-### Переводится / Translated:
-- Текстовые описания / Text descriptions
-- Заголовки и названия / Headers and titles
-- Обычные параграфы / Regular paragraphs
-
-## Устранение неполадок / Troubleshooting
-
-### Workflow не запускается / Workflow doesn't trigger
-
-1. Проверьте разрешения Actions / Check Actions permissions
-2. Убедитесь, что изменения коммитятся в `main` ветку / Ensure changes are committed to `main` branch
-3. Проверьте пути в `on.push.paths` / Check paths in `on.push.paths`
-
-### Ошибки API / API Errors
-
-1. Проверьте наличие API ключей в секретах / Check API keys in secrets
-2. Убедитесь, что ключи активны и имеют квоту / Ensure keys are active and have quota
-3. Проверьте логи workflow для деталей / Check workflow logs for details
-
-### Неправильный перевод / Incorrect Translation
-
-1. Проверьте prompt в функции `translate_text()` / Check prompt in `translate_text()` function
-2. Настройте параметр `temperature` (ниже = более детерминированно) / Adjust `temperature` parameter (lower = more deterministic)
-3. Попробуйте другую модель / Try a different model
-
-## Примеры / Examples
-
-### Пример 1: Обновление основного README
-
-Example 1: Updating main README
+### Test Before Pushing
 
 ```bash
-# Редактируем README.md на английском
-# Edit README.md in English
+# Make changes to README.md
 vim README.md
 
-# Коммитим изменения
-# Commit changes
-git add README.md
-git commit -m "Update README with new features"
-git push origin main
+# Run translation locally
+export SOURCE_LANG=en
+export TARGET_LANGS=ru,zh-CN
+python scripts/translate_readmes.py
 
-# Workflow автоматически создаст переводы
-# Workflow will automatically create translations
+# Review translations
+git diff README.ru.md README.zh-CN.md
+
+# If satisfied, commit and push
+git add README*.md
+git commit -m "Update README and translations"
+git push origin main
 ```
 
-### Пример 2: Ручной перевод с русского
+---
 
-Example 2: Manual translation from Russian
+## 🔧 Configuration
+
+### Supported Languages
+
+Currently configured languages:
+
+| Code | Language | File |
+|------|----------|------|
+| `en` | English | `README.md` |
+| `ru` | Russian | `README.ru.md` |
+| `zh-CN` | Simplified Chinese | `README.zh-CN.md` |
+
+### Adding New Languages
+
+To add support for a new language (e.g., Spanish):
+
+1. **Update translation script** in `.github/workflows/auto-translate-readmes.yml`:
+
+```python
+LANGUAGE_CODES = {
+    'en': 'English',
+    'ru': 'Russian (Русский)',
+    'zh-CN': 'Simplified Chinese (简体中文)',
+    'es': 'Spanish (Español)'  # Add this
+}
+
+README_FILES = {
+    'en': 'README.md',
+    'ru': 'README.ru.md',
+    'zh-CN': 'README.zh-CN.md',
+    'es': 'README.es.md'  # Add this
+}
+```
+
+2. **Update workflow inputs** (lines 24-27):
+
+```yaml
+options:
+  - en
+  - ru
+  - zh-CN
+  - es  # Add this
+```
+
+3. **Update default targets** (line 31):
+
+```yaml
+default: 'ru,zh-CN,es'
+```
+
+### Changing Translation Model
+
+Default model: `gpt-4-turbo-preview`
+
+To use a different model, edit the script in the workflow file (line 127):
+
+```python
+response = client.chat.completions.create(
+    model="gpt-4o",  # Change this
+    messages=[...],
+    temperature=0.3
+)
+```
+
+**Available models:**
+- `gpt-4-turbo-preview` — Best quality (default)
+- `gpt-4o` — Faster, multimodal
+- `gpt-3.5-turbo` — Cheaper, faster, lower quality
+
+### Adjusting Translation Quality
+
+**Temperature parameter** (line 132):
+- `0.0` — Deterministic, consistent translations
+- `0.3` — **Default** — Good balance
+- `0.7` — More creative, less consistent
+- `1.0` — Maximum creativity
+
+**Lower temperature** is recommended for technical documentation.
+
+---
+
+## 📋 Translation Rules
+
+### What Gets Translated
+
+✅ **Translated:**
+- Headers and titles
+- Paragraph text
+- Tool descriptions
+- Explanations and instructions
+
+### What Stays in English
+
+🚫 **Not translated:**
+- URLs and hyperlinks
+- GitHub repository names (e.g., `neovim/neovim`)
+- Code blocks and command examples
+- File paths (e.g., `scripts/translate.py`)
+- Tags (e.g., `*Tags: Python, Docker, AI*`)
+- Technical terms (often kept in English even in other languages)
+
+### Example
+
+**Input (English):**
+```markdown
+- **[ripgrep](https://github.com/BurntSushi/ripgrep)** — Ultra-fast search tool written in Rust.
+  - *Tags: Rust, CLI, Search*
+```
+
+**Output (Russian):**
+```markdown
+- **[ripgrep](https://github.com/BurntSushi/ripgrep)** — Сверхбыстрый инструмент поиска, написанный на Rust.
+  - *Tags: Rust, CLI, Search*
+```
+
+**Notice:** Repository name, URL, and tags remain unchanged.
+
+---
+
+## 🐛 Troubleshooting
+
+### Workflow Doesn't Trigger
+
+**Symptoms:** Push to `main` but no workflow runs
+
+**Solutions:**
+1. ✅ Verify Actions are enabled: `Settings → Actions → General → Actions permissions`
+2. ✅ Check file changed: Workflow only triggers on `README.md` changes
+3. ✅ Verify branch: Must push to `main` branch
+4. ✅ Check workflow file: Ensure `.github/workflows/auto-translate-readmes.yml` exists
+
+### API Errors
+
+**Symptoms:** Workflow fails with "API Error" or "Authentication failed"
+
+**Solutions:**
+1. ✅ Verify secret exists: `Settings → Secrets → OPENAI_API_KEY`
+2. ✅ Check API key validity: Test key on OpenAI platform
+3. ✅ Verify quota: Ensure you have available API credits
+4. ✅ Check API status: Visit [OpenAI Status Page](https://status.openai.com/)
+
+### Poor Translation Quality
+
+**Symptoms:** Translations are inaccurate or awkward
+
+**Solutions:**
+1. ✅ **Improve source description:** Better English = better translation
+2. ✅ **Lower temperature:** Change from `0.3` to `0.1` for more consistency
+3. ✅ **Try different model:** Switch to `gpt-4o` for latest improvements
+4. ✅ **Add context:** More detailed descriptions translate better
+
+### Merge Conflicts
+
+**Symptoms:** Workflow creates conflicts with manual edits
+
+**Solutions:**
+1. ✅ **Only edit `README.md`:** Never manually edit `README.ru.md` or `README.zh-CN.md`
+2. ✅ **Pull before push:** Always `git pull` before pushing new changes
+3. ✅ **Resolve conflicts:** If conflict occurs, keep `README.md` changes and regenerate translations
+
+### Script Creation Fails
+
+**Symptoms:** Error about missing `scripts/translate_readmes.py`
+
+**Solutions:**
+1. ✅ **Let workflow create it:** First run auto-creates the script
+2. ✅ **Check permissions:** Ensure workflow has write permissions
+3. ✅ **Create manually:** Extract script from workflow file if needed
+
+---
+
+## 💡 Best Practices
+
+### 1. Edit Only English Version
+
+✅ **DO:** Edit `README.md` only
+❌ **DON'T:** Manually edit `README.ru.md` or `README.zh-CN.md`
+
+**Why:** Translations are auto-generated. Manual edits will be overwritten.
+
+### 2. Write Clear Descriptions
+
+Good source text = good translations
+
+**Good:**
+> Ultra-fast recursive search tool written in Rust. Respects .gitignore by default.
+
+**Bad:**
+> Fast search thing.
+
+### 3. Use Consistent Terminology
+
+**Be consistent with technical terms:**
+- Container (not Docker box)
+- Repository (not repo in formal descriptions)
+- Command-line (not CLI in full descriptions)
+
+### 4. Review Translations
+
+After automatic translation:
+1. ✅ Check `README.ru.md` and `README.zh-CN.md`
+2. ✅ Verify technical terms weren't mistranslated
+3. ✅ Ensure formatting is preserved
+4. 🐛 Open issue if systematic problems occur
+
+### 5. Monitor API Costs
+
+**Track your OpenAI usage:**
+- Set up billing alerts on OpenAI platform
+- Monitor workflow runs in Actions tab
+- Consider using `gpt-3.5-turbo` for development/testing
+
+**Estimated costs:**
+- Small update: ~$0.01-0.05
+- Full README translation: ~$0.10-0.30
+- Monthly cost (active repo): ~$2-5
+
+### 6. Test Locally First
+
+For major changes:
 
 ```bash
-# Редактируем README.ru.md
-# Edit README.ru.md
-vim README.ru.md
-git add README.ru.md
-git commit -m "Обновление русской версии"
-git push origin main
+# Test translation before pushing
+python scripts/translate_readmes.py
 
-# В GitHub Actions:
-# In GitHub Actions:
-# Actions → Auto-Translate READMEs → Run workflow
-# Source language: ru
-# Target languages: en,zh-CN
+# Review diff
+git diff README.ru.md
+
+# If good, commit and push
+git add README*.md
+git commit -m "Major update to README"
+git push origin main
 ```
 
-## Лучшие практики / Best Practices
+---
 
-1. **Редактируйте один исходный файл** / **Edit one source file**
-   - Выберите основной язык (обычно английский)
-   - Дайте автоматизации создавать другие версии
+## 📊 Workflow Examples
 
-2. **Проверяйте переводы** / **Review translations**
-   - AI переводы могут требовать корректировки
-   - Проверьте технические термины
+### Example 1: Adding New Tools
 
-3. **Используйте workflow_dispatch** / **Use workflow_dispatch**
-   - Для явного контроля над процессом перевода
-   - Когда нужно перевести с нестандартного языка
+```bash
+# 1. Edit English README
+vim README.md
+# Add tools to appropriate sections
 
-4. **Мониторьте квоты API** / **Monitor API quotas**
-   - Следите за использованием OpenAI API
-   - Настройте уведомления о лимитах
+# 2. Commit and push
+git add README.md
+git commit -m "add: ffmpeg and handbrake to video section"
+git push origin main
 
-## Дополнительные ресурсы / Additional Resources
+# 3. Wait ~2-3 minutes for automatic translation
+# 4. Pull translated versions
+git pull origin main
+```
+
+### Example 2: Fixing Translation Error
+
+```bash
+# If you notice a translation error:
+# 1. Check if it's a source problem
+vim README.md
+# Fix the English description if needed
+
+# 2. Push the fix
+git add README.md
+git commit -m "fix: clarify description for tool X"
+git push origin main
+
+# 3. Translations regenerate automatically
+```
+
+### Example 3: Manual Translation Run
+
+```bash
+# Translate only to Russian (useful for testing)
+# 1. Go to Actions tab
+# 2. Click "Auto-Translate READMEs"
+# 3. Click "Run workflow"
+# 4. Set:
+#    - Source: en
+#    - Target: ru
+# 5. Click "Run workflow"
+```
+
+---
+
+## 🔍 Advanced: Workflow Customization
+
+### Custom Trigger Paths
+
+Edit `.github/workflows/auto-translate-readmes.yml`:
+
+```yaml
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'README.md'              # Main file
+      # Add other files if needed:
+      # - 'docs/README.md'
+      # - 'CONTRIBUTING.md'
+```
+
+### Commit Message Customization
+
+Change line 201:
+
+```yaml
+git commit -m "chore: auto-sync README translations"
+```
+
+To:
+
+```yaml
+git commit -m "🌍 Auto-update translations [skip ci]"
+```
+
+**Note:** `[skip ci]` prevents infinite loops.
+
+### Email Notifications
+
+Add to workflow:
+
+```yaml
+- name: Notify on failure
+  if: failure()
+  uses: dawidd6/action-send-mail@v3
+  with:
+    server_address: smtp.gmail.com
+    server_port: 465
+    username: ${{ secrets.MAIL_USERNAME }}
+    password: ${{ secrets.MAIL_PASSWORD }}
+    subject: Translation workflow failed
+    to: your-email@example.com
+    from: GitHub Actions
+    body: Check the workflow run at ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+```
+
+---
+
+## 📚 Resources
 
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [OpenAI API Documentation](https://platform.openai.com/docs)
 - [Markdown Guide](https://www.markdownguide.org/)
+- [Python `openai` Library](https://github.com/openai/openai-python)
 
-## Поддержка / Support
+---
 
-Для вопросов и проблем:
+## 🆘 Support
 
-For questions and issues:
+**Need help?**
 
-- Создайте issue в репозитории / Create an issue in the repository
-- Проверьте логи GitHub Actions / Check GitHub Actions logs
-- Обратитесь к документации API / Refer to API documentation
+- 💬 [Open a Discussion](https://github.com/zhukovgreen/awesome-repositories-collection/discussions)
+- 🐛 [Report a Bug](https://github.com/zhukovgreen/awesome-repositories-collection/issues)
+- 📖 Review workflow logs in Actions tab
+- 🔍 Check existing issues for similar problems
+
+---
+
+## 🎯 Summary
+
+**Workflow:**
+1. ✍️ Edit `README.md` only
+2. 🚀 Push to `main`
+3. 🤖 Automatic translation happens
+4. ✅ Pull and verify translations
+
+**Remember:**
+- Only edit English version
+- Translations are automatic
+- Review but don't manually edit translated files
+- Monitor API costs
+- Test major changes locally
+
+Happy contributing! 🌍✨
