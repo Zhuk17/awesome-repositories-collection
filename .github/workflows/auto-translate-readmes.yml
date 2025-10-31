@@ -50,13 +50,46 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       
+      - name: Install argostranslate language models
+        run: |
+          echo "📦 Установка языковых моделей для argostranslate..."
+          python -c "
+          import argostranslate.package
+          import argostranslate.translate
+          
+          # Обновляем список доступных пакетов
+          argostranslate.package.update_package_index()
+          available_packages = argostranslate.package.get_available_packages()
+          
+          # Устанавливаем необходимые языковые пары
+          packages_to_install = [
+              ('en', 'ru'),
+              ('en', 'zh'),
+          ]
+          
+          for from_code, to_code in packages_to_install:
+              package = next(
+                  (pkg for pkg in available_packages 
+                   if pkg.from_code == from_code and pkg.to_code == to_code),
+                  None
+              )
+              if package:
+                  print(f'📥 Установка {from_code} → {to_code}...')
+                  try:
+                      argostranslate.package.install_from_path(package.download())
+                      print(f'✅ {from_code} → {to_code} установлено')
+                  except Exception as e:
+                      print(f'⚠️ Ошибка установки {from_code} → {to_code}: {e}')
+              else:
+                  print(f'⚠️ Пакет {from_code} → {to_code} не найден')
+          "
+      
       - name: Run translation
         env:
           SOURCE_LANG: ${{ github.event.inputs.source_language || 'en' }}
           TARGET_LANGS: ${{ github.event.inputs.target_languages || 'ru,zh-CN' }}
         run: |
           echo "🚀 Запуск перевода..."
-          echo "📦 Установка языковых моделей для argostranslate..."
           python scripts/translate_readmes.py
       
       - name: Commit and push translations

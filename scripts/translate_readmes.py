@@ -55,6 +55,13 @@ LIBRETRANSLATE_SERVERS = [
 def install_argos_language_pair(from_code: str, to_code: str) -> bool:
     """Устанавливает языковую пару для argostranslate"""
     try:
+        # Проверяем, не установлена ли уже пара
+        installed_languages = argostranslate.translate.get_installed_languages()
+        if any(lang.code == to_code for lang in installed_languages):
+            print(f"   ✓ Языковая пара {from_code} → {to_code} уже установлена")
+            return True
+        
+        print(f"   📦 Установка языковой пары: {from_code} → {to_code}")
         argostranslate.package.update_package_index()
         available_packages = argostranslate.package.get_available_packages()
         
@@ -65,14 +72,14 @@ def install_argos_language_pair(from_code: str, to_code: str) -> bool:
         )
         
         if package_to_install:
-            print(f"   📦 Установка языковой пары: {from_code} → {to_code}")
             argostranslate.package.install_from_path(package_to_install.download())
+            print(f"   ✅ Языковая пара {from_code} → {to_code} успешно установлена")
             return True
         else:
-            print(f"   ⚠️  Языковая пара {from_code} → {to_code} не найдена")
+            print(f"   ⚠️  Языковая пара {from_code} → {to_code} не найдена в доступных пакетах")
             return False
     except Exception as e:
-        print(f"   ⚠️  Ошибка установки: {e}")
+        print(f"   ⚠️  Ошибка установки {from_code} → {to_code}: {e}")
         return False
 
 def translate_with_argos(text: str, target_lang: str, source_lang: str = 'en') -> Optional[str]:
