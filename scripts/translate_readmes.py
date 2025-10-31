@@ -155,6 +155,7 @@ def translate_with_libretranslate(text: str, target_lang: str, source_lang: str 
 def protect_technical_elements(text: str):
     """
     Защищает технические элементы от перевода, заменяя их плейсхолдерами
+    Использует устойчивые к переводу плейсхолдеры (только латиница и цифры)
     
     Returns:
         Tuple (protected_text, placeholders_dict)
@@ -163,36 +164,57 @@ def protect_technical_elements(text: str):
     protected_text = text
     counter = 0
     
+    # Используем UUID-подобные плейсхолдеры, которые точно не будут переведены
+    # Формат: XA1234B, XC5678D и т.д. - переводчик не будет их переводить
+    
     # Защищаем code blocks (самый приоритетный - они могут содержать всё)
     code_block_pattern = r'```[\s\S]*?```'
-    for match in re.finditer(code_block_pattern, protected_text):
-        placeholder = f"__CODEBLOCK_{counter}__"
+    matches = list(re.finditer(code_block_pattern, protected_text))
+    for match in reversed(matches):  # Обратный порядок чтобы не сдвигались индексы
+        placeholder = f"XA{str(counter).zfill(4)}B"
         placeholders[placeholder] = match.group(0)
-        protected_text = protected_text.replace(match.group(0), placeholder, 1)
+        start, end = match.span()
+        protected_text = protected_text[:start] + placeholder + protected_text[end:]
         counter += 1
     
-    # Защищаем ссылки [text](url)
+    # Защищаем ссылки [text](url) - более специфичный паттерн
     link_pattern = r'\[([^\]]+)\]\(([^\)]+)\)'
-    for match in re.finditer(link_pattern, protected_text):
-        placeholder = f"__LINK_{counter}__"
+    matches = list(re.finditer(link_pattern, protected_text))
+    for match in reversed(matches):
+        placeholder = f"XC{str(counter).zfill(4)}D"
         placeholders[placeholder] = match.group(0)
-        protected_text = protected_text.replace(match.group(0), placeholder, 1)
+        start, end = match.span()
+        protected_text = protected_text[:start] + placeholder + protected_text[end:]
         counter += 1
     
-    # Защищаем inline code
-    inline_code_pattern = r'`[^`\n]+`'
-    for match in re.finditer(inline_code_pattern, protected_text):
-        placeholder = f"__INLINECODE_{counter}__"
+    # Защищаем inline code (но не внутри code blocks)
+    inline_code_pattern = r'(?<!`)`([^`\n]+)`(?!`)'
+    matches = list(re.finditer(inline_code_pattern, protected_text))
+    for match in reversed(matches):
+        placeholder = f"XE{str(counter).zfill(4)}F"
         placeholders[placeholder] = match.group(0)
-        protected_text = protected_text.replace(match.group(0), placeholder, 1)
+        start, end = match.span()
+        protected_text = protected_text[:start] + placeholder + protected_text[end:]
         counter += 1
     
-    # Защищаем URLs
-    url_pattern = r'https?://[^\s\)]+'
-    for match in re.finditer(url_pattern, protected_text):
-        placeholder = f"__URL_{counter}__"
+    # Защищаем URLs (но не внутри ссылок или code blocks)
+    url_pattern = r'(?<!\]\()https?://[^\s\)<>]+'
+    matches = list(re.finditer(url_pattern, protected_text))
+    for match in reversed(matches):
+        placeholder = f"XG{str(counter).zfill(4)}H"
         placeholders[placeholder] = match.group(0)
-        protected_text = protected_text.replace(match.group(0), placeholder, 1)
+        start, end = match.span()
+        protected_text = protected_text[:start] + placeholder + protected_text[end:]
+        counter += 1
+    
+    # Защищаем HTML теги и атрибуты
+    html_pattern = r'<[^>]+>'
+    matches = list(re.finditer(html_pattern, protected_text))
+    for match in reversed(matches):
+        placeholder = f"XI{str(counter).zfill(4)}J"
+        placeholders[placeholder] = match.group(0)
+        start, end = match.span()
+        protected_text = protected_text[:start] + placeholder + protected_text[end:]
         counter += 1
     
     return protected_text, placeholders
@@ -200,9 +222,73 @@ def protect_technical_elements(text: str):
 def restore_technical_elements(translated_text: str, placeholders: dict[str, str]) -> str:
     """Восстанавливает технические элементы после перевода"""
     result = translated_text
-    # Восстанавливаем в обратном порядке приоритета
-    for placeholder, original in placeholders.items():
-        result = result.replace(placeholder, original)
+    
+    # Восстанавливаем в порядке убывания длины оригиналов
+    # (чтобы более длинные не конфликтовали с короткими)
+    sorted_placeholders = sorted(placeholders.items(), key=lambda x: -len(x[0]))
+    
+    for placeholder, original in sorted_placeholders:
+        # Пытаемся найти точное совпадение
+        if placeholder in result:
+            result = result.replace(placeholder, original)
+            continue
+        
+        # Извлекаем номер из плейсхолдера (например, XA1234B -> 1234)
+        num_match = re.search(r'\d+', placeholder)
+        if not num_match:
+            continue
+        
+        placeholder_num = num_match.group()
+        placeholder_prefix = placeholder[:2]  # XA, XC, XE и т.д.
+        placeholder_suffix = placeholder[-1]   # B, D, F и т.д.
+        
+        # Пробуем различные варианты искажения
+        patterns = [
+            # Точное совпадение
+            placeholder,
+            # С пробелами: XA 1234 B, XA1234 B, XA 1234B
+            f"{placeholder_prefix}\\s*{placeholder_num}\\s*{placeholder_suffix}",
+            f"{placeholder_prefix}{placeholder_num}\\s+{placeholder_suffix}",
+            f"{placeholder_prefix}\\s+{placeholder_num}{placeholder_suffix}",
+            # Разделено: X A 1234 B
+            f"{placeholder_prefix[0]}\\s*{placeholder_prefix[1]}\\s*{placeholder_num}\\s*{placeholder_suffix}",
+            # Разные регистры
+            placeholder.upper(),
+            placeholder.lower(),
+            # Без префикса/суффикса: 1234, A1234, 1234B
+            placeholder_num,
+            f"{placeholder_prefix[1]}{placeholder_num}",
+            f"{placeholder_num}{placeholder_suffix}",
+        ]
+        
+        found = False
+        for pattern in patterns:
+            # Ищем все совпадения
+            matches = list(re.finditer(pattern, result, re.IGNORECASE))
+            if matches:
+                # Заменяем все совпадения на оригинал
+                # Но только если это действительно наш плейсхолдер (проверяем номер)
+                for match in reversed(matches):
+                    matched_text = match.group()
+                    # Проверяем, что в совпадении есть наш номер
+                    if placeholder_num in matched_text:
+                        start, end = match.span()
+                        result = result[:start] + original + result[end:]
+                        found = True
+        
+        if not found:
+            # Последняя попытка - поиск по номеру с контекстом
+            # Ищем паттерн где есть наш номер в правильном формате
+            context_pattern = rf'\b{placeholder_prefix[0]}[A-Za-z]?\s*{placeholder_num}\s*[A-Za-z]?\b'
+            matches = list(re.finditer(context_pattern, result))
+            if matches and len(matches) <= len(placeholders):  # Не заменяем слишком много
+                # Берем первое совпадение с таким номером
+                match = matches[0]
+                start, end = match.span()
+                result = result[:start] + original + result[end:]
+            else:
+                print(f"   ⚠️  Не удалось восстановить плейсхолдер {placeholder} (оригинал: {original[:50]}...)")
+    
     return result
 
 def translate_text(text: str, target_language: str, source_language: str = 'en') -> Optional[str]:
