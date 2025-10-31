@@ -294,6 +294,7 @@ Development environments and task automation tools.
 - **[Flowcraft](https://github.com/flowcraft-io/flowcraft)** — Dependency-free automation platform. Simple and lightweight workflow automation without external dependencies.
 - **[Leantime](https://github.com/Leantime/leantime)** — Simple and powerful project management and strategic planning system. Agile methodology support with kanban boards and time tracking.
 - **[Memos](https://github.com/usememos/memos)** — Lightweight note-taking service with Markdown support. Self-hosted alternative to Twitter/X for quick notes and thoughts.
+- [Goose](https://github.com/block/goose)** — Open-source AI agent framework supporting multiple models and flexible, modular extensions.
 
 ### Business & Enterprise
 
