@@ -1,135 +1,348 @@
-# 优秀仓库集合 ⚡
+伟大的仓库收藏
 
-> 精心挑选的实用开发工具和实用程序列表
+<p对齐="中心">
+<a href="README.md"}英语 </a> ——
+:<a href="README.ru.md" +++/a" ^
+<a href="README.zh-CN.md" QQ/a.
+</p> (中文(简体) ).
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<p对齐="中心">
+<img src=" URL 150 alt="令人惊叹".
+<img src=" URL 151 alt="License" (中文(简体) ).
+<img src=" URL 152 alt="恒星" (中文(简体) ).
+</p> (中文(简体) ).
 
-## 语言 / Languages / Языки
+-- -- . . .
 
-- [English](README.md)
-- [Русский](README.ru.md)
-- [简体中文](README.zh-CN.md)
+□ □ □ 概览
 
-## 目录
+> 为开发者、系统管理员和研究人员精心整理的多语种基本工具、公用事业和技术资源汇编。
 
-- [文件导航](#文件导航)
-- [搜索和替换](#搜索和替换)
-- [系统监控](#系统监控)
-- [网络](#网络)
-- [Docker/云服务/存储](#docker云服务存储)
-- [IDE/云开发/自动化](#ide云开发自动化)
-- [开发工具](#开发工具)
-  - [Git](#git)
-  - [代码编辑器](#代码编辑器)
-  - [调试](#调试)
-- [性能](#性能)
-- [安全/OSINT](#安全osint)
-- [教育](#教育)
-- [其他优秀集合](#其他优秀集合)
-- [如何贡献](#如何贡献)
+该数据库汇集了经过战斗测试的开放源码项目,涉及**发展工具**、**AI/ML**、**系统监测**、**安全**、**集装箱化**和**自动化**。 每个工具都是根据主动维护、清晰的文档和现实世界的适用性来选择的。
 
-## 文件导航
+* 仓库统计
 
-- **[fzf](https://github.com/junegunn/fzf)** - 命令行模糊搜索器
-- **[fd](https://github.com/sharkdp/fd)** - 简单、快速、用户友好的find替代品
-- **[exa](https://github.com/ogham/exa)** - 具有增强功能的ls现代替代品
-- **[bat](https://github.com/sharkdp/bat)** - 带语法高亮的cat克隆
+- **100 * 管理工具和资源
+- **13** 主要类别
+- **3** 语文翻译(英文、俄文、中文)
+- **100%**开源工具
 
-## 搜索和替换
+-- -- . . .
 
-- **[ripgrep](https://github.com/BurntSushi/ripgrep)** - 超快文本搜索工具
-- **[sd](https://github.com/chmln/sd)** - 直观的查找和替换命令行工具
+——线克 2 .
 
-## 系统监控
+^ ^ 目录
 
-- **[htop](https://github.com/htop-dev/htop)** - 交互式进程查看器
-- **[btop](https://github.com/aristocratos/btop)** - 资源监控器，显示处理器、内存、磁盘、网络和进程的使用情况和统计信息
-- **[glances](https://github.com/nicolargo/glances)** - 跨平台监控工具
-- **[ncdu](https://dev.yorhel.nl/ncdu)** - NCurses磁盘使用分析器
+-    3  
+-... 连线4...
+- 5号线
+- 6号线
+- 7号线
+- 线上8...
+- ——————————————————————
+- 10号线
+- 11号线
+- 12号线
+- —— —— —— —— —— ——
+-    14  
+- 15号线
+- 16号线
+- 17号线
+- 18号线
+-   19  
+- 20... 20... - 20... - 20...
+- 21号线 - 21号线
 
-## 网络
+-- -- . . .
 
-- **[curl](https://github.com/curl/curl)** - 用于传输数据的命令行工具
-- **[httpie](https://github.com/httpie/cli)** - 用户友好的HTTP客户端
-- **[mitmproxy](https://github.com/mitmproxy/mitmproxy)** - 交互式HTTP代理
-- **[ngrok](https://github.com/inconshreveable/ngrok)** - 反向代理，用于创建安全隧道
+# # # # # 文件导航
 
-## Docker/云服务/存储
+高效探索和导航您文件系统的基本工具 。
 
-- **[Portainer](https://github.com/portainer/portainer)** - 轻量级容器管理UI
-- **[Dozzle](https://github.com/amir20/dozzle)** - Docker容器的实时日志查看器
-- **[Traefik](https://github.com/traefik/traefik)** - 现代HTTP反向代理和负载均衡器
-- **[MinIO](https://github.com/minio/minio)** - 高性能、与S3兼容的对象存储
-- **[Rclone](https://github.com/rclone/rclone)** - 云存储的rsync工具
-- **[Syncthing](https://github.com/syncthing/syncthing)** - 连续文件同步程序
+-QQLINK 22  **-有交互界面的指令行模糊查找器. 与外壳历史,文件搜索,和Vim/neovim无缝地融合来进行闪电快导航.
+- QQLINK 23 - 简单快活,方便用户的替代品 INLINECODE 144 . 支持并行执行,忽略模式,以及智能案件敏感性.
+- QQLINK 24  ** – 现代替换 INLINECODE 145  有 git 集成,树视图,和色码文件类型,用于增强可读性.
+-QQLINK 25  **-以语法突出,克特融合为主的猫克隆并自动呼出. 在终端中快速查看代码文件的完美.
+- QQLINK 26  **-下一代 INLINECODE 146  有图标,颜色,和树视图的命令. 写在"Rust"中,用于放火表演.
+-QQLINK 27  **-由Vi-Inspirted文件管理器,具有三栏布局,文件预览,以及广泛的定制选项.
 
-## IDE/云开发/自动化
+——线克 28 .
 
-- **[code-server](https://github.com/coder/code-server)** - 浏览器中的VS Code
-- **[Gitpod](https://github.com/gitpod-io/gitpod)** - 云端开发环境
-- **[act](https://github.com/nektos/act)** - 在本地运行GitHub Actions
-- **[Ansible](https://github.com/ansible/ansible)** - 简单的IT自动化平台
-- **[n8n](https://github.com/n8n-io/n8n)** - 带技术用户扩展的工作流自动化工具
+-- -- . . .
 
-## 开发工具
+□ {} 搜索和替换
 
-### Git
+通过代码库搜索和进行批量文本操作的强大工具.
 
-- **[lazygit](https://github.com/jesseduffield/lazygit)** - 简单的git命令终端UI
-- **[tig](https://github.com/jonas/tig)** - git的文本模式界面
-- **[gh](https://github.com/cli/cli)** - GitHub命令行工具
-- **[glab](https://github.com/profclems/glab)** - GitLab命令行工具
+-QQLINK 29  **-默认尊重.gitignore的超快递归搜索工具. 大于大型密码库上的grep,ag等替代品.
+-QQLINK 30  **-为开发者优化了代码搜索工具. 速度快于 ack,有忽略 VCS 目录的智能默认.
+-QQLINK 31  **-有regex支持的直观发现和替换CLI工具. 比 INLINECODE 147  更安全,更能进行基因组学的日常使用.
+- QQLINK 32  **-结构代码搜索和重构工具. 由AST模式来搜索代码,而不是regex,以获取更精确的结果.
 
-### 代码编辑器
+ LINK 33  (英语).
 
-- **[neovim](https://github.com/neovim/neovim)** - Vim的超级充电版本
-- **[helix](https://github.com/helix-editor/helix)** - 后现代文本编辑器
-- **[micro](https://github.com/zyedidia/micro)** - 现代直观的终端文本编辑器
+-- -- . . .
 
-### 调试
+□ □ □ 系统监测
 
-- **[gdb](https://www.sourceware.org/gdb/)** - GNU调试器
-- **[lldb](https://lldb.llvm.org/)** - 下一代高性能调试器
+实时跟踪系统资源、流程和业绩计量。
 
-## 性能
+-QQLINK 34  **-为Unix系统互动进程查看器. 用鼠标支持并自定义列的颜色编码显示 。
+- QQLINK 35  **- 资源显示器带有美丽的UI显示CPU,内存,磁盘,网络和进程信息. 现代C++执行主题.
+-QQLINK 36  **-用Python书写的跨平台监测工具. 将数据导出到各种格式,并支持客户端-服务器模式.
+-QQLINK 37  **-以NCurses为主的磁盘使用分析器. 用直观界面快速找到消耗磁盘空间的东西.
+-QQLINK 38  **-由gtop和getop所启发的图形过程/系统显示器. 有跨平台支持的自定义部件 。
+- QQLINK 39  ** — 容器度量衡的顶等接口. 实时监视多克容器,并配备资源使用统计数据。
 
-- **[hyperfine](https://github.com/sharkdp/hyperfine)** - 命令行基准测试工具
-- **[valgrind](https://valgrind.org/)** - 内存调试、内存泄漏检测和性能分析工具
-- **[perf](https://perf.wiki.kernel.org/)** - Linux性能分析工具
+链接 40 
 
-## 安全/OSINT
+-- -- . . .
 
-- **[sherlock](https://github.com/sherlock-project/sherlock)** - 通过用户名在社交网络上搜索账户
-- **[theHarvester](https://github.com/laramies/theHarvester)** - 收集电子邮件、子域名和名称的工具
-- **[osintgram](https://github.com/Datalux/Osintgram)** - Instagram的OSINT工具
-- **[Maltego](https://www.maltego.com/)** - OSINT和取证工具
-- **[SpiderFoot](https://github.com/smicallef/spiderfoot)** - 自动化OSINT收集工具
-- **[Recon-ng](https://github.com/lanmaster53/recon-ng)** - 完整的Web侦察框架
-- **[OWASP Amass](https://github.com/owasp-amass/amass)** - 深度攻击面映射和资产发现工具
+□ □ □ 网络
 
-## 教育
+测试API,调试网络流量,管理连接的工具.
 
-- **[ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)** - Zsh配置管理框架
-- **[tldr](https://github.com/tldr-pages/tldr)** - 简化和社区驱动的man页面
-- **[explainshell](https://github.com/idank/explainshell)** - 解析shell命令
-- **[The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)** - 一篇命令行使用指南
-- **[Missing Semester](https://github.com/missing-semester/missing-semester)** - MIT关于开发工具的讲座
+-QQLINK 41  **-测试API的方便用户的HTTP客户端. 带有语法加亮和JSON支持的表达式语法出框.
+-QQLINK 42  **-现代卷曲与"httpie-like"接口. 将卷曲的力量与httpie方便用户的语法结合.
+-QQLINK 43  **-有彩色输出和支持DNS-over-HTTPS的现代DNS客户端. 更好的替代品为  INLINECODE 148 ,输出更清晰.
+- QQLINK 44  ** – 为穿透测试者和开发者提供交互式 HTTPS 代理. 检查,修改,并重放HTTP/HTTPS流量.
+-QQLINK 45  **-为本地主机创建安全地道的倒置代理. 用于测试和揭露当地服务。
+-QQLINK 46  **-终端带宽利用工具. 按进程、连接和远程IP显示当前网络使用情况。
 
-## 其他优秀集合
+ LINK 47  (英语).
 
-- **[awesome](https://github.com/sindresorhus/awesome)** - 各种优秀列表的精选列表
-- **[awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps)** - 命令行应用列表
-- **[awesome-shell](https://github.com/alebcay/awesome-shell)** - shell工具和资源列表
-- **[terminals-are-sexy](https://github.com/k4m4/terminals-are-sexy)** - 终端框架、插件和资源
+-- -- . . .
 
-## 如何贡献
+# # # # 开发工具
 
-欢迎贡献！请阅读[贡献指南](CONTRIBUTING.md)。
+QQ Git 工具
 
-## 关于描述的自动翻译
+版本控制功能可以增强您的 Git 工作流程 。
 
-本README使用自动翻译系统从英文版本生成描述。翻译系统基于模板，确保所有语言版本保持同步。如果您发现翻译错误，请在Issues中报告或提交Pull Request。
+-QQLINK 48  **-为git指令提供简单的终端UI. 相接阶段,管理分支,并解决与键盘驱动界面的冲突.
+-QQLINK 49  **-Git的文本-模版接口. 在终端中浏览寄存器历史,责备视图和树导航.
+收集有用的公用事业,包括摘要、努力、更改日志等等。
+-QQLINK 51  **-GitHub官方命令行工具. 在不离开终端的情况下创建问题,拉动请求并管理寄存器.
+-QQLINK 52  ** – GitLab CLI工具,用于管理问题,合并请求,以及直接从命令行发出的管道.
+- QQLINK 53  ** — git, diff, and grep 输出的语法高亮调呼器. 使代码审查与相邻的diffs更为愉快.
 
-## 论文/研究资料
+QQ 代码编辑器
 
-有关本项目中提到的工具和技术的深入研究和分析，请参阅[论文文件夹](theses/)，其中包含各种主题的详细研究论文和技术分析。
+现代文本编辑器为生产力和可扩展性进行了优化.
+
+- QQLINK 54  **-超可扩展显相文本编辑器. 内建LSP支持,Lua配置,和现代插件生态系统.
+-QQLINK 55  **-后现代文本编辑器 有内置的LSP,树保姆,以及多个选择. 框外不需要配置 。
+-QQLINK 56  **-现代与直观终端文字编辑器. 支持鼠标输入和常见密钥绑定(Ctrl+C,Ctrl+V).
+-?)-------------------------- 由Rust所写出. 有可扩展插件系统的最小设计 。
+
+调试
+
+用于诊断和解决应用程序中问题的工具。
+
+-QQLINK 58  **-C,C++等语言的GNU调试器. 工业标准调试器具有强大的脚本能力.
+-QQLINK 59  **-LLVM项目的下一代调试器. 对调试C,C++,目标-C,和斯威夫特都非常出色.
+- QQLINK 60  **- 为Go编程语言调试. 支持goroutines,频道,和Go特定调试功能.
+- QQLINK 61  ** – 增强Python调试器有语法突出,制表完成等功能,并有更好的内向.
+
+绩效
+
+优化基准和特征分析工具。
+
+-QQLINK 62  **-有统计分析的指令行基准工具. 暖上运行,参数化基准,并导出到各种格式.
+-QQLINK 63 - 用于性能剖面的堆积跟踪可视化器. 识别CPU密集应用中的热点.
+- QQLINK 64-- 构建动态分析工具的仪器框架. 检测内存泄漏,种族条件和缓存缺失.
+-QQLINK 65  **-有性能计数器的Linux剖面工具. 分析 CPU 循环、 缓存缺失和硬件事件 。
+
+ LINK 66  (英语).
+
+-- -- . . .
+
+# # # 点子和云
+
+集装箱管理和云存储解决方案.
+
+-QQLINK 67  **-用于定义和运行多容器多克应用程序的工具. 基于YAML的可再生环境配置.
+-QQLINK 68  **-终端UI 为多克和多克作曲. 管理容器,查看日志,检查图像,并以键盘快捷键重启服务.
+- QQLINK 69  **-轻量级集装箱管理UI. Docker,Kubernetes和Swarm的网络界面.
+-QQLINK 70  **-多克容器实时日志查看器. 有过滤和搜索能力的简单网络用户界面。
+-QQLINK 71  **-现代倒置代理和负载平衡器. 自动服务发现,让我们加密支持,和中间软件系统.
+- QQLINK 72  **-更快地在Kubernetes上下文和命名空间之间切换.
+-QQLINK 73  **-Kubernetes集群的终端UI. 监视资源,查看日志,执行命令时不记住kubectl语法.
+- QQLINK 74  ** — 命令行程序,将文件和目录同步到和从云存储. 支持40+云供养.
+-QQLINK 75  **-高性能 S3相容对象存储. 具有企业特色的AWS S3的自备替代品.
+-QQLINK 76  **-连续文件同步程序. P2P同步无云中介.
+
+ LINK 77  (英语).
+
+-- -- . . .
+
+# # # # # IDE 自动化
+
+开发环境和任务自动化工具.
+
+-QQLINK 78  **-以VS代码为主的AI动力代码编辑器. 用于代码生成和重构的集成AI助手.
+- QQLINK 79  **-有丰富的生态系统的可扩展代码编辑器. 建入吉特,调试出行,并有上千个扩建.
+-QQLINK 80  **-浏览器中的VS代码. 使用网页浏览器访问您的开发环境 。
+-QQLINK 81  **-云发展环境. 为任何 GitHub, GitLab, 或 Bitbucket 工程, 旋转准备到代码的 dev 环境 。
+-QQLINK 82  **-只使用客户端工具来创建可再生的dev环境. 与多克,库伯内特斯,云提供商合作.
+- QQLINK 83  **-任务跑者与构建工具. 使用跨平台支持和YAML配置的更简单的Make替代.
+- QQLINK 84  **-由Make所启发的指挥跑者. 用简单的语法保存并运行项目特定命令.
+-QQLINK 85  **-在本地运行GitHub Actions. 测试工作流程,然后推动避免CI中的审判和错误。
+-QQLINK 86  **-用于配置管理,应用部署和管弦乐的自动化平台.
+-QQLINK 87  **-有可视编辑器的Workflow自动化工具. 以200+集成方式自行托管Zapier的替代品.
+
+—— 链接 88 
+
+-- -- . . .
+
+# # # # AI & 机器学习
+
+LLM框架,AI代理,以及机器学习工具.
+
+- QQLINK 89  ** ——在当地与大型语言模型一起起起跑. 支持Llama 2,Code Llama,Mistral等开放型号.
+-QQLINK 90  **-由语言模型提供动力的应用程序开发框架. 建立聊天机,代理,和RAG系统.
+-QQLINK 91  **-可视LLM工作流程构建器 有拖放接口. 创建AI代理,聊天机,以及没有编码的多代理系统.
+- QQLINK 92  ** – 本地运行的OpenAI API起降替换. 使用消费级硬件来运行LLM,生成图像,并合成音频.
+使用无互联网的LLMs与您的文档互动。 100%的私人,没有数据离开你的执行环境。
+- QQLINK 94  **-开源ChatGPT可选可100%下线. 本地运行 LLMS 的桌面应用程序 。
+-QQLINK 95  **-为LLMS提供方便用户的网页界面. 与Ollama和OpenAI兼容的API合作.
+
+* 链接 96 
+
+-- -- . . .
+
+□                                                                      
+
+持续整合和持续部署平台和工具。
+
+-QQLINK 97  **-工作流程自动化用于建设,测试,部署代码. 与 GitHub 寄存器的本地融合 。
+- **  LINK 98  **-与Git仓库、CI/CD管道、问题跟踪和集装箱登记册一起完成DevOps平台。
+-QQLINK 99  **-开源连续发送服务器. 采用价值流可视化的复杂管线模型.
+-QQLINK 100  **-可扩展自动化服务器. 千个用于构建,部署和自动化工程的插件.
+-QQLINK 101  **-集装箱-本地CI/CD平台. 管道作为多克建筑的代码.
+-?)------------- 以简洁为主的社区"无人机"叉. 自办CI/CD,配置为YAML.
+
+ LINK 103  (英语).
+
+-- -- . . .
+
+# # # # 视频处理
+
+视频生成、操作和分析工具。
+
+-QQLINK 104  **-完整跨平台解决方案,用于录音,转换,并流出音频和视频. 多媒体处理行业标准.
+-QQLINK 105  **-富于特色的指令行视频下载器. 有附加特性和修补的fork of youtube-dl.
+-QQLINK 106  **-将OpenAI Sora 2相机世代连锁并延伸超过12秒极限的工具. 自动即时解构并分解.
+-QQLINK 107  **-有综合格式支持的视频转码器. 用于批处理的GUI和CLI版本.
+
+——线克-108 .
+
+-- -- . . .
+
+####安全与OSINT
+
+安全测试工具、OSINT框架和脆弱性扫描仪。
+
+- QQLINK 109  **-包括工具、框架和学习材料在内的安全资源清单。
+-QQLINK 110  **-按类别组织OSINT工具集. 网易开源情报来源目录.
+- **  LINK 111  **-集装箱、文件系统和IaC的综合安全扫描仪。 检测出弱点、错位和秘密
+- QQLINK 112  **- 用于检测 git 寄存器中被硬编码后的秘密的SAST工具. 扫描记录、树枝和整个历史
+-QQLINK 113  **-亨特社交媒体账号由用户名横跨300+网站. 基于Python的OSINT工具.
+收集来自公共来源的电子邮件、子域名、主机和雇员姓名。 侦察必需
+- QQLINK 115  **-深入攻击地表测绘和资产发现. 通过刮取和API对组织进行网络测绘.
+-QQLINK 116  **-有网络界面的自動OSINT收藏工具. 从100+源头收集目标情报.
+-QQLINK 117  **-有意无保障网络申请安全培训. 寻找和利用脆弱性。
+-?)---------------- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 基于身份的云应用访问控制.
+
+——林克 119 腾讯网.
+
+-- -- . . .
+
+□ 教育
+
+为开发者提供学习资源、课程和综合指南。
+
+- QQLINK 120  **- 学习密码免费与互动课. 全网开发课程附认证.
+- QQLINK 121  **- 计算机科学免费自学教育之路. 使用在线课程完成学位课程。
+-QQLINK 122  **-学习设计大型系统. 附有图表和实例的综合指南。
+-QQLINK 123  **-麻省理工学院关于计算工具的课程,每个开发者都应该知道. 壳,活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活
+- QQLINK 124  **-一页中掌握命令行. 日常使用的实用例子.
+- QQLINK 125  **-完成学习计划成为软件工程师. 覆盖了算法,数据结构,以及系统设计.
+-QQLINK 126  **-通过建立自己的技术版本来学习. 教授数据库,网络服务器,Git,Docker等等.
+
+ LINK 127  (英语).
+
+-- -- . . .
+
+□ □ 其他优秀收藏品
+
+涵盖专门专题和工具的汇总清单。
+
+-=YTET -伊甸园字幕组=- 翻译: 所有话题的精彩名单
+- **  LINK 129  **-自办公益服务替代方案. 专注隐私的应用程序可以在自己的服务器上运行.
+- QQLINK 130  **-按类别排列的命令行应用程序解析列表.
+- QQLINK 131  **-命令行框架、工具包、指南和gizmos。
+- QQLINK 132  **- 终端框架,插件,和资源的解析列表.
+
+ LINK 133  (英语).
+
+-- -- . . .
+
+□ □ 研究与这些
+
+👉 (LINK 134  **)
+
+ INLINECODE 149 目录载有关于关键主题的深入研究、技术分析和综合说明:
+
+- QQLINK 135  **-俄罗斯企业大语言模型采纳分析. 涵盖案例、挑战和执行战略。
+-QQLINK 136  **-深潜入软件质量危机. 检查内存出漏,系统故障,以及基础设施支出3,640亿美元为何无法解决基本工程问题.
+
+* 贡献这些
+
+使用提供的 LINK 137  来贡献你自己的研究和分析.
+
+—— 链接  138 
+
+-- -- . . .
+
+□ 贡献
+
+欢迎捐款! 请阅读 LINK 139 以了解如何提交拉力请求的细节.
+
+质量标准
+
+在提交之前,确保您的补充符合这些标准:
+
+- 积极维护**——定期更新和社区支助
+- ** 清除文件**——附有设置指示的全面README
+- ** 制备准备**——稳定和广泛采用
+- ** 开源**——许可许可(MIT、Apache 2.0、GPL等)
+- *** 真正的问题**——明确使用大小写和价值建议
+
+提交格式
+
+\\ CODEBLOCK  0   
+
+示例
+
+—— CODEBLOCK  1  —— (韩语).
+
+-- -- . . .
+
+□□□□□□□□□□□□执照.
+
+这个项目根据麻省理工学院的许可获得许可——详情请参见 LINK 140 文件.
+
+-- -- . . .
+
+□ 语文版本
+
+-你来了
+- LINK 142 -俄文版 互联网档案馆的存檔,存档日期2013-12-22.
+-  LINK 143 - 简化中文版.
+
+-- -- . . .
+
+<p对齐="中心">
+< sub> 为开发者社区创建的 < sub>
+</p> (中文(简体) ).
