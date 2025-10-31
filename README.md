@@ -22,7 +22,7 @@ This repository brings together battle-tested open-source projects spanning **de
 
 ### 📊 Repository Statistics
 
-- **100+** curated tools and resources
+- **130+** curated tools and resources
 - **13** main categories
 - **3** language translations (English, Russian, Chinese)
 - **100%** open-source tools
@@ -65,6 +65,8 @@ Essential tools for exploring and navigating your filesystem efficiently.
 - **[bat](https://github.com/sharkdp/bat)** — Cat clone with syntax highlighting, git integration, and automatic paging. Perfect for quickly viewing code files in the terminal.
 - **[lsd](https://github.com/lsd-rs/lsd)** — Next-generation `ls` command with icons, colors, and tree view. Written in Rust for blazing performance.
 - **[ranger](https://github.com/ranger/ranger)** — Vi-inspired file manager with three-column layout, file previews, and extensive customization options.
+- **[qView](https://github.com/jurplel/qView)** — Minimalist and fast image viewer for desktop. Lightweight with keyboard navigation, supports all major image formats.
+- **[cloudcmd](https://github.com/coderaiser/cloudcmd)** — Web-based file manager with integrated console and editor. Access and manage files remotely through a browser interface.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -93,6 +95,8 @@ Track system resources, processes, and performance metrics in real-time.
 - **[ncdu](https://dev.yorhel.nl/ncdu)** — NCurses-based disk usage analyzer. Quickly find what's consuming disk space with an intuitive interface.
 - **[bottom](https://github.com/ClementTsang/bottom)** — Graphical process/system monitor inspired by gtop and gotop. Customizable widgets with cross-platform support.
 - **[ctop](https://github.com/bcicen/ctop)** — Top-like interface for container metrics. Monitor Docker containers in real-time with resource usage stats.
+- **[Performa](https://github.com/jhuckaby/Performa)** — Server monitoring with custom metrics. Real-time performance tracking with configurable alerts and dashboards.
+- **[resources](https://github.com/nokyan/resources)** — System resource monitor for CPU, GPU, and NPU. Lightweight tool showing detailed hardware utilization.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -108,6 +112,9 @@ Tools for testing APIs, debugging network traffic, and managing connections.
 - **[mitmproxy](https://github.com/mitmproxy/mitmproxy)** — Interactive HTTPS proxy for penetration testers and developers. Inspect, modify, and replay HTTP/HTTPS traffic.
 - **[ngrok](https://github.com/inconshreveable/ngrok)** — Reverse proxy for creating secure tunnels to localhost. Essential for webhook testing and exposing local services.
 - **[bandwhich](https://github.com/imsnif/bandwhich)** — Terminal bandwidth utilization tool. Shows current network usage by process, connection, and remote IP.
+- **[graftcp](https://github.com/hmgle/graftcp)** — Transparent TCP proxy for any application. Redirect TCP connections without modifying application code or configuration.
+- **[easy-postman](https://github.com/lakernote/easy-postman)** — Load testing and integration testing tool for APIs. Simplified alternative to Postman with automated testing capabilities.
+- **[share](https://github.com/schollz/share)** — End-to-end encrypted file transfer via web or CLI. Secure peer-to-peer file sharing without intermediary servers.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -134,6 +141,7 @@ Modern text editors optimized for productivity and extensibility.
 - **[Helix](https://github.com/helix-editor/helix)** — Post-modern text editor with built-in LSP, tree-sitter, and multiple selections. No configuration needed out of the box.
 - **[micro](https://github.com/zyedidia/micro)** — Modern and intuitive terminal-based text editor. Supports mouse input and common keybindings (Ctrl+C, Ctrl+V).
 - **[amp](https://github.com/jmacdonald/amp)** — Vi-inspired text editor written in Rust. Minimal design with extensible plugin system.
+- **[ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)** — Chromium browser without Google integration. Enhanced privacy and security with removed Google services and telemetry.
 
 ### Debugging
 
@@ -143,6 +151,11 @@ Tools for diagnosing and fixing issues in your applications.
 - **[lldb](https://lldb.llvm.org/)** — Next-generation debugger from LLVM project. Excellent for debugging C, C++, Objective-C, and Swift.
 - **[delve](https://github.com/go-delve/delve)** — Debugger for the Go programming language. Supports goroutines, channels, and Go-specific debugging features.
 - **[pdb++](https://github.com/pdbpp/pdbpp)** — Enhanced Python debugger with syntax highlighting, tab completion, and better introspection.
+- **[fastcrud](https://github.com/benavlabs/fastcrud)** — Async CRUD operations for FastAPI with automatic JOINs. Simplified database operations with automatic relationship handling.
+- **[bkhtmltopdf](https://github.com/bkhtmltopdf/bkhtmltopdf)** — Fast HTML to PDF converter. High-performance tool for generating PDF documents from HTML content.
+- **[dnote](https://github.com/dnote/dnote)** — Terminal-based notebook on SQLite. Simple note-taking system with command-line interface and local storage.
+- **[dotbins](https://github.com/basnijholt/dotbins)** — CLI binary manager through dotfiles. Manage and version control command-line tools in your dotfiles repository.
+- **[ito](https://github.com/heyito/ito)** — Voice dictation for any application. Universal voice input tool that works across different programs and platforms.
 
 ### Performance
 
@@ -152,6 +165,7 @@ Benchmarking and profiling tools for optimization.
 - **[flamegraph](https://github.com/brendangregg/FlameGraph)** — Stack trace visualizer for performance profiling. Identify hotspots in CPU-intensive applications.
 - **[valgrind](https://valgrind.org/)** — Instrumentation framework for building dynamic analysis tools. Detect memory leaks, race conditions, and cache misses.
 - **[perf](https://perf.wiki.kernel.org/)** — Linux profiling tool with performance counters. Analyze CPU cycles, cache misses, and hardware events.
+- **[KDiskMark](https://github.com/JonMagon/KDiskMark)** — Disk benchmark tool with GUI for Linux. Measure read/write speeds and I/O performance of storage devices.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -171,6 +185,8 @@ Container management and cloud storage solutions.
 - **[Rclone](https://github.com/rclone/rclone)** — Command-line program to sync files and directories to and from cloud storage. Supports 40+ cloud providers.
 - **[MinIO](https://github.com/minio/minio)** — High-performance, S3-compatible object storage. Self-hosted alternative to AWS S3 with enterprise features.
 - **[Syncthing](https://github.com/syncthing/syncthing)** — Continuous file synchronization program. P2P sync without cloud intermediaries.
+- **[docker-jdownloader-2](https://github.com/jlesage/docker-jdownloader-2)** — JDownloader 2 in a Docker container with web GUI. Automated file downloader with support for many file hosting services.
+- **[dock-droid](https://github.com/sickcodes/dock-droid)** — Run Android x86/ARM in a Docker container. Full Android system emulation with hardware acceleration support.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -190,6 +206,9 @@ Development environments and task automation tools.
 - **[act](https://github.com/nektos/act)** — Run GitHub Actions locally. Test workflows before pushing to avoid trial-and-error in CI.
 - **[Ansible](https://github.com/ansible/ansible)** — Automation platform for configuration management, application deployment, and orchestration.
 - **[n8n](https://github.com/n8n-io/n8n)** — Workflow automation tool with visual editor. Self-hosted alternative to Zapier with 200+ integrations.
+- **[feeddeck](https://github.com/feeddeck/feeddeck)** — RSS and social media aggregator inspired by TweetDeck. Self-hosted feed reader with a familiar interface.
+- **[Documize community](https://github.com/documize/community)** — Self-hosted knowledge base with wiki functionality. Organize documentation, runbooks, and team knowledge in one place.
+- **[amphi-etl](https://github.com/AmphiAI/amphi-etl)** — Visual Python ETL pipeline builder. Drag-and-drop interface for creating data transformation workflows without coding.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -206,6 +225,12 @@ LLM frameworks, AI agents, and machine learning tools.
 - **[PrivateGPT](https://github.com/imartinez/privateGPT)** — Interact with your documents using LLMs without internet. 100% private, no data leaves your execution environment.
 - **[Jan](https://github.com/janhq/jan)** — Open-source ChatGPT alternative that runs 100% offline. Desktop application for running LLMs locally.
 - **[Open WebUI](https://github.com/open-webui/open-webui)** — User-friendly web interface for LLMs. Works with Ollama and OpenAI-compatible APIs.
+- **[Apple On Device OpenAI](https://github.com/gety-io/apple-on-device-openai)** — OpenAI-compatible API for local Apple models. Simplifies on-device inference for Apple Silicon with OpenAI API compatibility.
+- **[open-codex](https://github.com/ymichael/open-codex)** — AI-powered terminal agent. Works with multiple LLM backends to assist with coding tasks directly in the terminal.
+- **[vtcode](https://github.com/vinhnx/vtcode)** — Terminal AI coding agent. Intelligent code generation and assistance without leaving your terminal.
+- **[spacy-llm](https://github.com/explosion/spacy-llm)** — Integrate LLMs into spaCy NLP pipelines. Combine traditional NLP with modern language models for enhanced text processing.
+- **[spidercreator](https://github.com/carlosplanchon/spidercreator)** — LLM-powered web scraper generator. Automatically generate web scraping scripts using natural language descriptions.
+- **[fastdup](https://github.com/visual-layer/fastdup)** — Find duplicates and anomalies in image datasets. Fast and efficient tool for dataset quality control and curation.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -234,6 +259,9 @@ Tools for video generation, manipulation, and analysis.
 - **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** — Feature-rich command-line video downloader. Fork of youtube-dl with additional features and fixes.
 - **[Sora Extend](https://github.com/mshumer/sora-extend)** — Tool to chain and extend OpenAI Sora 2 video generations beyond 12-second limit. Automated prompt deconstruction and segment concatenation.
 - **[HandBrake](https://github.com/HandBrake/HandBrake)** — Video transcoder with comprehensive format support. GUI and CLI versions for batch processing.
+- **[wunjo](https://github.com/wladradchenko/wunjo)** — Head motion-driven animation generator from video. Deep learning-based tool for creating realistic facial animations.
+- **[auto-subs](https://github.com/tmoroney/auto-subs)** — Automatic subtitle generator for videos. Offline-capable tool using speech recognition to create subtitle files.
+- **[shutter-encoder](https://github.com/paulpacifico/shutter-encoder)** — Advanced video encoder and optimizer. Professional-grade video conversion with batch processing and format optimization.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -253,6 +281,8 @@ Security testing tools, OSINT frameworks, and vulnerability scanners.
 - **[SpiderFoot](https://github.com/smicallef/spiderfoot)** — Automated OSINT collection tool with web interface. Gather intelligence about targets from 100+ sources.
 - **[OWASP Juice Shop](https://github.com/juice-shop/juice-shop)** — Intentionally insecure web application for security training. Practice finding and exploiting vulnerabilities.
 - **[HashiCorp Vault](https://github.com/hashicorp/vault)** — Secrets management and data protection. Identity-based access control for cloud applications.
+- **[Nginx-Lua-Anti-DDoS](https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS)** — Lua-based anti-DDoS script for Nginx. JavaScript puzzle challenge system to protect against automated attacks.
+- **[Certipy](https://github.com/ly4k/Certipy)** — Active Directory Certificate Services (AD CS) auditing and exploitation tool. Discover and abuse misconfigurations in AD CS.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -269,6 +299,7 @@ Learning resources, courses, and comprehensive guides for developers.
 - **[The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)** — Master the command line in one page. Practical examples for everyday use.
 - **[coding-interview-university](https://github.com/jwasham/coding-interview-university)** — Complete study plan to become a software engineer. Covers algorithms, data structures, and system design.
 - **[build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)** — Learn by building your own version of technologies. Tutorials for databases, web servers, Git, Docker, and more.
+- **[LearnGitBranching](https://github.com/pcottle/learnGitBranching)** — Interactive visual Git tutorial. Master branching, merging, rebasing, and advanced Git workflows through hands-on exercises.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
