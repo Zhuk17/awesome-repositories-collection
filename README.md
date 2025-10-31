@@ -22,7 +22,7 @@ This repository brings together battle-tested open-source projects spanning **de
 
 ### 📊 Repository Statistics
 
-- **260+** curated tools and resources
+- **275+** curated tools and resources
 - **19** main categories
 - **3** language translations (English, Russian, Chinese)
 - **100%** open-source tools
@@ -75,6 +75,8 @@ Essential tools for exploring and navigating your filesystem efficiently.
 - **[ranger](https://github.com/ranger/ranger)** — Vi-inspired file manager with three-column layout, file previews, and extensive customization options.
 - **[qView](https://github.com/jurplel/qView)** — Minimalist and fast image viewer for desktop. Lightweight with keyboard navigation, supports all major image formats.
 - **[cloudcmd](https://github.com/coderaiser/cloudcmd)** — Web-based file manager with integrated console and editor. Access and manage files remotely through a browser interface.
+- **[Flameshot](https://github.com/flameshot-org/flameshot)** — Powerful screenshot tool with annotation capabilities. Capture, annotate, and share screenshots with built-in image editor.
+- **[CopyQ](https://github.com/hluk/CopyQ)** — Advanced clipboard manager with searchable history. Store and organize clipboard entries with tags, notes, and scripting support.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -108,6 +110,7 @@ Track system resources, processes, and performance metrics in real-time.
 - **[Umami](https://github.com/umami-software/umami)** — Privacy-focused web analytics. Self-hosted alternative to Google Analytics with GDPR compliance.
 - **[Healthchecks](https://github.com/healthchecks/healthchecks)** — Cron job monitoring service. Get alerts when scheduled tasks fail or don't run on time.
 - **[coroot](https://github.com/coroot/coroot)** — Infrastructure monitoring and APM analysis. Identify performance bottlenecks and optimize application delivery.
+- **[Grafana Loki](https://github.com/grafana/loki)** — Log aggregation system inspired by Prometheus. Highly efficient log storage and querying with Grafana integration for centralized logging.
 - **[PowerToys](https://github.com/microsoft/PowerToys)** — Windows utilities for power users. Collection of tools to extend Windows functionality with shortcuts, color picker, and more.
 - **[starship](https://github.com/starship/starship)** — Minimalist cross-shell prompt. Fast and customizable prompt for any shell with git status, jobs, and directory info.
 - **[Quick Look](https://github.com/QL-Win/QuickLook)** — Instant file preview for Windows. Press spacebar to preview files without opening applications.
@@ -191,8 +194,6 @@ Tools for diagnosing and fixing issues in your applications.
 - **[Parm](https://github.com/parm-pm/parm)** — Cross-platform package manager pulling releases directly from GitHub. Simple dependency management for open-source projects.
 - **[dotbins](https://github.com/basnijholt/dotbins)** — CLI binary manager through dotfiles. Manage and version control command-line tools in your dotfiles repository.
 - **[ito](https://github.com/heyito/ito)** — Voice dictation for any application. Universal voice input tool that works across different programs and platforms.
-- **[Ditto](https://github.com/sabrogden/Ditto)** — Advanced clipboard manager for Windows. Stores clipboard history up to 6 months, supports code, text, and images.
-- **[Flameshot](https://github.com/flameshot-org/flameshot)** — Powerful screenshot tool with annotation capabilities. Capture, edit, and share screenshots with built-in image editor.
 - **[Graphite](https://github.com/GraphiteEditor/Graphite)** — Professional-grade raster and vector graphics editor. Modern design tool with infinite canvas and powerful editing capabilities.
 - **[drawdb](https://github.com/drawdb-io/drawdb)** — Database schema diagrams with automatic SQL generation. Visual database design tool with forward and reverse engineering.
 - **[jsoncrack](https://github.com/AykutSarac/jsoncrack.com)** — Interactive JSON structure visualizer. Beautiful and intuitive tool for exploring complex JSON data structures.
@@ -242,11 +243,12 @@ Container management and cloud storage solutions.
 
 ### Databases
 
-High-performance database systems for various use cases.
+High-performance database systems and administration tools for various use cases.
 
 - **[ClickHouse](https://github.com/ClickHouse/ClickHouse)** — Column-oriented database for real-time analytics. Extremely fast queries on large datasets with SQL interface.
 - **[OceanBase](https://github.com/oceanbase/oceanbase)** — Distributed SQL database compatible with MySQL. Enterprise-grade database with high availability and scalability.
 - **[stagDB](https://github.com/stagdb/stagdb)** — Advanced PostgreSQL admin panel with instant branch management. Visualize, manage, and branch your database schemas effortlessly.
+- **[DBeaver](https://github.com/dbeaver/dbeaver)** — Universal database tool supporting 100+ database types. SQL editor, ER diagrams, data visualization, and query execution for MySQL, PostgreSQL, MongoDB, and more.
 
 ### Web Development
 
@@ -255,6 +257,10 @@ Modern frameworks and tools for building web applications.
 - **[Svelte](https://github.com/sveltejs/svelte)** — Cybernetically enhanced web framework. Write less code, build smaller bundles with reactive component architecture.
 - **[Babylon.js](https://github.com/BabylonJS/Babylon.js)** — Powerful 3D engine for the web. Create stunning 3D experiences in browsers with WebGL and WebGPU support.
 - **[Cesium](https://github.com/CesiumGS/cesium)** — 3D globes and maps for the web. High-performance geospatial visualization with photorealistic rendering.
+- **[Tauri](https://github.com/tauri-apps/tauri)** — Framework for building desktop applications with web technologies. Smaller binaries than Electron, better security, and native performance.
+- **[Bun](https://github.com/oven-sh/bun)** — Fast all-in-one JavaScript runtime, bundler, and package manager. Drop-in replacement for Node.js with native TypeScript support and blazing speed.
+- **[Deno](https://github.com/denoland/deno)** — Secure runtime for JavaScript and TypeScript. Built-in security, modern web APIs, and first-class TypeScript support without configuration.
+- **[pnpm](https://github.com/pnpm/pnpm)** — Fast, disk space efficient package manager. Uses hard links and symlinks to save disk space while maintaining compatibility with npm.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -342,6 +348,8 @@ Continuous Integration and Continuous Deployment platforms and tools.
 - **[Jenkins](https://github.com/jenkinsci/jenkins)** — Extensible automation server. Thousands of plugins for building, deploying, and automating projects.
 - **[Drone](https://github.com/harness/drone)** — Container-native CI/CD platform. Pipeline as code with Docker-based builds.
 - **[Woodpecker](https://github.com/woodpecker-ci/woodpecker)** — Community fork of Drone with focus on simplicity. Self-hosted CI/CD with YAML configuration.
+- **[k6](https://github.com/grafana/k6)** — Modern load testing tool for performance testing. JavaScript-based with powerful scripting capabilities for load, stress, and spike testing.
+- **[Locust](https://github.com/locustio/locust)** — Distributed load testing framework. Define test scenarios in Python and simulate millions of concurrent users.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
