@@ -2,7 +2,7 @@
 
 ## 📖 Overview
 
-This repository includes an **automated translation synchronization system** for README files across multiple languages (English, Russian, Chinese). The system works via **GitHub Actions** and uses **AI** (OpenAI GPT-4) for high-quality machine translation.
+This repository includes an **automated translation synchronization system** for README files across multiple languages (English, Russian, Chinese). The system works via **GitHub Actions** and uses **free open-source translators** (argostranslate with local models and LibreTranslate API) for machine translation.
 
 ### How It Works
 
@@ -26,17 +26,19 @@ This repository includes an **automated translation synchronization system** for
 - Manually via `workflow_dispatch` for custom translations
 
 **Features:**
-- Embedded Python translation script
-- Support for multiple AI providers (OpenAI, Anthropic)
+- Python translation script in `scripts/translate_readmes.py`
+- Support for free translation methods (argostranslate, LibreTranslate)
 - Automatic commit and push of translations
+- **No API keys required** - completely free and open-source
 
 #### 2. Python Translation Script
 
-**Embedded in workflow** (lines 63-187)
+**Location:** `scripts/translate_readmes.py`
 
 **Capabilities:**
-- Uses OpenAI API (GPT-4 Turbo Preview)
-- Preserves markdown formatting
+- Uses **argostranslate** (local models) as primary method - fastest and most reliable
+- Falls back to **LibreTranslate API** (public servers) if needed
+- Preserves markdown formatting automatically
 - Doesn't translate technical terms, URLs, code blocks
 - Smart handling of repository names and file paths
 
@@ -44,27 +46,13 @@ This repository includes an **automated translation synchronization system** for
 
 ## ⚙️ Setup
 
-### 1. Add API Keys
+### 1. No API Keys Required! 🎉
 
-Navigate to your repository settings:
+The system uses **completely free** translation services:
+- **argostranslate**: Downloads language models automatically (no API keys)
+- **LibreTranslate**: Uses public servers (no authentication needed)
 
-```
-Settings → Secrets and variables → Actions → New repository secret
-```
-
-**Required Secret:**
-
-```
-Name: OPENAI_API_KEY
-Value: sk-... (your OpenAI API key)
-```
-
-**Optional Secret (for fallback):**
-
-```
-Name: ANTHROPIC_API_KEY
-Value: sk-ant-... (your Anthropic API key)
-```
+Just push your changes and it works!
 
 ### 2. Configure GitHub Actions Permissions
 
@@ -130,16 +118,16 @@ For special cases (translating from Russian source, selective languages, etc.):
 
 ```bash
 # Install required Python packages
-pip install openai anthropic requests python-dotenv pyyaml
+pip install -r requirements.txt
+# or manually:
+pip install argostranslate requests python-dotenv pyyaml
 ```
 
 ### Setup
 
-Create a `.env` file in the repository root:
-
-```bash
-OPENAI_API_KEY=sk-your-openai-api-key-here
-```
+No environment variables needed! The script will automatically:
+1. Download language models for argostranslate on first run
+2. Use public LibreTranslate servers if needed
 
 ### Extract Translation Script
 
@@ -241,34 +229,32 @@ options:
 default: 'ru,zh-CN,es'
 ```
 
-### Changing Translation Model
+### Translation Methods
 
-Default model: `gpt-4-turbo-preview`
+The system uses two methods in order of preference:
 
-To use a different model, edit the script in the workflow file (line 127):
+1. **argostranslate** (primary)
+   - Local translation models (downloaded automatically)
+   - Fast and reliable
+   - No API calls, completely offline after initial download
+   - Models are installed automatically on first use
 
-```python
-response = client.chat.completions.create(
-    model="gpt-4o",  # Change this
-    messages=[...],
-    temperature=0.3
-)
-```
+2. **LibreTranslate API** (fallback)
+   - Public servers: `translate.argosopentech.com`, `libretranslate.de`
+   - Used if argostranslate models are unavailable
+   - No authentication required
 
-**Available models:**
-- `gpt-4-turbo-preview` — Best quality (default)
-- `gpt-4o` — Faster, multimodal
-- `gpt-3.5-turbo` — Cheaper, faster, lower quality
+### Improving Translation Quality
 
-### Adjusting Translation Quality
+Since we use free translation services, quality depends on:
+1. **Clear source text** - Write descriptive, grammatically correct English
+2. **Technical terms** - System automatically preserves links, code, URLs
+3. **Retry if needed** - Sometimes LibreTranslate servers are busy, retry the workflow
 
-**Temperature parameter** (line 132):
-- `0.0` — Deterministic, consistent translations
-- `0.3` — **Default** — Good balance
-- `0.7` — More creative, less consistent
-- `1.0` — Maximum creativity
-
-**Lower temperature** is recommended for technical documentation.
+**Tips:**
+- Use complete sentences rather than fragments
+- Be consistent with terminology
+- Include context in descriptions
 
 ---
 
@@ -322,15 +308,15 @@ response = client.chat.completions.create(
 3. ✅ Verify branch: Must push to `main` branch
 4. ✅ Check workflow file: Ensure `.github/workflows/auto-translate-readmes.yml` exists
 
-### API Errors
+### Translation Method Errors
 
-**Symptoms:** Workflow fails with "API Error" or "Authentication failed"
+**Symptoms:** Workflow fails with "translation failed" or "model not found"
 
 **Solutions:**
-1. ✅ Verify secret exists: `Settings → Secrets → OPENAI_API_KEY`
-2. ✅ Check API key validity: Test key on OpenAI platform
-3. ✅ Verify quota: Ensure you have available API credits
-4. ✅ Check API status: Visit [OpenAI Status Page](https://status.openai.com/)
+1. ✅ **Check argostranslate models:** First run downloads models automatically, this may take a few minutes
+2. ✅ **LibreTranslate servers down:** Wait and retry, or the workflow will automatically retry
+3. ✅ **Network issues:** Ensure GitHub Actions runner has internet access
+4. ✅ **Language pair unavailable:** Some language pairs might not be available, check argostranslate documentation
 
 ### Poor Translation Quality
 
@@ -339,8 +325,8 @@ response = client.chat.completions.create(
 **Solutions:**
 1. ✅ **Improve source description:** Better English = better translation
 2. ✅ **Lower temperature:** Change from `0.3` to `0.1` for more consistency
-3. ✅ **Try different model:** Switch to `gpt-4o` for latest improvements
-4. ✅ **Add context:** More detailed descriptions translate better
+3. ✅ **Check translation servers:** LibreTranslate servers might be temporarily unavailable
+4. ✅ **Retry workflow:** Sometimes network issues resolve on retry
 
 ### Merge Conflicts
 
@@ -396,17 +382,17 @@ After automatic translation:
 3. ✅ Ensure formatting is preserved
 4. 🐛 Open issue if systematic problems occur
 
-### 5. Monitor API Costs
+### 5. Monitor Translation Performance
 
-**Track your OpenAI usage:**
-- Set up billing alerts on OpenAI platform
-- Monitor workflow runs in Actions tab
-- Consider using `gpt-3.5-turbo` for development/testing
+**Track translation quality:**
+- Review translations after each update
+- Check Actions logs for any errors
+- Models are cached after first download for faster subsequent runs
 
-**Estimated costs:**
-- Small update: ~$0.01-0.05
-- Full README translation: ~$0.10-0.30
-- Monthly cost (active repo): ~$2-5
+**Performance:**
+- First run: ~2-5 minutes (downloads models)
+- Subsequent runs: ~30-60 seconds
+- Completely free - no API costs!
 
 ### 6. Test Locally First
 
@@ -535,9 +521,10 @@ Add to workflow:
 ## 📚 Resources
 
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [OpenAI API Documentation](https://platform.openai.com/docs)
+- [argostranslate Documentation](https://github.com/argosopentech/argos-translate)
+- [LibreTranslate API](https://libretranslate.com/)
 - [Markdown Guide](https://www.markdownguide.org/)
-- [Python `openai` Library](https://github.com/openai/openai-python)
+- [Python `argostranslate` Library](https://pypi.org/project/argostranslate/)
 
 ---
 

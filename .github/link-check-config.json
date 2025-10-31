@@ -1,0 +1,19 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^mailto:"
+    },
+    {
+      "pattern": "^#"
+    },
+    {
+      "pattern": "^http://localhost"
+    }
+  ],
+  "timeout": "10s",
+  "retryOn429": true,
+  "retryCount": 3,
+  "fallbackRetryDelay": "30s",
+  "aliveStatusCodes": [200, 403, 429, 999]
+}
+

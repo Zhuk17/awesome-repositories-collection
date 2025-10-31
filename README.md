@@ -20,7 +20,16 @@
 
 This repository brings together battle-tested open-source projects spanning **development tools**, **AI/ML**, **system monitoring**, **security**, **containerization**, and **automation**. Each tool is selected based on active maintenance, clear documentation, and real-world applicability.
 
+### 📊 Repository Statistics
+
+- **100+** curated tools and resources
+- **13** main categories
+- **3** language translations (English, Russian, Chinese)
+- **100%** open-source tools
+
 ---
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ## 📋 Table of Contents
 
@@ -57,6 +66,8 @@ Essential tools for exploring and navigating your filesystem efficiently.
 - **[lsd](https://github.com/lsd-rs/lsd)** — Next-generation `ls` command with icons, colors, and tree view. Written in Rust for blazing performance.
 - **[ranger](https://github.com/ranger/ranger)** — Vi-inspired file manager with three-column layout, file previews, and extensive customization options.
 
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
 ---
 
 ## 🔍 Search & Replace
@@ -67,6 +78,8 @@ Powerful tools for searching through codebases and performing bulk text operatio
 - **[ag (The Silver Searcher)](https://github.com/ggreer/the_silver_searcher)** — Code-searching tool optimized for developers. Faster than ack, with smart defaults for ignoring VCS directories.
 - **[sd](https://github.com/chmln/sd)** — Intuitive find-and-replace CLI tool with regex support. Safer and more ergonomic than `sed` for everyday use.
 - **[ast-grep](https://github.com/ast-grep/ast-grep)** — Structural code search and refactoring tool. Search code by AST patterns instead of regex for more precise results.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
@@ -81,6 +94,8 @@ Track system resources, processes, and performance metrics in real-time.
 - **[bottom](https://github.com/ClementTsang/bottom)** — Graphical process/system monitor inspired by gtop and gotop. Customizable widgets with cross-platform support.
 - **[ctop](https://github.com/bcicen/ctop)** — Top-like interface for container metrics. Monitor Docker containers in real-time with resource usage stats.
 
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
 ---
 
 ## 🌐 Networking
@@ -93,6 +108,8 @@ Tools for testing APIs, debugging network traffic, and managing connections.
 - **[mitmproxy](https://github.com/mitmproxy/mitmproxy)** — Interactive HTTPS proxy for penetration testers and developers. Inspect, modify, and replay HTTP/HTTPS traffic.
 - **[ngrok](https://github.com/inconshreveable/ngrok)** — Reverse proxy for creating secure tunnels to localhost. Essential for webhook testing and exposing local services.
 - **[bandwhich](https://github.com/imsnif/bandwhich)** — Terminal bandwidth utilization tool. Shows current network usage by process, connection, and remote IP.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
@@ -136,6 +153,8 @@ Benchmarking and profiling tools for optimization.
 - **[valgrind](https://valgrind.org/)** — Instrumentation framework for building dynamic analysis tools. Detect memory leaks, race conditions, and cache misses.
 - **[perf](https://perf.wiki.kernel.org/)** — Linux profiling tool with performance counters. Analyze CPU cycles, cache misses, and hardware events.
 
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
 ---
 
 ## 🐳 Docker & Cloud
@@ -152,6 +171,8 @@ Container management and cloud storage solutions.
 - **[Rclone](https://github.com/rclone/rclone)** — Command-line program to sync files and directories to and from cloud storage. Supports 40+ cloud providers.
 - **[MinIO](https://github.com/minio/minio)** — High-performance, S3-compatible object storage. Self-hosted alternative to AWS S3 with enterprise features.
 - **[Syncthing](https://github.com/syncthing/syncthing)** — Continuous file synchronization program. P2P sync without cloud intermediaries.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
@@ -170,6 +191,8 @@ Development environments and task automation tools.
 - **[Ansible](https://github.com/ansible/ansible)** — Automation platform for configuration management, application deployment, and orchestration.
 - **[n8n](https://github.com/n8n-io/n8n)** — Workflow automation tool with visual editor. Self-hosted alternative to Zapier with 200+ integrations.
 
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
 ---
 
 ## 🤖 AI & Machine Learning
@@ -184,6 +207,8 @@ LLM frameworks, AI agents, and machine learning tools.
 - **[Jan](https://github.com/janhq/jan)** — Open-source ChatGPT alternative that runs 100% offline. Desktop application for running LLMs locally.
 - **[Open WebUI](https://github.com/open-webui/open-webui)** — User-friendly web interface for LLMs. Works with Ollama and OpenAI-compatible APIs.
 
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
 ---
 
 ## 🔄 CI/CD
@@ -197,6 +222,8 @@ Continuous Integration and Continuous Deployment platforms and tools.
 - **[Drone](https://github.com/harness/drone)** — Container-native CI/CD platform. Pipeline as code with Docker-based builds.
 - **[Woodpecker](https://github.com/woodpecker-ci/woodpecker)** — Community fork of Drone with focus on simplicity. Self-hosted CI/CD with YAML configuration.
 
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
 ---
 
 ## 🎬 Video Processing
@@ -207,6 +234,8 @@ Tools for video generation, manipulation, and analysis.
 - **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** — Feature-rich command-line video downloader. Fork of youtube-dl with additional features and fixes.
 - **[Sora Extend](https://github.com/mshumer/sora-extend)** — Tool to chain and extend OpenAI Sora 2 video generations beyond 12-second limit. Automated prompt deconstruction and segment concatenation.
 - **[HandBrake](https://github.com/HandBrake/HandBrake)** — Video transcoder with comprehensive format support. GUI and CLI versions for batch processing.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
@@ -225,6 +254,8 @@ Security testing tools, OSINT frameworks, and vulnerability scanners.
 - **[OWASP Juice Shop](https://github.com/juice-shop/juice-shop)** — Intentionally insecure web application for security training. Practice finding and exploiting vulnerabilities.
 - **[HashiCorp Vault](https://github.com/hashicorp/vault)** — Secrets management and data protection. Identity-based access control for cloud applications.
 
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
 ---
 
 ## 📚 Education
@@ -239,6 +270,8 @@ Learning resources, courses, and comprehensive guides for developers.
 - **[coding-interview-university](https://github.com/jwasham/coding-interview-university)** — Complete study plan to become a software engineer. Covers algorithms, data structures, and system design.
 - **[build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)** — Learn by building your own version of technologies. Tutorials for databases, web servers, Git, Docker, and more.
 
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
 ---
 
 ## 🌟 Other Awesome Collections
@@ -250,6 +283,8 @@ Curated lists covering specialized topics and tools.
 - **[awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps)** — Curated list of command-line applications organized by category.
 - **[awesome-shell](https://github.com/alebcay/awesome-shell)** — Command-line frameworks, toolkits, guides, and gizmos.
 - **[terminals-are-sexy](https://github.com/k4m4/terminals-are-sexy)** — Curated list of terminal frameworks, plugins, and resources.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
@@ -265,6 +300,8 @@ The `theses/` directory contains in-depth research, technical analyses, and comp
 ### Contributing Theses
 
 Use the provided [template](./theses/thesis_template_en.md) to contribute your own research and analysis.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 

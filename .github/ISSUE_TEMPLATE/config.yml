@@ -1,0 +1,12 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/cheesewhe/awesome-repositories-collection/discussions
+    about: Ask questions, share ideas, and discuss the project
+  - name: 📖 Documentation
+    url: https://github.com/cheesewhe/awesome-repositories-collection#readme
+    about: Check the README for general information
+  - name: 🤝 Contributing Guide
+    url: https://github.com/cheesewhe/awesome-repositories-collection/blob/main/CONTRIBUTING.md
+    about: Read our contributing guidelines before submitting
+

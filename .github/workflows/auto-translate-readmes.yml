@@ -52,11 +52,11 @@ jobs:
       
       - name: Run translation
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           SOURCE_LANG: ${{ github.event.inputs.source_language || 'en' }}
           TARGET_LANGS: ${{ github.event.inputs.target_languages || 'ru,zh-CN' }}
         run: |
           echo "🚀 Запуск перевода..."
+          echo "📦 Установка языковых моделей для argostranslate..."
           python scripts/translate_readmes.py
       
       - name: Commit and push translations

@@ -1,0 +1,61 @@
+name: Link Checker
+
+# Проверка всех ссылок в README файлах на работоспособность
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'README*.md'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'README*.md'
+  schedule:
+    # Запускать еженедельно по понедельникам в 3:00 UTC
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install link checking tools
+        run: |
+          npm install -g markdown-link-check
+      
+      - name: Check links with markdown-link-check
+        continue-on-error: true
+        run: |
+          echo "🔍 Checking links in README files..."
+          
+          # Проверяем все markdown файлы
+          find . -name "README*.md" -o -name "CONTRIBUTING.md" -o -name "AUTOMATION.md" | \
+          while read file; do
+            echo "Checking: $file"
+            markdown-link-check "$file" --config .github/link-check-config.json || true
+          done
+          
+          # Проверяем файлы в theses
+          find ./theses -name "*.md" 2>/dev/null | \
+          while read file; do
+            echo "Checking: $file"
+            markdown-link-check "$file" --config .github/link-check-config.json || true
+          done
+          
+          echo "✅ Link checking completed!"
+      
+
