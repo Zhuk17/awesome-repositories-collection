@@ -22,8 +22,8 @@ This repository brings together battle-tested open-source projects spanning **de
 
 ### 📊 Repository Statistics
 
-- **130+** curated tools and resources
-- **13** main categories
+- **170+** curated tools and resources
+- **15** main categories
 - **3** language translations (English, Russian, Chinese)
 - **100%** open-source tools
 
@@ -43,6 +43,8 @@ This repository brings together battle-tested open-source projects spanning **de
   - [Debugging](#debugging)
   - [Performance](#performance)
 - [Docker & Cloud](#-docker--cloud)
+  - [Databases](#databases)
+  - [Web Development](#web-development)
 - [IDE & Automation](#-ide--automation)
 - [AI & Machine Learning](#-ai--machine-learning)
 - [CI/CD](#-cicd)
@@ -97,6 +99,12 @@ Track system resources, processes, and performance metrics in real-time.
 - **[ctop](https://github.com/bcicen/ctop)** — Top-like interface for container metrics. Monitor Docker containers in real-time with resource usage stats.
 - **[Performa](https://github.com/jhuckaby/Performa)** — Server monitoring with custom metrics. Real-time performance tracking with configurable alerts and dashboards.
 - **[resources](https://github.com/nokyan/resources)** — System resource monitor for CPU, GPU, and NPU. Lightweight tool showing detailed hardware utilization.
+- **[Umami](https://github.com/umami-software/umami)** — Privacy-focused web analytics. Self-hosted alternative to Google Analytics with GDPR compliance.
+- **[Healthchecks](https://github.com/healthchecks/healthchecks)** — Cron job monitoring service. Get alerts when scheduled tasks fail or don't run on time.
+- **[coroot](https://github.com/coroot/coroot)** — Infrastructure monitoring and APM analysis. Identify performance bottlenecks and optimize application delivery.
+- **[PowerToys](https://github.com/microsoft/PowerToys)** — Windows utilities for power users. Collection of tools to extend Windows functionality with shortcuts, color picker, and more.
+- **[starship](https://github.com/starship/starship)** — Minimalist cross-shell prompt. Fast and customizable prompt for any shell with git status, jobs, and directory info.
+- **[Quick Look](https://github.com/QL-Win/QuickLook)** — Instant file preview for Windows. Press spacebar to preview files without opening applications.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -156,6 +164,11 @@ Tools for diagnosing and fixing issues in your applications.
 - **[dnote](https://github.com/dnote/dnote)** — Terminal-based notebook on SQLite. Simple note-taking system with command-line interface and local storage.
 - **[dotbins](https://github.com/basnijholt/dotbins)** — CLI binary manager through dotfiles. Manage and version control command-line tools in your dotfiles repository.
 - **[ito](https://github.com/heyito/ito)** — Voice dictation for any application. Universal voice input tool that works across different programs and platforms.
+- **[Graphite](https://github.com/GraphiteEditor/Graphite)** — Professional-grade raster and vector graphics editor. Modern design tool with infinite canvas and powerful editing capabilities.
+- **[drawdb](https://github.com/drawdb-io/drawdb)** — Database schema diagrams with automatic SQL generation. Visual database design tool with forward and reverse engineering.
+- **[jsoncrack](https://github.com/AykutSarac/jsoncrack.com)** — Interactive JSON structure visualizer. Beautiful and intuitive tool for exploring complex JSON data structures.
+- **[drawio-desktop](https://github.com/jgraph/drawio-desktop)** — Powerful diagram editor with offline support. Create flowcharts, UML diagrams, network topologies, and more.
+- **[Netron](https://github.com/lutzroeder/netron)** — Visualizer for neural networks and ML models. View model architectures, layer details, and weights interactively.
 
 ### Performance
 
@@ -187,6 +200,24 @@ Container management and cloud storage solutions.
 - **[Syncthing](https://github.com/syncthing/syncthing)** — Continuous file synchronization program. P2P sync without cloud intermediaries.
 - **[docker-jdownloader-2](https://github.com/jlesage/docker-jdownloader-2)** — JDownloader 2 in a Docker container with web GUI. Automated file downloader with support for many file hosting services.
 - **[dock-droid](https://github.com/sickcodes/dock-droid)** — Run Android x86/ARM in a Docker container. Full Android system emulation with hardware acceleration support.
+- **[Nextcloud](https://github.com/nextcloud/server)** — Self-hosted file sync and collaboration platform. Complete alternative to Google Workspace with calendar, contacts, and more.
+- **[ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)** — Self-hosted web archive. Download and save websites for offline viewing with full-text search.
+- **[kopia](https://github.com/kopia/kopia)** — Fast and secure backup tool. Cross-platform backup solution with deduplication and encryption.
+
+### Databases
+
+High-performance database systems for various use cases.
+
+- **[ClickHouse](https://github.com/ClickHouse/ClickHouse)** — Column-oriented database for real-time analytics. Extremely fast queries on large datasets with SQL interface.
+- **[OceanBase](https://github.com/oceanbase/oceanbase)** — Distributed SQL database compatible with MySQL. Enterprise-grade database with high availability and scalability.
+
+### Web Development
+
+Modern frameworks and tools for building web applications.
+
+- **[Svelte](https://github.com/sveltejs/svelte)** — Cybernetically enhanced web framework. Write less code, build smaller bundles with reactive component architecture.
+- **[Babylon.js](https://github.com/BabylonJS/Babylon.js)** — Powerful 3D engine for the web. Create stunning 3D experiences in browsers with WebGL and WebGPU support.
+- **[Cesium](https://github.com/CesiumGS/cesium)** — 3D globes and maps for the web. High-performance geospatial visualization with photorealistic rendering.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -209,6 +240,12 @@ Development environments and task automation tools.
 - **[feeddeck](https://github.com/feeddeck/feeddeck)** — RSS and social media aggregator inspired by TweetDeck. Self-hosted feed reader with a familiar interface.
 - **[Documize community](https://github.com/documize/community)** — Self-hosted knowledge base with wiki functionality. Organize documentation, runbooks, and team knowledge in one place.
 - **[amphi-etl](https://github.com/AmphiAI/amphi-etl)** — Visual Python ETL pipeline builder. Drag-and-drop interface for creating data transformation workflows without coding.
+- **[Automatisch](https://github.com/automatisch/automatisch)** — Self-hosted Zapier alternative for workflow automation. Connect apps and services without code, fully open-source and privacy-focused.
+- **[cal.com](https://github.com/calcom/cal.com)** — Open-source scheduling infrastructure. Beautiful scheduling system for managing meetings, events, and appointments.
+- **[Omnivore](https://github.com/omnivore-app/omnivore)** — Read-it-later service with synchronization. Save articles, newsletters, and documents for later reading across all devices.
+- **[Espanso](https://github.com/espanso/espanso)** — Cross-platform text expander. Accelerate your typing with custom snippets and abbreviations.
+- **[super-productivity](https://github.com/johannesjo/super-productivity)** — Task manager and project tracker. Time tracking, Jira integration, and Pomodoro timer for maximum productivity.
+- **[Budibase](https://github.com/Budibase/budibase)** — Low-code platform for building business applications. Create internal tools, admin panels, and workflows without coding.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -231,6 +268,8 @@ LLM frameworks, AI agents, and machine learning tools.
 - **[spacy-llm](https://github.com/explosion/spacy-llm)** — Integrate LLMs into spaCy NLP pipelines. Combine traditional NLP with modern language models for enhanced text processing.
 - **[spidercreator](https://github.com/carlosplanchon/spidercreator)** — LLM-powered web scraper generator. Automatically generate web scraping scripts using natural language descriptions.
 - **[fastdup](https://github.com/visual-layer/fastdup)** — Find duplicates and anomalies in image datasets. Fast and efficient tool for dataset quality control and curation.
+- **[Fabric](https://github.com/danielmiessler/fabric)** — Framework for integrating AI into personal workflows. Customizable AI patterns and prompts for everyday tasks.
+- **[gpt-researcher](https://github.com/assafelovic/gpt-researcher)** — Autonomous research assistant powered by LLMs. Conducts deep research on any topic and generates comprehensive reports.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -262,6 +301,9 @@ Tools for video generation, manipulation, and analysis.
 - **[wunjo](https://github.com/wladradchenko/wunjo)** — Head motion-driven animation generator from video. Deep learning-based tool for creating realistic facial animations.
 - **[auto-subs](https://github.com/tmoroney/auto-subs)** — Automatic subtitle generator for videos. Offline-capable tool using speech recognition to create subtitle files.
 - **[shutter-encoder](https://github.com/paulpacifico/shutter-encoder)** — Advanced video encoder and optimizer. Professional-grade video conversion with batch processing and format optimization.
+- **[Jellyfin](https://github.com/jellyfin/jellyfin)** — Self-hosted media server. Free and open-source alternative to Plex and Emby for streaming your media collection.
+- **[LibrePhotos](https://github.com/LibrePhotos/librephotos)** — Self-hosted photo management service. Open-source alternative to Google Photos with facial recognition and automatic tagging.
+- **[Upscayl](https://github.com/upscayl/upscayl)** — AI-powered image upscaling tool. Enhance image quality using machine learning models locally.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -283,6 +325,11 @@ Security testing tools, OSINT frameworks, and vulnerability scanners.
 - **[HashiCorp Vault](https://github.com/hashicorp/vault)** — Secrets management and data protection. Identity-based access control for cloud applications.
 - **[Nginx-Lua-Anti-DDoS](https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS)** — Lua-based anti-DDoS script for Nginx. JavaScript puzzle challenge system to protect against automated attacks.
 - **[Certipy](https://github.com/ly4k/Certipy)** — Active Directory Certificate Services (AD CS) auditing and exploitation tool. Discover and abuse misconfigurations in AD CS.
+- **[Vaultwarden](https://github.com/dani-garcia/vaultwarden)** — Self-hosted Bitwarden-compatible password manager. Lightweight server implementation with all Bitwarden client features.
+- **[ente](https://github.com/ente-io/ente)** — End-to-end encrypted cloud storage for photos and videos. Privacy-first alternative to Google Photos with client-side encryption.
+- **[wg-easy](https://github.com/wg-easy/wg-easy)** — Easy-to-use WireGuard VPN with web interface. Set up and manage VPN servers through a user-friendly dashboard.
+- **[trufflehog](https://github.com/trufflesecurity/trufflehog)** — Detect leaked secrets in git repositories. Scans commits, branches, and PRs for exposed credentials and API keys.
+- **[fail2ban](https://github.com/fail2ban/fail2ban)** — Intrusion prevention framework. Automatically ban IPs showing malicious behavior like brute-force attacks.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -300,6 +347,9 @@ Learning resources, courses, and comprehensive guides for developers.
 - **[coding-interview-university](https://github.com/jwasham/coding-interview-university)** — Complete study plan to become a software engineer. Covers algorithms, data structures, and system design.
 - **[build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)** — Learn by building your own version of technologies. Tutorials for databases, web servers, Git, Docker, and more.
 - **[LearnGitBranching](https://github.com/pcottle/learnGitBranching)** — Interactive visual Git tutorial. Master branching, merging, rebasing, and advanced Git workflows through hands-on exercises.
+- **[Joplin](https://github.com/laurent22/joplin)** — Cross-platform note-taking application. Markdown editor with synchronization, encryption, and plugin support.
+- **[Wallabag](https://github.com/wallabag/wallabag)** — Self-hosted read-it-later service. Save articles for later reading with full-text search and tagging.
+- **[Overleaf](https://github.com/overleaf/overleaf)** — Collaborative LaTeX editor. Real-time collaborative editing for scientific papers and documents.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
