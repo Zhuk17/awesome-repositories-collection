@@ -181,8 +181,8 @@ Include:
 
 ## Questions?
 
-- 💬 Open a [GitHub Discussion](https://github.com/zhukovgreen/awesome-repositories-collection/discussions)
-- 🐛 Found a bug? Open an [Issue](https://github.com/zhukovgreen/awesome-repositories-collection/issues)
+- 💬 Open a [GitHub Discussion](https://github.com/cheesewhe/awesome-repositories-collection/discussions)
+- 🐛 Found a bug? Open an [Issue](https://github.com/cheesewhe/awesome-repositories-collection/issues)
 - 📧 Need help? Check existing issues or start a discussion
 
 ---

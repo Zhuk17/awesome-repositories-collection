@@ -8,8 +8,8 @@
 
 <p align="center">
   <img src="https://awesome.re/badge.svg" alt="Awesome">
-  <img src="https://img.shields.io/github/license/zhukovgreen/awesome-repositories-collection" alt="License">
-  <img src="https://img.shields.io/github/stars/zhukovgreen/awesome-repositories-collection" alt="Stars">
+  <img src="https://img.shields.io/github/license/cheesewhe/awesome-repositories-collection" alt="License">
+  <img src="https://img.shields.io/github/stars/cheesewhe/awesome-repositories-collection" alt="Stars">
 </p>
 
 ---

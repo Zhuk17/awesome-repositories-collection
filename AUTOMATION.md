@@ -545,8 +545,8 @@ Add to workflow:
 
 **Need help?**
 
-- 💬 [Open a Discussion](https://github.com/zhukovgreen/awesome-repositories-collection/discussions)
-- 🐛 [Report a Bug](https://github.com/zhukovgreen/awesome-repositories-collection/issues)
+- 💬 [Open a Discussion](https://github.com/cheesewhe/awesome-repositories-collection/discussions)
+- 🐛 [Report a Bug](https://github.com/cheesewhe/awesome-repositories-collection/issues)
 - 📖 Review workflow logs in Actions tab
 - 🔍 Check existing issues for similar problems
 
