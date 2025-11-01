@@ -22,7 +22,7 @@ This repository brings together battle-tested open-source projects spanning **de
 
 ### 📊 Repository Statistics
 
-- **370+** curated tools and resources
+- **375+** curated tools and resources
 - **20** main categories
 - **4** language translations (English, Russian, Chinese, Spanish)
 - **100%** open-source tools
@@ -330,6 +330,7 @@ Development environments and task automation tools.
 - **[Budibase](https://github.com/Budibase/budibase)** — Low-code platform for building business applications. Create internal tools, admin panels, and workflows without coding.
 - **[Nyno](https://github.com/nyno-org/nyno)** — YAML-based workflow automation alternative to n8n. Lightweight workflow engine without cloud dependencies.
 - **[Flowcraft](https://github.com/flowcraft-io/flowcraft)** — Dependency-free automation platform. Simple and lightweight workflow automation without external dependencies.
+- **[Android Code Studio](https://github.com/AndroidCSOfficial/android-code-studio)** — Android IDE for developing full-featured Android apps on Android devices. Complete development environment with Gradle support, terminal, and AI assistant.
 - **[Apache APISIX](https://github.com/apache/apisix)** — High-performance API gateway for microservices. Production-ready solution with rich plugin ecosystem and enterprise support.
 - **[Hoppscotch](https://github.com/hoppscotch/hoppscotch)** — Modern, beautiful API testing client. Self-hosted alternative to Postman with intuitive interface and powerful features.
 - **[Keploy](https://github.com/keploy/keploy)** — API testing and mocking tool. Automated end-to-end testing with intelligent mock generation and replay capabilities.
@@ -372,6 +373,7 @@ ERP systems, helpdesk solutions, and business management tools.
 - **[OpenWRT](https://github.com/openwrt/openwrt)** — Embedded operating system for routers. Linux distribution for embedded devices with package management and extensive customization.
 - **[pfSense](https://github.com/pfsense/pfsense)** — Free, open-source firewall and router platform. Network security appliance with firewall, VPN, and routing capabilities.
 - **[OPNsense](https://github.com/opnsense/core)** — Hardened FreeBSD-based firewall and routing platform. Enterprise-grade firewall distribution with extensive security features.
+- **[ONLYOFFICE](https://github.com/ONLYOFFICE)** — Complete open-source office suite alternative to Microsoft Office. Online editors for documents, spreadsheets, and presentations with collaboration features.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -406,6 +408,7 @@ LLM frameworks, AI agents, and machine learning tools.
 - **[BrowserlessOS](https://github.com/browserlessai/browserlessai)** — Alternative browser with built-in AI agent. Privacy-focused browser with integrated AI assistance capabilities.
 - **[VoltAgent Inspector](https://github.com/MCPJam/inspector)** — Visual inspector for MCP servers. Open-source debugging and monitoring tool for Model Context Protocol implementations.
 - **[GPT-API-free / DeepSeek-API-free](https://github.com/gpt-api-free/gpt-api-free)** — Free API keys for AI platforms. Open-source service providing access to various AI model APIs without cost.
+- **[restorePhotos](https://github.com/Nutlope/restorePhotos)** — AI-powered photo restoration tool. Restore old and damaged photos using advanced machine learning algorithms.
 - **[Kimi-Dev-72B](https://github.com/moonshotai/Kimi-Dev-72B)** — Open-source LLM for engineering tasks. Code generation, bug detection, autonomous testing, and patching of large industrial codebases.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
@@ -635,6 +638,7 @@ The `projects-ideas/` directory contains curated links to repositories with idea
 - **[Industrial Automation & SCADA](./projects-ideas/industrial-automation-scada.md)** — Comprehensive collection of tools for SCADA systems, PLC programming, BIM/CAD design, point cloud processing, and engineering AI applications.
 - **[Supervision](https://github.com/roboflow/supervision)** — Universal Python framework for computer vision providing reusable building blocks for modern CV projects. Model-agnostic toolkit for visualization, annotation, object counting, dataset management, and real-time video processing.
 - **[car-counter](https://github.com/serialdotai/car-counter)** — Open-source Python tool for automatic vehicle counting in traffic videos using computer vision. Combines YOLOv8 object detection with SORT tracking algorithm for accurate vehicle counting across virtual lines.
+- **[yolo-training-template](https://github.com/mfranzon/yolo-training-template)** — Ready-to-use template for training YOLO models on any Kaggle datasets in just a few hours. Complete pipeline with auto-labeling using GroundingDINO, training scripts, and inference examples.
 
 ### Contributing Theses
 
