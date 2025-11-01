@@ -22,7 +22,7 @@ This repository brings together battle-tested open-source projects spanning **de
 
 ### 📊 Repository Statistics
 
-- **410+** curated tools and resources
+- **411+** curated tools and resources
 - **21** main categories
 - **4** language translations (English, Russian, Chinese, Spanish)
 - **100%** open-source tools
@@ -593,7 +593,6 @@ Learning resources, courses, and comprehensive guides for developers.
 - **[The Missing Semester](https://github.com/missing-semester/missing-semester)** — MIT course about computing tools every developer should know. Shell, vim, git, debugging, and more.
 - **[The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)** — Master the command line in one page. Practical examples for everyday use.
 - **[coding-interview-university](https://github.com/jwasham/coding-interview-university)** — Complete study plan to become a software engineer. Covers algorithms, data structures, and system design.
-- **[build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)** — Learn by building your own version of technologies. Tutorials for databases, web servers, Git, Docker, and more.
 - **[LearnGitBranching](https://github.com/pcottle/learnGitBranching)** — Interactive visual Git tutorial. Master branching, merging, rebasing, and advanced Git workflows through hands-on exercises.
 - **[Joplin](https://github.com/laurent22/joplin)** — Cross-platform note-taking application. Markdown editor with synchronization, encryption, and plugin support.
 - **[Wallabag](https://github.com/wallabag/wallabag)** — Self-hosted read-it-later service. Save articles for later reading with full-text search and tagging.
