@@ -60,6 +60,7 @@ This repository brings together battle-tested open-source projects spanning **de
 - [Other Collections](#-other-awesome-collections)
 - [Research & Theses](#-research--theses)
 - [Project Ideas](#project-ideas-collection)
+- [Contributors](#-contributors)
 - [Contributing](#-contributing)
 
 ---
@@ -560,6 +561,12 @@ Before submitting, ensure your addition meets these standards:
 ```markdown
 - **[ripgrep](https://github.com/BurntSushi/ripgrep)** — Ultra-fast recursive search tool written in Rust. Respects .gitignore by default and outperforms grep, ag, and ack on large codebases with regex support and parallel execution.
 ```
+
+---
+
+## 👥 Contributors
+
+Special thanks to @theayushmishr for adding ytarchive, Goose AI agent framework, and librewolf browser. Your contributions greatly improve this collection!
 
 ---
 
