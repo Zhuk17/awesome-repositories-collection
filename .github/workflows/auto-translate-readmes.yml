@@ -1,6 +1,6 @@
 name: Auto-Translate READMEs
 
-# Автоматический перевод README.md на русский и китайский языки
+# Автоматический перевод README.md на русский, китайский и испанский языки
 # Запускается при изменении основного README.md файла
 
 on:
@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       source_language:
-        description: 'Source language (en, ru, zh-CN)'
+        description: 'Source language (en, ru, zh-CN, es)'
         required: true
         default: 'en'
         type: choice
@@ -20,10 +20,11 @@ on:
           - en
           - ru
           - zh-CN
+          - es
       target_languages:
-        description: 'Target languages (comma-separated: en,ru,zh-CN)'
+        description: 'Target languages (comma-separated: en,ru,zh-CN,es)'
         required: true
-        default: 'ru,zh-CN'
+        default: 'ru,zh-CN,es'
 
 jobs:
   translate-readmes:
@@ -65,6 +66,7 @@ jobs:
           packages_to_install = [
               ('en', 'ru'),
               ('en', 'zh'),
+              ('en', 'es'),
           ]
           
           for from_code, to_code in packages_to_install:
@@ -87,7 +89,7 @@ jobs:
       - name: Run translation
         env:
           SOURCE_LANG: ${{ github.event.inputs.source_language || 'en' }}
-          TARGET_LANGS: ${{ github.event.inputs.target_languages || 'ru,zh-CN' }}
+          TARGET_LANGS: ${{ github.event.inputs.target_languages || 'ru,zh-CN,es' }}
         run: |
           echo "🚀 Запуск перевода..."
           python scripts/translate_readmes.py
@@ -98,7 +100,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           
           # Добавляем переведенные файлы
-          git add README.ru.md README.zh-CN.md
+          git add README.ru.md README.zh-CN.md README.es.md
           
           # Проверяем, есть ли изменения
           if git diff --staged --quiet; then

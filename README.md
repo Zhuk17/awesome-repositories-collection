@@ -3,7 +3,8 @@
 <p align="center">
   <a href="README.md">🇬🇧 English</a> •
   <a href="README.ru.md">🇷🇺 Русский</a> •
-  <a href="README.zh-CN.md">🇨🇳 简体中文</a>
+  <a href="README.zh-CN.md">🇨🇳 简体中文</a> •
+  <a href="README.es.md">🇪🇸 Español</a>
 </p>
 
 <p align="center">
@@ -22,7 +23,7 @@ This repository brings together battle-tested open-source projects spanning **de
 ### 📊 Repository Statistics
 - **275+** curated tools and resources
 - **19** main categories
-- **3** language translations (English, Russian, Chinese)
+- **4** language translations (English, Russian, Chinese, Spanish)
 - **100%** open-source tools
 
 ---

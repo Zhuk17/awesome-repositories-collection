@@ -30,20 +30,23 @@ except ImportError:
 LANGUAGE_CODES = {
     'en': 'English',
     'ru': 'Russian (Русский)',
-    'zh-CN': 'Simplified Chinese (简体中文)'
+    'zh-CN': 'Simplified Chinese (简体中文)',
+    'es': 'Spanish (Español)'
 }
 
 # Маппинг языков для argostranslate (использует стандартные коды ISO)
 ARGOS_LANGUAGE_MAP = {
     'en': 'en',
     'ru': 'ru',
-    'zh-CN': 'zh'  # argostranslate использует 'zh' для китайского
+    'zh-CN': 'zh',  # argostranslate использует 'zh' для китайского
+    'es': 'es'
 }
 
 README_FILES = {
     'en': 'README.md',
     'ru': 'README.ru.md',
-    'zh-CN': 'README.zh-CN.md'
+    'zh-CN': 'README.zh-CN.md',
+    'es': 'README.es.md'
 }
 
 # Публичные LibreTranslate серверы (fallback)
@@ -120,7 +123,8 @@ def translate_with_libretranslate(text: str, target_lang: str, source_lang: str 
     libretranslate_map = {
         'en': 'en',
         'ru': 'ru',
-        'zh-CN': 'zh'
+        'zh-CN': 'zh',
+        'es': 'es'
     }
     
     from_code = libretranslate_map.get(source_lang, source_lang)
@@ -344,7 +348,7 @@ def sync_translations(source_lang='en', target_langs=None):
         True если успешно, False в случае ошибки
     """
     if target_langs is None:
-        target_langs = ['ru', 'zh-CN']
+        target_langs = ['ru', 'zh-CN', 'es']
     
     # Определяем корневую директорию репозитория
     repo_root = Path(__file__).parent.parent
@@ -395,7 +399,7 @@ if __name__ == '__main__':
     
     # Определяем параметры из переменных окружения
     source = os.getenv('SOURCE_LANG', 'en')
-    targets_str = os.getenv('TARGET_LANGS', 'ru,zh-CN')
+    targets_str = os.getenv('TARGET_LANGS', 'ru,zh-CN,es')
     targets = [t.strip() for t in targets_str.split(',') if t.strip()]
     
     print(f"\n📋 Конфигурация:")
