@@ -56,5 +56,4 @@ jobs:
           done
           
           echo "✅ Link checking completed!"
-      
 
