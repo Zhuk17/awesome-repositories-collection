@@ -1,15 +1,15 @@
 # Awesome Repositories Collection #
 
 <p align="center">
-<a href="README.md"> trimestre Inglés</a> •
+</a> •
 <a href="README.ru.md"> Desnudos Русский</a> •
 <a href="README.zh-CN.md">简 中文</a>
 </p>
 
 <p align="center">
-<img src="XG0438H alt="Awesome">
-<img src="XG0437H alt="License">
-<img src="XG0436H alt="Stars">
+<img src="XG0442H alt="Awesome">
+<img src="XG0441H alt="License">
+<img src="XG0440H alt="Stars">
 </p>
 
 -...
@@ -22,7 +22,7 @@ Este repositorio reúne proyectos de código abierto con pruebas de batalla que 
 
 #### 📊 Repository Statistics
 
-- **370+** herramientas y recursos curados
+**375+** herramientas y recursos curados
 **20** categorías principales
 - **4** traducciones de idiomas (inglés, ruso, chino, español)
 - **100%** herramientas de código abierto
@@ -70,7 +70,7 @@ Este repositorio reúne proyectos de código abierto con pruebas de batalla que 
 Herramientas esenciales para explorar y navegar su sistema de archivos de manera eficiente.
 
 **[fzf](https://github.com/junegunn/fzf)** — Detector borroso de línea de comandos con interfaz interactiva. Integra perfectamente con la historia de la concha, la búsqueda de archivos y vim/neovim para la navegación rápida.
-**[fd](https://github.com/sharkdp/fd)** — Una alternativa sencilla, rápida y fácil de usar a `find`. Soporta ejecución paralela, ignora patrones y sensibilidad inteligente de caso.
+**[fd](https://github.com/sharkdp/fd)** — alternativa sencilla, rápida y fácil de usar a `find`. Soporta ejecución paralela, ignora patrones y sensibilidad inteligente de caso.
 **[exa](https://github.com/ogham/exa)** — Reemplazo moderno para `ls` con integración de git, vista a los árboles y tipos de archivos codificados por colores para mejorar la legibilidad.
 **[bat](https://github.com/sharkdp/bat)** — clon de gato con resaltado de sintaxis, integración de git y paging automático. Perfecto para ver rápidamente los archivos de código en la terminal.
 **[lsd](https://github.com/lsd-rs/lsd)** — Next generation XE`ls` comando F con iconos, colores y vista a los árboles. Escrito en Rust por Blakeing performance.
@@ -90,7 +90,7 @@ Herramientas potentes para buscar a través de codebases y realizar operaciones 
 
 - **[ripgrep](https://github.com/BurntSushi/ripgrep)** — Herramienta de búsqueda recursiva ultrarrápida que respeta .gitignore por defecto. Outperforms grep, ag, y otras alternativas en grandes bases de código.
 **[ag (The Silver Searcher)](https://github.com/ggreer/the_silver_searcher)** — Herramienta de búsqueda de código optimizada para desarrolladores. Más rápido que ack, con predeterminación inteligente para ignorar directorios VCS.
-**[sd](https://github.com/chmln/sd)** — Herramienta CLI intuitiva para encontrar y reemplazar con el apoyo de regex. Más segura y ergonómica que `sed` para uso diario.
+**[sd](https://github.com/chmln/sd)** — Herramienta CLI intuitiva de búsqueda y sustitución con soporte regex. Más segura y ergonómica que `sed` para uso diario.
 **[ast-grep](https://github.com/ast-grep/ast-grep)** — Herramienta de búsqueda y refactorización de códigos estructurales. Código de búsqueda por patrones AST en lugar de regex para resultados más precisos.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
@@ -102,17 +102,17 @@ Herramientas potentes para buscar a través de codebases y realizar operaciones 
 Seguimiento de los recursos, procesos y métricas de rendimiento en tiempo real.
 
 **[htop](https://github.com/htop-dev/htop)** — Interactive process viewer for Unix systems. Pantalla codificada con soporte para ratón y columnas personalizables.
-**[btop](https://github.com/aristocratos/btop)** — Monitor de recursos con hermosa UI mostrando CPU, memoria, disco, red y información de proceso. Moderna implementación C++ con temas.
+**[btop](https://github.com/aristocratos/btop)** — Monitor de recursos con hermosa UI que muestra CPU, memoria, disco, red y información de proceso. Moderna implementación C++ con temas.
 - **[glances](https://github.com/nicolargo/glances)** — Herramienta de monitoreo multiplataforma escrita en Python. Exporta datos a diversos formatos y admite el modo cliente-servidor.
 **[ncdu](https://dev.yorhel.nl/ncdu)** — analizador de uso de disco basado en NCurses. Encuentre rápidamente lo que consume espacio de disco con una interfaz intuitiva.
 **[bottom](https://github.com/ClementTsang/bottom)** — Monitor de proceso gráfico/sistema inspirado en gtop y gotop. widgets personalizables con soporte multiplataforma.
-**[ctop](https://github.com/bcicen/ctop)** Interfaz superior para métricas de contenedores. Monitor Docker contenedores en tiempo real con estadísticas de uso de recursos.
+**[ctop](https://github.com/bcicen/ctop)** — Interfaz superior para las métricas de contenedores. Monitor Docker contenedores en tiempo real con estadísticas de uso de recursos.
 **[Performa](https://github.com/jhuckaby/Performa)** — Monitorización de servidores con métricas personalizadas. Seguimiento de rendimiento en tiempo real con alertas configurables y paneles.
 **[resources](https://github.com/nokyan/resources)** — Monitor de recursos del sistema para CPU, GPU y NPU. Herramienta ligera que muestra la utilización detallada del hardware.
 **[Umami](https://github.com/umami-software/umami)** — Análisis web centrado en la privacidad. Una alternativa a Google Analytics con el cumplimiento del RGPD.
 - **[Healthchecks](https://github.com/healthchecks/healthchecks)** - Servicio de monitoreo de empleo de Cron. Obtener alertas cuando las tareas programadas fallan o no se ejecutan a tiempo.
 **[coroot](https://github.com/coroot/coroot)** — Supervisión de la infraestructura y análisis de APM. Identificar los cuellos de botella de rendimiento y optimizar la entrega de aplicaciones.
-**[Netdata](https://github.com/netdata/netdata)** — Monitorización del desempeño en tiempo real para sistemas y aplicaciones. Distribuido, en tiempo real, monitoreo de salud y solución de problemas de rendimiento.
+**[Netdata](https://github.com/netdata/netdata)** — Supervisión de la ejecución en tiempo real para sistemas y aplicaciones. Distribuido, en tiempo real, monitoreo de salud y solución de problemas de rendimiento.
 **[VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics)** — Solución de seguimiento rápida y rentable y base de datos de series temporales. Almacenamiento remoto a largo plazo para Prometheus con alto rendimiento y escalabilidad.
 **[Signoz](https://github.com/SigNoz/signoz)** — Open-source APM and observability platform. Visibilidad completa con troncos, métricas y rastros en un único panel de vidrio.
 **[Uptrace](https://github.com/uptrace/uptrace)** — Herramienta de rastreo distribuida y APM. APM de código abierto y solución de localización distribuida compatible con OpenTelemetry.
@@ -158,7 +158,7 @@ Herramientas para probar APIs, depurar el tráfico de red y gestionar conexiones
 **[RustDesk](https://github.com/rustdesk/rustdesk)** — Software de escritorio remoto de código abierto. Una alternativa a AnyDesk para el acceso y soporte remotos.
 **[LocalSend](https://github.com/localsend/localsend)** — Intercambio de archivos seguro sobre la red local. Transferencia de archivos cifrado entre dispositivos sin nube o Internet.
 **[Bruno](https://github.com/usebruno/bruno)** — Cliente de API para probar REST, GraphQL y SOAP APIs. Ligera alternativa a Postman e Insomnia con arquitectura sin conexión.
-**[NETworkManager](https://github.com/BornToBeRoot/NETworkManager)** — Herramienta de red con analizador WiFi, escáner de puerto y gestión RDP/SSH. Herramienta de administración de red profesional para Windows.
+**[NETworkManager](https://github.com/BornToBeRoot/NETworkManager)** — Kit de herramientas de red con analizador WiFi, escáner de puerto y gestión RDP/SSH. Herramienta de administración de red profesional para Windows.
 **[Wireshark](https://freecodecamp.org/news/use-wireshark-filters-to-analyze-network-traffic)** — Analizador de protocolos de red para depurar el tráfico. Herramienta de código abierto para la solución de problemas de red, análisis y desarrollo de protocolos.
 **[Tailscale VPN](https://freecodecamp.org/news/set-up-a-home-vpn-on-a-raspberry-pi)** — Mesh VPN con cliente de código abierto gratuito y alojamiento propio. VPN con cero para crear redes seguras entre dispositivos.
 **[Pi-hole](https://github.com/pi-hole/pi-hole)** — Bloqueo de anuncios en toda la red a través de su propio hardware Linux. Disipador DNS auto hospedado que bloquea anuncios y rastreadores a nivel de red.
@@ -176,8 +176,8 @@ Herramientas de desarrollo
 
 Las utilidades de control de versiones que mejoran el flujo de trabajo de Git.
 
-**[lazygit](https://github.com/jesseduffield/lazygit)** — Simple terminal UI for git commands. Hunks de escenario, gestionar ramas y resolver conflictos con la interfaz impulsada por teclado.
-- **[tig](https://github.com/jonas/tig)** - Interfaz de texto para Git. Examine la historia del repositorio, la vista de la culpa y la navegación de los árboles en el terminal.
+**[lazygit](https://github.com/jesseduffield/lazygit)** — Terminal simple UI para comandos git. Hunks de escenario, gestionar ramas y resolver conflictos con la interfaz impulsada por teclado.
+**[tig](https://github.com/jonas/tig)** — Interfaz de movimiento de texto para Git. Examine la historia del repositorio, la vista de la culpa y la navegación de los árboles en el terminal.
 - **[git-extras](https://github.com/tj/git-extras)** — Colección de utilidades de git útiles, incluyendo resumen, esfuerzo, cambio y más.
 **[gh](https://github.com/cli/cli)** — La herramienta oficial de GitHub. Crear problemas, extraer solicitudes y gestionar repositorios sin salir del terminal.
 - **[glab](https://github.com/profclems/glab)** — GitLab CLI tool for managing issues, merge requests, and pipelines directly from the command line.
@@ -193,7 +193,7 @@ Modernos editores de texto optimizados para productividad y extensibilidad.
 **[micro](https://github.com/zyedidia/micro)** — Editor de texto moderno e intuitivo. Admite la entrada del ratón y la unión de teclas comunes (Ctrl+C, Ctrl+V).
 - **[amp](https://github.com/jmacdonald/amp)** - Editor de texto inspirado en Vi escrito en Rust. Diseño mínimo con sistema de plugin extensible.
 - **[ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)** — Navegador de cromo sin integración de Google. Mejorar la privacidad y la seguridad con los servicios de Google eliminados y la telemetría.
-**[Notepad++](https://notepad-plus-plus.org/)** — editor de códigos y textos ricos en funciones para Windows. Soporta todos los idiomas de programación con resaltado de sintaxis y plugins.
+- **[Notepad++](https://notepad-plus-plus.org/)** — Editor de códigos y texto ricos en funciones para Windows. Soporta todos los idiomas de programación con resaltado de sintaxis y plugins.
 
 ### Debugging
 
@@ -216,10 +216,10 @@ Herramientas para diagnosticar y solucionar problemas en sus aplicaciones.
 **[drawio-desktop](https://github.com/jgraph/drawio-desktop)** — Editor de diagramas potente con soporte offline. Crear diagramas de flujo, diagramas UML, topologías de red y más.
 **[Netron](https://github.com/lutzroeder/netron)** — Visualizador para redes neuronales y modelos ML. Ver arquitecturas modelo, detalles de capas y pesos interactivamente.
 **[Lazarus IDE](https://www.lazarus-ide.org/)** — IDE multiplataforma para Pascal y Objeto Pascal. alternativa gratuita a Delphi con biblioteca de componentes visuales.
-**[LibreOffice](https://www.libreoffice.org/)** — Suite de oficina libre y de código abierto. Completa alternativa a Microsoft Office con Writer, Calc, Impress y más.
+**[LibreOffice](https://www.libreoffice.org/)** — Suite de oficina gratuita y de código abierto. Completa alternativa a Microsoft Office con Writer, Calc, Impress y más.
 **[Qt](https://www.qt.io/)** — Marco de aplicación multiplataforma para el desarrollo de GUI. Escribe una vez, implementa en todas partes alternativas a Electron con rendimiento nativo.
 **[KeenWrite](https://github.com/DaveJarvis/keenwrite)** — Editor de Markdown con soporte variable y visualización de gráficos. Editor avanzado de texto para escritura técnica y documentación.
-**[Symiosis](https://github.com/Archit1208/Symiosis)** Editor de notas avanzado con modo de búsqueda y vim. Potente toma de notas basada en marcajes con resaltado de sintaxis.
+**[Symiosis](https://github.com/Archit1208/Symiosis)** — Editor de notas avanzado con modo de búsqueda y vim. Potente toma de notas basada en marcajes con resaltado de sintaxis.
 **[Lokus](https://github.com/ParentalControlHub/lokus)** — Aplicación local de toma de notas con conexiones visuales. Crear notas vinculadas con la vista gráfica de las relaciones entre las entradas.
 
 ### Performance
@@ -229,7 +229,7 @@ Herramientas de evaluación y perfilado para la optimización.
 **[hyperfine](https://github.com/sharkdp/hyperfine)** — Herramienta de referencia de línea de comandos con análisis estadístico. Corridas de calentamiento, parámetros de referencia y exportación a diversos formatos.
 - **[flamegraph](https://github.com/brendangregg/FlameGraph)** - Visualizador de traza de traza para el perfil de rendimiento. Identificar puntos calientes en aplicaciones intensivos en CPU.
 **[valgrind](https://valgrind.org/)** — Marco de instrumentación para la construcción de herramientas de análisis dinámico. Detectar fugas de memoria, condiciones de carrera y faltas de caché.
-**[perf](https://perf.wiki.kernel.org/)** — herramienta de perfilado Linux con contadores de rendimiento. Analizar ciclos de CPU, faltas de caché y eventos de hardware.
+- **[perf](https://perf.wiki.kernel.org/)** — herramienta de perfiles Linux con contadores de rendimiento. Analizar ciclos de CPU, faltas de caché y eventos de hardware.
 **[KDiskMark](https://github.com/JonMagon/KDiskMark)** — Disk benchmark tool with GUI for Linux. Medir velocidades de lectura/escritura y rendimiento de dispositivos de almacenamiento I/O.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
@@ -247,7 +247,7 @@ Manejo de contenedores y soluciones de almacenamiento en la nube.
 **[Traefik](https://github.com/traefik/traefik)** — Proxy reverso moderno y balanceador de carga. El descubrimiento automático del servicio, el soporte de cifrado y el sistema de middleware.
 **[kubectl-ctx/kubectl-ns](https://github.com/ahmetb/kubectx)** — Faster way to switch between Kubernetes contexts and namespaces.
 **[k9s](https://github.com/derailed/k9s)** — Terminal UI para grupos de Kubernetes. Monitorear recursos, ver registros y ejecutar comandos sin memorizar sintaxis kubectl.
-- **[Rclone](https://github.com/rclone/rclone)** — Programa de línea de comandos para sincronizar archivos y directorios a y desde el almacenamiento en la nube. Soporta 40+ proveedores de nube.
+- **[Rclone](https://github.com/rclone/rclone)** — Programa de línea de comandos para sincronizar archivos y directorios a y desde almacenamiento en la nube. Soporta 40+ proveedores de nube.
 **[MinIO](https://github.com/minio/minio)** — Almacenamiento de objetos compatible con S3 de alto rendimiento. alternativa a AWS S3 con características empresariales.
 **[Syncthing](https://github.com/syncthing/syncthing)** — Programa continuo de sincronización de archivos. Sincronización P2P sin intermediarios en la nube.
 - **[docker-jdownloader-2](https://github.com/jlesage/docker-jdownloader-2)** — JDownloader 2 en un contenedor Docker con GUI web. Descargador de archivos automatizado con soporte para muchos servicios de hosting de archivos.
@@ -269,13 +269,13 @@ Sistemas de bases de datos de alto rendimiento y herramientas de administración
 **[stagDB](https://github.com/stagdb/stagdb)** — Panel de administración PostgreSQL avanzado con gestión de ramas instantáneas. Visualiza, gestiona y ramifica tus esquemas de bases de datos sin esfuerzo.
 **[Neo4j](https://github.com/neo4j/neo4j)** — Base de datos gráfica nativa para datos conectados. Base de datos de alto rendimiento optimizada para estructuras de datos gráficas y consultas complejas de relación.
 **[ArangoDB](https://github.com/arangodb/arangodb)** — Base de datos multimodelo que apoya gráficos, documentos y valores clave. Base de datos unificada con capacidades flexibles de modelado de datos.
-- **[Supabase](https://github.com/supabase/supabase)** - alternativa de bombo de código abierto. Plataforma completa de backend-as-a-service con suscripciones en tiempo real, autenticación y almacenamiento.
+- **[Supabase](https://github.com/supabase/supabase)** - alternativa de bomberos de código abierto. Plataforma completa de backend-as-a-service con suscripciones en tiempo real, autenticación y almacenamiento.
 **[Appwrite](https://github.com/appwrite/appwrite)** — Backend-as-a-service platform. Solución auto hospedada para construir aplicaciones web y móviles con autenticación, bases de datos y almacenamiento.
 **[PocketBase](https://github.com/pocketbase/pocketbase)** — backend de código abierto en un archivo. Ligera alternativa a Firebase con suscripciones en tiempo real y almacenamiento de archivos.
 **[Airbyte](https://github.com/airbytehq/airbyte)** — Plataforma de integración de datos para tuberías ELT. Solución de código abierto para la construcción de almacenes de datos y sistemas de análisis.
 **[Dagster](https://github.com/dagster-io/dagster)** — Plataforma de orquestación de datos para el aprendizaje automático. Marco para la construcción, ensayo y monitoreo de tuberías ML y flujos de trabajo de datos.
 - **[dbt](https://github.com/dbt-labs/dbt-core)** — Herramienta de transformación de datos para la ingeniería analítica. Marco basado en SQL para transformar datos en almacenes con pruebas y documentación.
-**[Prefect](https://github.com/PrefectHQ/prefect)** — Marco de orquestación de flujos de trabajo para tuberías de datos. Solución moderna para construir, programar y monitorear flujos de trabajo de datos.
+**[Prefect](https://github.com/PrefectHQ/prefect)** — Marco de orquestación de flujo de trabajo para tuberías de datos. Solución moderna para construir, programar y monitorear flujos de trabajo de datos.
 - **[Apache Iceberg](https://iceberg.apache.org)** — Formato de mesa abierta para datos grandes. El formato de alto rendimiento de Google para grandes conjuntos de datos analíticos con transacciones ACID.
 - **[Elasticsearch](https://freecodecamp.org/news/elasticsearch-in-5-hours)** — Motor de búsqueda libre y de código abierto para datos. Distribuido, RESTful search and analytics engine capaz de abordar un número creciente de casos de uso.
 **[DBeaver](https://github.com/dbeaver/dbeaver)** — Herramienta de base de datos universal que admite más de 100 tipos de bases de datos. Editor SQL, diagramas ER, visualización de datos y ejecución de consultas para MySQL, PostgreSQL, MongoDB y más.
@@ -294,9 +294,9 @@ Marcos y herramientas modernos para la construcción de aplicaciones web.
 **[Flutter](https://flutter.dev)** — Marco UI multiplataforma para la construcción de hermosas aplicaciones nativas. SDK de código abierto de Google para la construcción de aplicaciones móviles, web y de escritorio desde una sola base de código.
 **[Angular](https://angular.io)** — Marco de código abierto para aplicaciones modernas de una sola página. Plataforma integral de Google para construir aplicaciones web escalables con TypeScript.
 **[Freezed (Flutter)](https://freecodecamp.org/news/how-to-use-freezed-in-flutter)** — Paquete de generación de código para los modelos Flutter. Herramienta de código abierto para generar clases de datos y tipos de unión en Dart.
-**[RSelenium + Rvest (R)](https://freecodecamp.org/news/web-scraping-in-r-with-rselenium-and-rvest)** — bibliotecas de desguace web para la programación R. Paquetes de código abierto para la extracción automatizada de datos web y automatización del navegador.
-**[Next.js](https://github.com/vercel/next.js)** — Reactúa el marco para la producción. Marco web completo con renderización lado servidor, generación de sitios estáticos y rutas API.
-**[Nest.js](https://github.com/nestjs/nest)** — Marco progresivo Node.js para la construcción de aplicaciones eficientes del servidor. Marco de backend de grado empresarial con inyección de dependencia y arquitectura modular.
+**[RSelenium + Rvest (R)](https://freecodecamp.org/news/web-scraping-in-r-with-rselenium-and-rvest)** — Bibliotecas de chatarra web para la programación R. Paquetes de código abierto para la extracción automatizada de datos web y automatización del navegador.
+**[Next.js](https://github.com/vercel/next.js)** — Reactúa el marco de producción. Marco web completo con renderización lado servidor, generación de sitios estáticos y rutas API.
+- **[Nest.js](https://github.com/nestjs/nest)** - Marco progresivo Node.js para la construcción de aplicaciones eficientes del servidor. Marco de backend de grado empresarial con inyección de dependencia y arquitectura modular.
 **[Fastify](https://github.com/fastify/fastify)** — Marco web rápido y bajo para Node.js. Marco HTTP de alto rendimiento con registro incorporado, enrutamiento y validación.
 **[Moleculer](https://github.com/moleculerjs/moleculer)** — Marco rápido, moderno y potente de microservicios para Node.js. Marco de microservicios progresivos con descubrimiento de servicios incorporados y equilibrio de carga.
 
@@ -308,12 +308,12 @@ Marcos y herramientas modernos para la construcción de aplicaciones web.
 
 Medios de desarrollo y herramientas de automatización de tareas.
 
-**[Cursor](https://github.com/getcursor/cursor)** — editor de códigos impulsado por AI construido en código VS. Asistente integrado de IA para generación de códigos y refactorización.
-**[VS Code](https://github.com/microsoft/vscode)** — Editor de código extensible con rico ecosistema. Git incorporado, depuración y miles de extensiones.
+**[Cursor](https://github.com/getcursor/cursor)** — editor de códigos impulsado por AI construido en el código VS. Asistente integrado de IA para generación de códigos y refactorización.
+**[VS Code](https://github.com/microsoft/vscode)** — Editor de códigos extensible con rico ecosistema. Git incorporado, depuración y miles de extensiones.
 - **[code-server](https://github.com/coder/code-server)** - Código VS en el navegador. Acceda a su entorno de desarrollo desde cualquier lugar con un navegador web.
 **[Gitpod](https://github.com/gitpod-io/gitpod)** — Medios de desarrollo de la nube. GitHub, GitLab o Bitbucket.
 **[DevPod](https://github.com/loft-sh/devpod)** — Herramienta única para crear ambientes dev reproducibles. Trabaja con Docker, Kubernetes y proveedores de nubes.
-**[Taskfile](https://github.com/go-task/task)** — Herramienta de montaje y ejecución de tareas. Una alternativa más simple para hacer con soporte multiplataforma y configuración YAML.
+**[Taskfile](https://github.com/go-task/task)** — Herramienta de construcción y ejecución de tareas. Una alternativa más simple para hacer con soporte multiplataforma y configuración YAML.
 - **[Just](https://github.com/casey/just)** - Comandante corredor inspirado en Make. Guardar y ejecutar comandos específicos del proyecto con simple sintaxis.
 - **[act](https://github.com/nektos/act)** - Run GitHub Actions localmente. Prueba los flujos de trabajo antes de empujar para evitar el ensayo y el terrorismo en el CI.
 **[Ansible](https://github.com/ansible/ansible)** — Plataforma de automatización para la gestión de configuración, implementación de aplicaciones y orquestación.
@@ -330,7 +330,8 @@ Medios de desarrollo y herramientas de automatización de tareas.
 **[Budibase](https://github.com/Budibase/budibase)** — Plataforma de bajo código para la construcción de aplicaciones empresariales. Crear herramientas internas, paneles de administración y flujos de trabajo sin codificación.
 **[Nyno](https://github.com/nyno-org/nyno)** — Automatización de flujo de trabajo basada en YAML alternativa a n8n. Motor de flujo de trabajo ligero sin dependencia de la nube.
 **[Flowcraft](https://github.com/flowcraft-io/flowcraft)** — Plataforma de automatización sin dependencia. Automatización de flujo de trabajo simple y ligero sin dependencias externas.
-- **[Apache APISIX](https://github.com/apache/apisix)** — Puerta de API de alto rendimiento para microservicios. Solución lista para la producción con rico ecosistema de plugin y soporte empresarial.
+- **[Android Code Studio](https://github.com/AndroidCSOfficial/android-code-studio)** — Android IDE para desarrollar aplicaciones Android de alta funcionalidad en dispositivos Android. Ambiente completo de desarrollo con soporte Gradle, terminal y asistente de IA.
+**[Apache APISIX](https://github.com/apache/apisix)** — Puerta de API de alto rendimiento para microservicios. Solución lista para la producción con rico ecosistema de plugin y soporte empresarial.
 - **[Hoppscotch](https://github.com/hoppscotch/hoppscotch)** — Moderno, hermoso cliente de pruebas de API. alternativa auto hospeda a Postman con interfaz intuitiva y características poderosas.
 **[Keploy](https://github.com/keploy/keploy)** — Herramienta de prueba y burla de API. Pruebas automáticas de extremo a extremo con capacidades inteligentes de generación de mock y reproducción.
 **[Leantime](https://github.com/Leantime/leantime)** — Sistema de gestión y planificación estratégica de proyectos sencillo y poderoso. Apoyo a la metodología ágil con juntas kanban y seguimiento de tiempo.
@@ -347,10 +348,10 @@ Sistemas de planificación de los recursos institucionales, soluciones de ayuda 
 **[Peppermint](https://github.com/peppermint-tools/peppermint)** — Sistema de gestión de asistencia y emisión. Alternativa a Zendesk y Jira construida con Node.js.
 **[Kimai](https://github.com/kimai/kimai)** Seguimiento del tiempo y sistema de contabilidad mínimo para equipos y freelancers. Seguimiento de horas de trabajo y generar facturas.
 **[Unifiedtransform](https://github.com/kevwe7/unifiedtransform)** — Software moderno de código abierto para la gestión escolar y educativa. Sistema de automatización para instituciones educativas.
-**[Bagisto](https://github.com/bagisto/bagisto)** — Plataforma gratuita de comercio electrónico construida en Laravel. Solución completa de tienda online con comunidad activa y características extensas.
+**[Bagisto](https://github.com/bagisto/bagisto)** — Plataforma de comercio electrónico gratuita construida en Laravel. Solución completa de tienda online con comunidad activa y características extensas.
 **[TastyIgniter](https://github.com/tastyigniter/TastyIgniter)** — Plataforma de restaurante y sistema de pedidos en línea. Solución basada en Laravel para gestionar restaurantes y entrega de alimentos.
-**[WAHA (WhatsApp HTTP API)](https://github.com/Waha-ai/waha)** — alternativa de API de WhatsApp autoauspiciada. API HTTP de código abierto para la integración de WhatsApp Business sin servicios externos.
-**[x402](https://github.com/x402/protocol)** — Protocolo para micropagos instantáneos de Internet. Protocolo de código abierto, libre y descentralizado que permite microtransacciones instantáneas en Internet.
+**[WAHA (WhatsApp HTTP API)](https://github.com/Waha-ai/waha)** — alternativa de API de WhatsApp auto-alojada. API HTTP de código abierto para la integración de WhatsApp Business sin servicios externos.
+**[x402](https://github.com/x402/protocol)** — Protocolo para micropagos instantáneos de internet. Protocolo de código abierto, libre y descentralizado que permite microtransacciones instantáneas en Internet.
 **[AppFlowy](https://github.com/AppFlowy-IO/AppFlowy)** — alternativa de código abierto a la noción. Primer espacio de trabajo de privacidad para notas, documentos y gestión de proyectos con bloques y bases de datos personalizables.
 **[Logseq](https://github.com/logseq/logseq)** — Gestión de conocimientos de código abierto y de código de privacidad y plataforma de toma de notas. Herramienta local-primera con conexión bidireccional y vista gráfica.
 **[Trilium](https://github.com/zadam/trilium)** — Aplicación jerárquica de toma de notas con encriptación fuerte. Construye base de conocimiento personal con notas, imágenes y clippings web.
@@ -363,15 +364,16 @@ Sistemas de planificación de los recursos institucionales, soluciones de ayuda 
 **[OpenProject](https://github.com/opf/openproject)** — Software de gestión de proyectos basado en la web. Solución integral con planificación de proyectos, colaboración en equipo y seguimiento de tiempo.
 **[GoatCounter](https://github.com/arp242/goatcounter)** — Análisis web simple. Privacidad, ligera y alternativa de código abierto a Google Analytics.
 **[Element](https://github.com/vector-im/element-web)** — Aplicación de comunicación segura para Matrix. Mensajería descentralizada con encriptación de extremo a extremo e interfaz moderna.
-- **[Mattermost](https://github.com/mattermost/mattermost)** — Open-source, self-hosted Slack alternative. Plataforma de comunicación segura de equipo con intercambio de archivos e integraciones.
+- **[Mattermost](https://github.com/mattermost/mattermost)** - Fuente abierta, alternativa de Slack auto hospedado. Plataforma de comunicación segura de equipo con intercambio de archivos e integraciones.
 - **[Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)** — Solución de chat de equipo libre, ilimitada y de código abierto. alternativa auto hospeda a Slack con amplia personalización e integraciones.
 - **[Zulip](https://github.com/zulip/zulip)** - Potente chat de equipo de código abierto. Conversaciones intensas, organización basada en temas e integraciones extensas.
 **[Signal](https://github.com/signalapp/Signal-Desktop)** — Mensajero privado con encriptación de extremo a extremo. Plataforma de mensajería de código abierto enfocada en privacidad y seguridad.
 - **[Matrix](https://github.com/matrix-org/synapse)** - Estándar abierto para la comunicación descentralizada. Red de mensajería segura y descentralizada con puentes a otras plataformas.
 **[Nginx](https://github.com/nginx/nginx)** — servidor web de alto rendimiento y proxy inverso. Servidor HTTP ligero con opciones de configuración extensas y soporte de alta concurrencia.
 **[OpenWRT](https://github.com/openwrt/openwrt)** — Sistema operativo integrado para routers. Distribución Linux para dispositivos integrados con gestión de paquetes y amplia personalización.
-**[pfSense](https://github.com/pfsense/pfsense)** — Free, open-source firewall and router platform. Aplicación de seguridad de red con cortafuegos, VPN y capacidades de enrutamiento.
+- **[pfSense](https://github.com/pfsense/pfsense)** — Free, open-source firewall and router platform. Aplicación de seguridad de red con cortafuegos, VPN y capacidades de enrutamiento.
 **[OPNsense](https://github.com/opnsense/core)** — Hardened FreeBSD-based firewall and routing platform. Distribución de firewall de grado empresarial con amplias características de seguridad.
+**[ONLYOFFICE](https://github.com/ONLYOFFICE)** — Completa alternativa de oficina de código abierto a Microsoft Office. Editores en línea para documentos, hojas de cálculo y presentaciones con funciones de colaboración.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -381,32 +383,33 @@ Sistemas de planificación de los recursos institucionales, soluciones de ayuda 
 
 LLM frameworks, agentes de IA y herramientas de aprendizaje automático.
 
-- **[Ollama](https://github.com/ollama/ollama)** — Levántate y corre con grandes modelos de idiomas localmente. Apoya Llama 2, Código Llama, Mistral y otros modelos abiertos.
-**[LangChain](https://github.com/hwchase17/langchain)** — Marco para el desarrollo de aplicaciones impulsadas por modelos de lenguaje. Construir chatbots, agentes y sistemas RAG.
+- **[Ollama](https://github.com/ollama/ollama)** — Levántate y corre con grandes modelos de lenguaje localmente. Apoya Llama 2, Código Llama, Mistral y otros modelos abiertos.
+**[LangChain](https://github.com/hwchase17/langchain)** — Marco para desarrollar aplicaciones impulsadas por modelos de lenguaje. Construir chatbots, agentes y sistemas RAG.
 **[FlowiseAI](https://github.com/FlowiseAI/Flowise)** — Visual LLM workflow builder with drag-and-drop interface. Cree agentes de IA, chatbots y sistemas multiagentes sin codificación.
-- **[LocalAI](https://github.com/mudler/LocalAI)** — Reemplazo de arranque para OpenAI API funcionando localmente. Utilice hardware de grado de consumo para ejecutar LLMs, generar imágenes y sintetizar el audio.
-- **[PrivateGPT](https://github.com/imartinez/privateGPT)** — Interactuar con sus documentos usando LLMs sin internet. 100% privado, ningún dato deja su entorno de ejecución.
+**[LocalAI](https://github.com/mudler/LocalAI)** — Reemplazo de inicio para OpenAI API funcionando localmente. Utilice hardware de grado de consumo para ejecutar LLMs, generar imágenes y sintetizar el audio.
+- **[PrivateGPT](https://github.com/imartinez/privateGPT)** - Interactuar con sus documentos usando LLMs sin internet. 100% privado, ningún dato deja su entorno de ejecución.
 **[Jan](https://github.com/janhq/jan)** — Open-source ChatGPT alternative that runs 100% offline. Aplicación de escritorio para ejecutar LLMs localmente.
 - **[Open WebUI](https://github.com/open-webui/open-webui)** — Interfaz web fácil de usar para LLMs. Funciona con API compatibles con Ollama y OpenAI.
 **[Apple On Device OpenAI](https://github.com/gety-io/apple-on-device-openai)** — API compatible con OpenAI para los modelos locales de Apple. Simplifica la inferencia de dispositivo para Apple Silicon con compatibilidad con OpenAI API.
-- **[open-codex](https://github.com/ymichael/open-codex)** - Agente terminal impulsado por IA. Funciona con varios backends LLM para ayudar con tareas de codificación directamente en el terminal.
+- **[open-codex](https://github.com/ymichael/open-codex)** - Agente terminal impulsado por AI. Funciona con varios backends LLM para ayudar con tareas de codificación directamente en el terminal.
 - **[vtcode](https://github.com/vinhnx/vtcode)** - Agente de codificación Terminal AI. Generación de código inteligente y asistencia sin salir de su terminal.
 - **[spacy-llm](https://github.com/explosion/spacy-llm)** - Integrar las LLMs en tuberías SpaCy NLP. Combine NLP tradicional con modelos de lenguaje moderno para el procesamiento de texto mejorado.
 - **[spidercreator](https://github.com/carlosplanchon/spidercreator)** - Generador de raspadores web impulsado por LLM. Genera automáticamente scripts de chatarra web usando descripciones de lenguajes naturales.
 **[fastdup](https://github.com/visual-layer/fastdup)** — Encontrar duplicados y anomalías en los conjuntos de datos de imágenes. Herramienta rápida y eficiente para el control y curación de calidad de conjunto de datos.
 **[Fabric](https://github.com/danielmiessler/fabric)** — Marco para integrar la IA en los flujos de trabajo personales. Patrones y indicaciones de IA personalizables para tareas cotidianas.
-- **[gpt-researcher](https://github.com/assafelovic/gpt-researcher)** - Asistente de investigación autónomo de LLMs. Realiza profundas investigaciones sobre cualquier tema y genera informes completos.
+- **[gpt-researcher](https://github.com/assafelovic/gpt-researcher)** - Asistente de Investigación Autónomo de LLMs. Realiza profundas investigaciones sobre cualquier tema y genera informes completos.
 **[Firebase Genkit](https://goo.gle/3WKxg0v)** — Marco para la construcción de aplicaciones de IA con Node.js y Go. El kit de herramientas de código abierto de Google para desarrollar funciones y aplicaciones impulsadas por IA.
 **[OpenXLA](https://openxla.org)** — Marco para optimizar y compilar los modelos ML/AI. La pila de compilador de código abierto de Google para las cargas de trabajo de aprendizaje automático.
 **[Oscar](https://g.co/dev/oscar)** — Agente para el apoyo automatizado de los proyectos OSS. Asistente de Google para mantenimiento de proyectos de código abierto y resolución de emisiones.
 **[ChromaDB + Ollama](https://freecodecamp.org/news/build-a-local-rag-app-with-ollama-and-chromadb)** — Base de datos Vector para aplicaciones RAG con soporte local de LLM. pila de código abierto para la construcción de sistemas de generación aumentada de recuperación.
 **[Model Context Protocol (MCP)](https://freecodecamp.org/news/mcp-guide)** — Protocolo de código abierto y servidor para conectar herramientas de inteligencia artificial. Marco estandarizado para la construcción de integraciones de agentes AI.
 **[LeRobot](https://github.com/huggingface/lerobot)** — pila de código abierto de extremo a extremo para el aprendizaje de robots. Marco completo para la capacitación y el despliegue de sistemas robóticos.
-**[VoltAgent](https://github.com/VoltAgent/volt)** — Marco y constructor de cadenas de agentes AI. Kit de herramientas de código abierto para la construcción de sistemas multiagentes complejos.
+**[VoltAgent](https://github.com/VoltAgent/volt)** — Marco y constructor de cadenas de agentes de IA. Kit de herramientas de código abierto para la construcción de sistemas multiagentes complejos.
 **[BrowserlessOS](https://github.com/browserlessai/browserlessai)** — Navegador alternativo con agente AI incorporado. Navegador centrado en la privacidad con capacidades integradas de asistencia AI.
 **[VoltAgent Inspector](https://github.com/MCPJam/inspector)** — Inspector visual de servidores MCP. Instrumento de depuración y vigilancia de código abierto para las implementaciones del Protocolo Modelo de Contexto.
 **[GPT-API-free / DeepSeek-API-free](https://github.com/gpt-api-free/gpt-api-free)** — claves de API gratuitas para plataformas AI. Servicio de código abierto que proporciona acceso a varias API modelo AI sin costo.
-**[Kimi-Dev-72B](https://github.com/moonshotai/Kimi-Dev-72B)** — Open-source LLM for engineering tasks. Generación de código, detección de errores, pruebas autónomas y parche de grandes bases de código industrial.
+- **[restorePhotos](https://github.com/Nutlope/restorePhotos)** — Herramienta de restauración de fotos impulsada por AI. Restaurar fotos viejas y dañadas usando algoritmos avanzados de aprendizaje automático.
+**[Kimi-Dev-72B](https://github.com/moonshotai/Kimi-Dev-72B)** — LLM de código abierto para tareas de ingeniería. Generación de código, detección de errores, pruebas autónomas y parche de grandes bases de código industrial.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -423,8 +426,8 @@ Plataformas e instrumentos de integración continua y despliegue continuo.
 **[Drone](https://github.com/harness/drone)** — Plataforma CI/CD nativa de contenedores. Pipeline como código con las construcciones basadas en Docker.
 **[Woodpecker](https://github.com/woodpecker-ci/woodpecker)** - Tinta comunitaria de Drone con enfoque en la simplicidad. CI/CD auto hospedado con configuración YAML.
 **[Bazel](https://bazel.build)** — Sistema de construcción de código abierto para proyectos a gran escala. Google es herramienta de construcción rápida, escalable y multi-idioma.
-**[Apache JMeter](https://freecodecamp.org/news/jmeter-performance-testing)** — Herramienta de prueba de carga gratuita para analizar y medir el rendimiento. Solución de código abierto para la prueba de rendimiento de las aplicaciones.
-**[k6](https://github.com/grafana/k6)** — Herramienta de prueba de carga moderna para pruebas de rendimiento. Base de JavaScript con potentes capacidades de scripting para pruebas de carga, estrés y pico.
+- **[Apache JMeter](https://freecodecamp.org/news/jmeter-performance-testing)** — Herramienta de prueba de carga gratuita para analizar y medir el rendimiento. Solución de código abierto para la prueba de rendimiento de las aplicaciones.
+**[k6](https://github.com/grafana/k6)** — Herramienta moderna de prueba de carga para pruebas de rendimiento. Base de JavaScript con potentes capacidades de scripting para pruebas de carga, estrés y pico.
 **[Locust](https://github.com/locustio/locust)** — Marco de pruebas de carga distribuidas. Define los escenarios de prueba en Python y simula millones de usuarios concurrentes.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
@@ -437,12 +440,12 @@ Herramientas para generación de vídeo, manipulación y análisis.
 
 - **[FFmpeg](https://github.com/FFmpeg/FFmpeg)** — Solución multiplataforma completa para grabar, convertir y transmitir audio y vídeo. Estándar de la industria para el procesamiento multimedia.
 **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** — descargador de vídeo de línea de comandos rico en características. Fork of youtube-dl with additional features and fixes.
-**[Sora Extend](https://github.com/mshumer/sora-extend)** — Herramienta para encadenar y extender OpenAI Sora 2 generaciones de vídeo más allá del límite de 12 segundos. Automatizada deconstrucción rápida y concatenación de segmentos.
-**[HandBrake](https://github.com/HandBrake/HandBrake)** — Transcodificador de vídeo con soporte de formato completo. Versiones GUI y CLI para el procesamiento por lotes.
-- **[Kdenlive](https://github.com/KDE/kdenlive)** - Editor de vídeo libre y de código abierto. Software profesional de edición de vídeo no lineal con edición multi-track y efectos.
+**[Sora Extend](https://github.com/mshumer/sora-extend)** — Herramienta para encadenar y extender OpenAI Sora 2 generaciones de vídeo más allá de 12 segundos límite. Automatizada deconstrucción rápida y concatenación de segmentos.
+- **[HandBrake](https://github.com/HandBrake/HandBrake)** — Transcodificador de vídeo con soporte de formato completo. Versiones GUI y CLI para el procesamiento por lotes.
+**[Kdenlive](https://github.com/KDE/kdenlive)** — Editor de vídeo gratuito y de código abierto. Software profesional de edición de vídeo no lineal con edición multi-track y efectos.
 - **[wunjo](https://github.com/wladradchenko/wunjo)** — Generador de animación impulsado por el movimiento de la cabeza del vídeo. Herramienta basada en el aprendizaje profundo para crear animaciones faciales realistas.
 **[auto-subs](https://github.com/tmoroney/auto-subs)** — Generador automático de subtítulos para vídeos. Herramienta sin conexión con reconocimiento de discurso para crear archivos subtítulos.
-**[shutter-encoder](https://github.com/paulpacifico/shutter-encoder)** — Encoder avanzado de vídeo y optimizador. Conversión de vídeo profesional con procesamiento por lotes y optimización de formato.
+**[shutter-encoder](https://github.com/paulpacifico/shutter-encoder)** — Encoder y optimizador avanzado de vídeo. Conversión de vídeo profesional con procesamiento por lotes y optimización de formato.
 - **[Jellyfin](https://github.com/jellyfin/jellyfin)** - Servidor multimedia auto hospedado. alternativa gratuita y de código abierto a Plex y Emby para transmitir su colección de medios.
 - **[LibrePhotos](https://github.com/LibrePhotos/librephotos)** - Servicio de gestión de fotos auto hospedado. alternativa de código abierto a Google Fotos con reconocimiento facial y etiquetado automático.
 - **[Upscayl](https://github.com/upscayl/upscayl)** — Herramienta de aumento de imagen impulsada por AI. Mejorar la calidad de imagen utilizando modelos de aprendizaje automático localmente.
@@ -452,12 +455,12 @@ Herramientas para generación de vídeo, manipulación y análisis.
 - **[Audacity](https://www.audacityteam.org/)** - Editor de audio de código abierto. Grabar, editar y mezclar pistas de audio con herramientas de calidad profesional.
 - **[VLC Media Player](https://www.videolan.org/vlc/)** - Reproductor universal de medios. Reproduce prácticamente todos los formatos de vídeo y audio sin instalación de codec.
 - **[MPV](https://mpv.io/)** - Ligero, potente reproductor de medios. Línea de comando basado en mínimo GUI, altamente personalizable y scriptable.
-**[Immich](https://github.com/immich-app/immich)** — Solución de copia de seguridad de fotos y vídeo auto hospedado. Alternativa a Google Fotos con respaldos automáticos y reconocimiento facial.
+- **[Immich](https://github.com/immich-app/immich)** — Solución de copia de seguridad de fotos y vídeo auto hospedado. Alternativa a Google Fotos con respaldos automáticos y reconocimiento facial.
 **[Pars Local Player (PLP)](https://github.com/pars-local-player/pars-local-player)** — Reproductor de vídeo ligero sin telemetría ni seguimiento. Reproductor multimedia centrado en la privacidad con interfaz limpia.
 **[Sora 2 API Video Generator](https://github.com/sora-ai/video-generator)** — Generador de vídeo de código abierto con API. Crear vídeos usando modelos avanzados de IA y técnicas de generación.
 **[Vexa](https://github.com/Vexa-ai/vexa)** — API de autoorganización para la automatización de transcripciones de reuniones. Solución de código abierto para la conversión automatizada de audio a texto y resúmenes de reuniones.
 **[Audiobook Generator](https://github.com/BookxDev/bookxAI)** — Creación de audiolibro accionado por IA del texto. Herramienta de código abierto que genera audiolibros de sonido natural utilizando la tecnología de texto a voz.
-- **[Eclipsa Audio](https://goo.gle/41j1MRl)** — Free open-source 3D audio format and tools. Tecnología de audio espacial de Google para experiencias de sonido inmersivas.
+**[Eclipsa Audio](https://goo.gle/41j1MRl)** — Free open-source 3D audio format and tools. Tecnología de audio espacial de Google para experiencias de sonido inmersivas.
 - **[Godot Engine](https://github.com/godotengine/godot)** — Motor de juego 2D y 3D de código libre y abierto. Desarrollo de juego multiplataforma con scripting visual y set de características extensas.
 **[Veloren](https://github.com/veloren/veloren)** — Open-source multiplayer voxel RPG. Juego impulsado por la comunidad con la generación mundial procesal y juego cooperativo.
 **[OpenTTD](https://github.com/OpenTTD/OpenTTD)** — Juego de simulación de negocios de transporte de código abierto. Versión mejorada de Transport Tycoon Deluxe con multijugador online.
@@ -488,7 +491,7 @@ Herramientas y bibliotecas de código abierto para la visión de ordenador 3D, e
 **[PiLiDAR](https://github.com/iLiAR/PLiDAR)** — Proyecto de escáner 3D de DIY LiDAR usando Raspberry Pi y cámara. Software y hardware abierto con licencia CC-NC-SA. Escáner láser de bajo costo para experimentos de nube de puntos.
 **[Open3D](https://github.com/isl-org/Open3D)** — Biblioteca completa para el procesamiento de datos 3D. Manipulación de nube de puntos, generación de malla, visualización, registro de escaneo. Soporte Python y C++ con amplia documentación.
 **[CloudCompare](https://github.com/CloudCompare/CloudCompare)** — Herramienta de análisis y procesamiento de nubes de puntos de código abierto. Importar/exportar formatos estándar, generación de malla, filtrado y scripting. Esencial para comparar, fusionar y analizar nubes de puntos.
-**[COLMAP](https://github.com/colmap/colmap)** — Instrumento de estructura estándar de la industria de la movilidad y la fotogrametría. Reconstruir escenas 3D de múltiples imágenes con calibración automática de cámaras y tuberías de reconstrucción densas.
+- **[COLMAP](https://github.com/colmap/colmap)** — Instrumento de estructura estándar de la industria de la movilidad y fotogrametría. Reconstruir escenas 3D de múltiples imágenes con calibración automática de cámaras y tuberías de reconstrucción densas.
 - **[OpenCV](https://github.com/opencv/opencv)** — Biblioteca fundamental de visión informática. Incluye algoritmos para visión estéreo, procesamiento de profundidad, generación de nubes de puntos, cámaras estéreo y procesamiento posterior.
 **[Salingo Virtual 3D Scanner](https://github.com/Salingo/virtual-3d-scanner)** — Generador de imagen y nube de puntos RGB-D sintético. Analiza modelos virtuales 3D para generar conjuntos de datos para la formación y desarrollo de visión informática.
 **[TripoSR](https://github.com/VAST-AI-Research/TripoSR)** — Herramienta de aprendizaje profundo para la reconstrucción 3D de una sola imagen. Reconstrucción de superficie impulsada por IA con inferencia rápida y alta precisión para algoritmos modernos de IA. [Website](https://triposrai.com/)
@@ -510,7 +513,7 @@ Herramientas de código abierto para la automatización industrial, sistemas SCA
 **[ScadaBR](https://github.com/ScadaBR/ScadaBR)** — Sistema SCADA basado en la web construido en Java. Fácil implementación con Modbus RTU/TCP, OPC, soporte SNMP. Visualización, alarmas, tendencias ideales para pequeñas y medianas instalaciones de fabricación.
 **[Rapid SCADA](https://github.com/RapidScada/Scada)** — Proyecto SCADA en ruso con apoyo a Siemens S7, Allen-Bradley, Arduino, Raspberry Pi. Visualización flexible, reportaje, integración con redes industriales.
 **[OpenAPC](http://www.openapc.com)** — Plataforma de código abierto para el control y la visualización industriales. Extensible con plugins personalizados para aplicaciones especializadas.
-**[OpenPLC](https://www.openplcproject.com)** Silencio [GitHub](https://github.com/thiagoralves/OpenPLC_v3) — Plataforma de código abierto integral para programación de PLC (IEC 61131-3: Escalerilla, FBD, ST, IL, SFC). Simulación, despliegue a Arduino/Raspberry Pi y hardware industrial, monitoreo basado en la web, Modbus TCP/RTU, integración SCADA.
+**[OpenPLC](https://www.openplcproject.com)** tención [GitHub](https://github.com/thiagoralves/OpenPLC_v3) — Plataforma de código abierto integral para programación de PLC (IEC 61131-3: escalera, FBD, ST, IL, SFC). Simulación, despliegue a Arduino/Raspberry Pi y hardware industrial, monitoreo basado en la web, Modbus TCP/RTU, integración SCADA.
 **[Beremiz IDE](https://github.com/beremiz/beremiz)** — Plataforma PLC con integración de Python. Excelente para proyectos complejos distribuidos con capacidades de desarrollo de controlador personalizado.
 **[PLC Fiddle](https://www.plcfiddle.com)** — simulador PLC basado en la web (IEC 61131). Aprende y depura programas PLC sin instalar software.
 - **[Pigweed SDK](https://goo.gle/4fA1coO)** — Herramientas para el desarrollo de sistemas integrados. Plataforma de desarrollo integrado de código abierto de Google con controladores de dispositivo, bibliotecas y herramientas de productividad.
@@ -549,8 +552,8 @@ Herramientas de pruebas de seguridad, marcos OSINT y escáneres de vulnerabilida
 **[HashiCorp Vault](https://github.com/hashicorp/vault)** — Gestión de secretos y protección de datos. Control de acceso basado en identidad para aplicaciones en la nube.
 **[Nginx-Lua-Anti-DDoS](https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS)** — script anti-DDoS basado en Lua para Nginx. Sistema de desafío de rompecabezas JavaScript para proteger contra ataques automatizados.
 **[Certipy](https://github.com/ly4k/Certipy)** — Active Directory Certificate Services (AD CS) auditing and exploitation tool. Descubre y abusa de las configuraciones erróneas en AD CS.
-- **[Vaultwarden](https://github.com/dani-garcia/vaultwarden)** - Gestor de contraseña compatible con Bitwarden. Implementación de servidor ligero con todas las funciones del cliente Bitwarden.
-**[ente](https://github.com/ente-io/ente)** — Almacenamiento en la nube encriptado final a extremo para fotos y videos. Privacidad primera alternativa a Google Fotos con cifrado lado cliente.
+- **[Vaultwarden](https://github.com/dani-garcia/vaultwarden)** - Gestor de contraseñas compatible con Bitwarden. Implementación de servidor ligero con todas las funciones del cliente Bitwarden.
+**[ente](https://github.com/ente-io/ente)** — Almacenamiento en la nube encriptado de extremo a extremo para fotos y videos. Privacidad primera alternativa a Google Fotos con cifrado lado cliente.
 **[wg-easy](https://github.com/wg-easy/wg-easy)** — WireGuard VPN fácil de usar con interfaz web. Configurar y administrar servidores VPN a través de un panel fácil de usar.
 - **[trufflehog](https://github.com/trufflesecurity/trufflehog)** - Detectar secretos filtrados en repositorios de git. Scans compromete, ramas y PRs para credenciales expuestas y claves API.
 **[fail2ban](https://github.com/fail2ban/fail2ban)** - Marco de prevención de la intrusión. Prohibir automáticamente IPs mostrando comportamiento malicioso como ataques de fuerza bruta.
@@ -561,14 +564,14 @@ Herramientas de pruebas de seguridad, marcos OSINT y escáneres de vulnerabilida
 **[Hanko](https://github.com/hankoio/hanko)** — servidor de autenticación sin contraseña. Solución de autenticación moderna con passkeys y soporte WebAuthn.
 **[PrivyDrop](https://github.com/privydrop/privydrop)** — Caída de archivos Peer-to-peer con el despliegue de Docker. Compartir archivos sin almacenamiento en la nube, completamente auto-anfitriona.
 **[Ory](https://github.com/ory)** — Plataforma de gestión de identidad y acceso nativa en la nube. Solución IAM de grado empresarial con opciones auto hospedas e integraciones extensas.
-**[Cerbos](https://github.com/cerbos/cerbos)** — Autorización como servicio. Motor de políticas de código abierto para las decisiones de control y autorización de acceso fino.
+- **[Cerbos](https://github.com/cerbos/cerbos)** - Autorización como servicio. Motor de políticas de código abierto para las decisiones de control y autorización de acceso fino.
 **[FusionAuth](https://github.com/FusionAuth/fusionauth-containers)** — Plataforma de autenticación y autorización de nivel empresarial. Solución completa de gestión de identidad con SSO, MFA y gestión de usuarios.
 - **[Zitadel](https://github.com/zitadel/zitadel)** — Infraestructura de identidad para desarrolladores. Gestión de identidad y acceso de código abierto con protocolos modernos y arquitectura nativa de la nube.
 **[KeeWeb](https://github.com/keeweb/keeweb)** — Administrador de contraseñas multiplataforma compatible con KeePass. Interfaz basada en la web para gestionar bases de datos de contraseñas cifradas.
-**[Falco](https://github.com/falcosecurity/falco)** — Supervisión de seguridad en tiempo de ejecución para contenedores y anfitriones. Motor de detección conductual para detección de amenazas en Kubernetes y entornos cloud.
+**[Falco](https://github.com/falcosecurity/falco)** — Control de seguridad en tiempo de ejecución para contenedores y anfitriones. Motor de detección conductual para detección de amenazas en Kubernetes y entornos cloud.
 **[Wazuh](https://github.com/wazuh/wazuh)** — Plataforma XDR y SIEM de nivel empresarial. Unified security monitoring, threat detection, and compliance management solution.
 **[Suricata](https://github.com/OISF/suricata)** — Motor de red de alto rendimiento IDS/IPS. Sistema de detección y prevención de intrusiones estándar para el análisis de tráfico en red.
-**[Snort](https://github.com/snort3/snort3)** — Sistema de prevención de la intrusión en red. Potentes NIDS de código abierto con capacidades avanzadas de detección de amenazas.
+- **[Snort](https://github.com/snort3/snort3)** - Sistema de prevención de la intrusión en red. Potentes NIDS de código abierto con capacidades avanzadas de detección de amenazas.
 **[Metasploit](https://github.com/rapid7/metasploit-framework)** — Marco de pruebas de penetración. Plataforma integral para desarrollar, probar y ejecutar explotaciones contra sistemas remotos.
 **[Zeek](https://github.com/zeek/zeek)** — Marco de análisis de redes. Herramienta de monitoreo de red pasiva para investigación de seguridad y gestión de redes operativas.
 **[OpenVAS](https://github.com/greenbone/openvas-scanner)** — Escáner de vulnerabilidad para redes y sistemas. Solución amplia de evaluación y gestión de la vulnerabilidad de código abierto.
@@ -595,7 +598,7 @@ Recursos didácticos, cursos y guías integrales para desarrolladores.
 - **[Wallabag](https://github.com/wallabag/wallabag)** - Servicio de lectura auto hospedado. Guardar artículos para lectura posterior con búsqueda de texto completo y etiquetado.
 - **[Overleaf](https://github.com/overleaf/overleaf)** - Editor colaborativo de LaTeX. Edición colaborativa en tiempo real para documentos y documentos científicos.
 **[Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com)** — Programa para la participación de estudiantes en el desarrollo de código abierto. Programa gratuito que conecta a estudiantes con organizaciones de código abierto para proyectos de codificación de verano.
-- **[Tiny8](https://github.com/heyMP/tiny8)** — simulador de procesadores educativos. Herramienta de código abierto para aprender arquitectura informática y programación de montaje.
+- **[Tiny8](https://github.com/heyMP/tiny8)** - Simulador de procesadores educativos. Herramienta de código abierto para aprender arquitectura informática y programación de montaje.
 **[AWS Zero to Hero](https://github.com/iam-veeramachaneni/aws-devops-zero-to-hero)** — Materiales completos de aprendizaje de DevOps con ejemplos. Currículum de código abierto que abarca las prácticas de AWS, DevOps y la infraestructura en la nube.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
@@ -623,7 +626,7 @@ latitud **[Browse Theses Collection](./theses/)**
 
 El directorio `theses/` contiene investigación detallada, análisis técnicos y notas completas sobre temas clave:
 
-- **[LLM for Business](./theses/llm_for_business.md)** — Análisis de la adopción del modelo de lenguaje grande en las empresas rusas. Cubre casos, retos y estrategias de implementación.
+**[LLM for Business](./theses/llm_for_business.md)** — Análisis de la adopción del modelo de lenguaje grande en las empresas rusas. Cubre casos, retos y estrategias de implementación.
 **[The Great Software Quality Crash](./theses/thesis_habr_great_software_crash_en.md)** — Inmersión profunda en la crisis de calidad del software. Examina fugas de memoria, fallas del sistema y por qué $364 mil millones en gastos de infraestructura no resolverán problemas fundamentales de ingeniería.
 
 ### Project Ideas Collection
@@ -632,9 +635,10 @@ latitud **[Browse Project Ideas](./projects-ideas/)**
 
 El directorio `projects-ideas/` contiene enlaces curados a repositorios con ideas, plantillas e inspiración para proyectos de trabajo y proyectos paralelos personales:
 
-**[Industrial Automation & SCADA](./projects-ideas/industrial-automation-scada.md)** — Colección completa de herramientas para sistemas SCADA, programación PLC, diseño BIM/CAD, procesamiento de nubes de puntos y aplicaciones de ingeniería AI.
+- **[Industrial Automation & SCADA](./projects-ideas/industrial-automation-scada.md)** — Colección completa de herramientas para sistemas SCADA, programación PLC, diseño BIM/CAD, procesamiento de nubes de puntos y aplicaciones de ingeniería AI.
 - **[Supervision](https://github.com/roboflow/supervision)** — Marco Python universal para la visión informática que proporciona bloques de construcción reutilizables para los proyectos CV modernos. Kit de herramientas modelo-agnóstico para visualización, anotación, conteo de objetos, gestión de conjuntos de datos y procesamiento de vídeo en tiempo real.
-- **[car-counter](https://github.com/serialdotai/car-counter)** — Herramienta Python de código abierto para contar vehículos automáticos en vídeos de tráfico usando visión de ordenador. Combina la detección de objetos YOLOv8 con algoritmo de rastreo SORT para contar con vehículos precisos en líneas virtuales.
+- **[car-counter](https://github.com/serialdotai/car-counter)** — Herramienta Python de código abierto para contar vehículos automáticos en vídeos de tráfico usando visión de computadora. Combina la detección de objetos YOLOv8 con algoritmo de rastreo SORT para contar con vehículos precisos en líneas virtuales.
+- **[yolo-training-template](https://github.com/mfranzon/yolo-training-template)** — Plantilla lista para usar para entrenar modelos YOLO en cualquier conjunto de datos Kaggle en pocas horas. Gasoducto completo con auto-etiquetado utilizando GroundingDINO, scripts de entrenamiento y ejemplos de inferencia.
 
 ### Contribuir tesis
 
