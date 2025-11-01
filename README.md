@@ -377,6 +377,7 @@ Tools for video generation, manipulation, and analysis.
 - **[MPV](https://mpv.io/)** — Lightweight, powerful media player. Command-line based with minimal GUI, highly customizable and scriptable.
 - **[Immich](https://github.com/immich-app/immich)** — Self-hosted photo and video backup solution. Alternative to Google Photos with automatic backups and facial recognition.
 - **[Pars Local Player (PLP)](https://github.com/pars-local-player/pars-local-player)** — Lightweight video player without telemetry or tracking. Privacy-focused media player with clean interface.
+- **[ytarchive](https://github.com/Kethsar/ytarchive)** — Tool for downloading and archiving YouTube live streams with metadata and chat support.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
