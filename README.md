@@ -174,6 +174,7 @@ Modern text editors optimized for productivity and extensibility.
 - **[micro](https://github.com/zyedidia/micro)** — Modern and intuitive terminal-based text editor. Supports mouse input and common keybindings (Ctrl+C, Ctrl+V).
 - **[amp](https://github.com/jmacdonald/amp)** — Vi-inspired text editor written in Rust. Minimal design with extensible plugin system.
 - **[ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)** — Chromium browser without Google integration. Enhanced privacy and security with removed Google services and telemetry.
+- **[librewolf](https://librewolf.net/)** - A privacy-focused fork of Firefox, pre-configured to disable telemetry, tracking, and fingerprinting while improving security and user control.
 - **[Notepad++](https://notepad-plus-plus.org/)** — Feature-rich code and text editor for Windows. Supports all programming languages with syntax highlighting and plugins.
 - **[GIMP](https://www.gimp.org/)** — Free and open-source image editor. Professional alternative to Photoshop for photo editing, logo creation, and graphic design.
 - **[Inkscape](https://inkscape.org/)** — Professional vector graphics editor. Create scalable logos, illustrations, and print materials with precision.
