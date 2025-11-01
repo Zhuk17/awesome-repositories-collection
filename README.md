@@ -117,7 +117,7 @@ Track system resources, processes, and performance metrics in real-time.
 - **[starship](https://github.com/starship/starship)** — Minimalist cross-shell prompt. Fast and customizable prompt for any shell with git status, jobs, and directory info.
 - **[Quick Look](https://github.com/QL-Win/QuickLook)** — Instant file preview for Windows. Press spacebar to preview files without opening applications.
 - **[Atlas OS](https://github.com/AtlasOS/Atlas)** — Open-source lightweight Windows optimization. Custom Windows distribution focused on performance and minimalism.
-
+- **[Bloatynosy](https://github.com/builtbybel/Bloatynosy)** — Automated Windows debloating tool that removes preinstalled apps, disables telemetry, and reduces system bloat.
 ### Geographic Information Systems
 
 Tools for geospatial data analysis and mapping.
