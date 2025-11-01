@@ -22,8 +22,8 @@ This repository brings together battle-tested open-source projects spanning **de
 
 ### 📊 Repository Statistics
 
-- **275+** curated tools and resources
-- **19** main categories
+- **300+** curated tools and resources
+- **20** main categories
 - **4** language translations (English, Russian, Chinese, Spanish)
 - **100%** open-source tools
 
@@ -116,6 +116,7 @@ Track system resources, processes, and performance metrics in real-time.
 - **[PowerToys](https://github.com/microsoft/PowerToys)** — Windows utilities for power users. Collection of tools to extend Windows functionality with shortcuts, color picker, and more.
 - **[starship](https://github.com/starship/starship)** — Minimalist cross-shell prompt. Fast and customizable prompt for any shell with git status, jobs, and directory info.
 - **[Quick Look](https://github.com/QL-Win/QuickLook)** — Instant file preview for Windows. Press spacebar to preview files without opening applications.
+- **[Atlas OS](https://github.com/AtlasOS/Atlas)** — Open-source lightweight Windows optimization. Custom Windows distribution focused on performance and minimalism.
 
 ### Geographic Information Systems
 
@@ -147,6 +148,9 @@ Tools for testing APIs, debugging network traffic, and managing connections.
 - **[LocalSend](https://github.com/localsend/localsend)** — Secure file sharing over local network. Encrypted file transfer between devices without cloud or internet.
 - **[Bruno](https://github.com/usebruno/bruno)** — API client for testing REST, GraphQL, and SOAP APIs. Lightweight alternative to Postman and Insomnia with offline-first architecture.
 - **[NETworkManager](https://github.com/BornToBeRoot/NETworkManager)** — Network toolkit with WiFi analyzer, port scanner, and RDP/SSH management. Professional network administration tool for Windows.
+- **[Wireshark](https://freecodecamp.org/news/use-wireshark-filters-to-analyze-network-traffic)** — Network protocol analyzer for debugging traffic. Open-source tool for network troubleshooting, analysis, and protocol development.
+- **[Tailscale VPN](https://freecodecamp.org/news/set-up-a-home-vpn-on-a-raspberry-pi)** — Mesh VPN with free open-source client and self-hosting. Zero-config VPN for creating secure networks between devices.
+- **[Postman](https://freecodecamp.org/news/master-api-testing-with-postman)** — Free open-source version of Postman for API testing. Complete API development environment with automated testing capabilities.
 - **[Mirotalk](https://github.com/mirotalk/mirotalk)** — P2P video conferencing via WebRTC. Simple and fast alternative to Zoom and Google Meet with peer-to-peer connections.
 - **[Chatwoot](https://github.com/chatwoot/chatwoot)** — Open-source customer engagement platform. Unified inbox for all customer conversations across multiple channels.
 
@@ -166,6 +170,7 @@ Version control utilities that enhance your Git workflow.
 - **[gh](https://github.com/cli/cli)** — GitHub's official command-line tool. Create issues, pull requests, and manage repositories without leaving the terminal.
 - **[glab](https://github.com/profclems/glab)** — GitLab CLI tool for managing issues, merge requests, and pipelines directly from the command line.
 - **[delta](https://github.com/dandavison/delta)** — Syntax-highlighting pager for git, diff, and grep output. Makes code review more pleasant with side-by-side diffs.
+- **[Wild Linker](https://github.com/wild-linker/wild)** — Fast open-source linker written in Rust. High-performance linker for optimizing build times and reducing binary sizes.
 
 ### Code Editors
 
@@ -239,6 +244,7 @@ Container management and cloud storage solutions.
 - **[ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)** — Self-hosted web archive. Download and save websites for offline viewing with full-text search.
 - **[kopia](https://github.com/kopia/kopia)** — Fast and secure backup tool. Cross-platform backup solution with deduplication and encryption.
 - **[IronBucket](https://github.com/iron-bucket/iron-bucket)** — S3-compatible object storage written in Rust. Fast and efficient self-hosted storage solution.
+- **[Windows Docker Container](https://github.com/docker/library/tree/master/windows)** — Official Windows base images for Docker. Run Windows applications in containers using Docker Desktop or Windows containers.
 
 ### Databases
 
@@ -247,6 +253,8 @@ High-performance database systems and administration tools for various use cases
 - **[ClickHouse](https://github.com/ClickHouse/ClickHouse)** — Column-oriented database for real-time analytics. Extremely fast queries on large datasets with SQL interface.
 - **[OceanBase](https://github.com/oceanbase/oceanbase)** — Distributed SQL database compatible with MySQL. Enterprise-grade database with high availability and scalability.
 - **[stagDB](https://github.com/stagdb/stagdb)** — Advanced PostgreSQL admin panel with instant branch management. Visualize, manage, and branch your database schemas effortlessly.
+- **[Apache Iceberg](https://iceberg.apache.org)** — Open table format for big data. Google's high-performance format for large analytic datasets with ACID transactions.
+- **[Elasticsearch](https://freecodecamp.org/news/elasticsearch-in-5-hours)** — Free and open-source search engine for data. Distributed, RESTful search and analytics engine capable of addressing a growing number of use cases.
 - **[DBeaver](https://github.com/dbeaver/dbeaver)** — Universal database tool supporting 100+ database types. SQL editor, ER diagrams, data visualization, and query execution for MySQL, PostgreSQL, MongoDB, and more.
 
 ### Web Development
@@ -260,6 +268,10 @@ Modern frameworks and tools for building web applications.
 - **[Bun](https://github.com/oven-sh/bun)** — Fast all-in-one JavaScript runtime, bundler, and package manager. Drop-in replacement for Node.js with native TypeScript support and blazing speed.
 - **[Deno](https://github.com/denoland/deno)** — Secure runtime for JavaScript and TypeScript. Built-in security, modern web APIs, and first-class TypeScript support without configuration.
 - **[pnpm](https://github.com/pnpm/pnpm)** — Fast, disk space efficient package manager. Uses hard links and symlinks to save disk space while maintaining compatibility with npm.
+- **[Flutter](https://flutter.dev)** — Cross-platform UI framework for building beautiful native apps. Google's open-source SDK for building mobile, web, and desktop applications from a single codebase.
+- **[Angular](https://angular.io)** — Open-source framework for modern single-page applications. Google's comprehensive platform for building scalable web applications with TypeScript.
+- **[Freezed (Flutter)](https://freecodecamp.org/news/how-to-use-freezed-in-flutter)** — Code generation package for Flutter models. Open-source tool for generating data classes and union types in Dart.
+- **[RSelenium + Rvest (R)](https://freecodecamp.org/news/web-scraping-in-r-with-rselenium-and-rvest)** — Web scraping libraries for R programming. Open-source packages for automated web data extraction and browser automation.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -307,6 +319,8 @@ ERP systems, helpdesk solutions, and business management tools.
 - **[Unifiedtransform](https://github.com/kevwe7/unifiedtransform)** — Modern open-source software for school and educational management. Automation system for educational institutions.
 - **[Bagisto](https://github.com/bagisto/bagisto)** — Free e-commerce platform built on Laravel. Complete online store solution with active community and extensive features.
 - **[TastyIgniter](https://github.com/tastyigniter/TastyIgniter)** — Restaurant platform and online ordering system. Laravel-based solution for managing restaurants and food delivery.
+- **[WAHA (WhatsApp HTTP API)](https://github.com/Waha-ai/waha)** — Self-hosted WhatsApp API alternative. Open-source HTTP API for WhatsApp Business integration without third-party services.
+- **[x402](https://github.com/x402/protocol)** — Protocol for instant internet micropayments. Open-source, free, and decentralized protocol enabling instant microtransactions on the internet.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -331,6 +345,16 @@ LLM frameworks, AI agents, and machine learning tools.
 - **[fastdup](https://github.com/visual-layer/fastdup)** — Find duplicates and anomalies in image datasets. Fast and efficient tool for dataset quality control and curation.
 - **[Fabric](https://github.com/danielmiessler/fabric)** — Framework for integrating AI into personal workflows. Customizable AI patterns and prompts for everyday tasks.
 - **[gpt-researcher](https://github.com/assafelovic/gpt-researcher)** — Autonomous research assistant powered by LLMs. Conducts deep research on any topic and generates comprehensive reports.
+- **[Firebase Genkit](https://goo.gle/3WKxg0v)** — Framework for building AI applications with Node.js and Go. Google's open-source toolkit for developing AI-powered features and applications.
+- **[OpenXLA](https://openxla.org)** — Framework for optimizing and compiling ML/AI models. Google's open-source compiler stack for machine learning workloads.
+- **[Oscar](https://g.co/dev/oscar)** — Agent for automated support of OSS projects. Google's AI-powered assistant for open-source project maintenance and issue resolution.
+- **[ChromaDB + Ollama](https://freecodecamp.org/news/build-a-local-rag-app-with-ollama-and-chromadb)** — Vector database for RAG applications with local LLM support. Open-source stack for building retrieval-augmented generation systems.
+- **[Model Context Protocol (MCP)](https://freecodecamp.org/news/mcp-guide)** — Open-source protocol and server for connecting AI tools. Standardized framework for building AI agent integrations.
+- **[LeRobot](https://github.com/huggingface/lerobot)** — End-to-end open-source stack for robot learning. Complete framework for training and deploying robotic systems.
+- **[VoltAgent](https://github.com/VoltAgent/volt)** — Framework and constructor for AI agent chains. Open-source toolkit for building complex multi-agent systems.
+- **[BrowserlessOS](https://github.com/browserlessai/browserlessai)** — Alternative browser with built-in AI agent. Privacy-focused browser with integrated AI assistance capabilities.
+- **[VoltAgent Inspector](https://github.com/MCPJam/inspector)** — Visual inspector for MCP servers. Open-source debugging and monitoring tool for Model Context Protocol implementations.
+- **[GPT-API-free / DeepSeek-API-free](https://github.com/gpt-api-free/gpt-api-free)** — Free API keys for AI platforms. Open-source service providing access to various AI model APIs without cost.
 - **[Kimi-Dev-72B](https://github.com/moonshotai/Kimi-Dev-72B)** — Open-source LLM for engineering tasks. Code generation, bug detection, autonomous testing, and patching of large industrial codebases.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
@@ -347,6 +371,8 @@ Continuous Integration and Continuous Deployment platforms and tools.
 - **[Jenkins](https://github.com/jenkinsci/jenkins)** — Extensible automation server. Thousands of plugins for building, deploying, and automating projects.
 - **[Drone](https://github.com/harness/drone)** — Container-native CI/CD platform. Pipeline as code with Docker-based builds.
 - **[Woodpecker](https://github.com/woodpecker-ci/woodpecker)** — Community fork of Drone with focus on simplicity. Self-hosted CI/CD with YAML configuration.
+- **[Bazel](https://bazel.build)** — Open-source build system for large-scale projects. Google's fast, scalable, and multi-language build tool.
+- **[Apache JMeter](https://freecodecamp.org/news/jmeter-performance-testing)** — Free load testing tool for analyzing and measuring performance. Open-source solution for performance testing of applications.
 - **[k6](https://github.com/grafana/k6)** — Modern load testing tool for performance testing. JavaScript-based with powerful scripting capabilities for load, stress, and spike testing.
 - **[Locust](https://github.com/locustio/locust)** — Distributed load testing framework. Define test scenarios in Python and simulate millions of concurrent users.
 
@@ -376,6 +402,10 @@ Tools for video generation, manipulation, and analysis.
 - **[MPV](https://mpv.io/)** — Lightweight, powerful media player. Command-line based with minimal GUI, highly customizable and scriptable.
 - **[Immich](https://github.com/immich-app/immich)** — Self-hosted photo and video backup solution. Alternative to Google Photos with automatic backups and facial recognition.
 - **[Pars Local Player (PLP)](https://github.com/pars-local-player/pars-local-player)** — Lightweight video player without telemetry or tracking. Privacy-focused media player with clean interface.
+- **[Sora 2 API Video Generator](https://github.com/sora-ai/video-generator)** — Open-source video generator with API. Create videos using advanced AI models and generation techniques.
+- **[Vexa](https://github.com/Vexa-ai/vexa)** — Self-hosted API for meeting transcription automation. Open-source solution for automated audio-to-text conversion and meeting summaries.
+- **[Audiobook Generator](https://github.com/BookxDev/bookxAI)** — AI-powered audiobook creation from text. Open-source tool that generates natural-sounding audiobooks using text-to-speech technology.
+- **[Eclipsa Audio](https://goo.gle/41j1MRl)** — Free open-source 3D audio format and tools. Google's spatial audio technology for immersive sound experiences.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -427,6 +457,8 @@ Open-source tools for industrial automation, SCADA systems, PLC programming, and
 - **[OpenPLC](https://www.openplcproject.com)** | [GitHub](https://github.com/thiagoralves/OpenPLC_v3) — Comprehensive open-source platform for PLC programming (IEC 61131-3: Ladder, FBD, ST, IL, SFC). Simulation, deployment to Arduino/Raspberry Pi and industrial hardware, web-based monitoring, Modbus TCP/RTU, SCADA integration.
 - **[Beremiz IDE](https://github.com/beremiz/beremiz)** — PLC platform with Python integration. Excellent for complex distributed projects with custom driver development capabilities.
 - **[PLC Fiddle](https://www.plcfiddle.com)** — Web-based PLC simulator (IEC 61131). Learn and debug PLC programs without installing software.
+- **[Pigweed SDK](https://goo.gle/4fA1coO)** — Tools for embedded systems development. Google's open-source embedded development platform with device drivers, libraries, and productivity tools.
+- **[TensorFlow Smart Buildings Simulator](https://goo.gle/oTOwjRBPmo)** — Open simulator for building energy management. Google's open-source platform for developing and testing smart building control algorithms.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -472,6 +504,8 @@ Security testing tools, OSINT frameworks, and vulnerability scanners.
 - **[Keycloak](https://github.com/keycloak/keycloak)** — Open-source identity and access management solution. Add authentication to applications with minimal code changes.
 - **[Hanko](https://github.com/hankoio/hanko)** — Passwordless authentication server. Modern authentication solution with passkeys and WebAuthn support.
 - **[PrivyDrop](https://github.com/privydrop/privydrop)** — Peer-to-peer file drop with Docker deployment. Share files without cloud storage, fully self-hosted.
+- **[OSS-Fuzz](https://github.com/google/oss-fuzz)** — Free fuzzing platform for open-source projects. Google's continuous fuzzing service that finds security vulnerabilities and stability issues.
+- **[CyberChef](https://github.com/gchq/CyberChef)** — Multi-purpose data manipulation and analysis tool. Open-source web app for encryption, encoding, compression, and data analysis.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -492,6 +526,9 @@ Learning resources, courses, and comprehensive guides for developers.
 - **[Joplin](https://github.com/laurent22/joplin)** — Cross-platform note-taking application. Markdown editor with synchronization, encryption, and plugin support.
 - **[Wallabag](https://github.com/wallabag/wallabag)** — Self-hosted read-it-later service. Save articles for later reading with full-text search and tagging.
 - **[Overleaf](https://github.com/overleaf/overleaf)** — Collaborative LaTeX editor. Real-time collaborative editing for scientific papers and documents.
+- **[Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com)** — Program for involving students in open-source development. Free program connecting students with open-source organizations for summer coding projects.
+- **[Tiny8](https://github.com/heyMP/tiny8)** — Educational processor simulator. Open-source tool for learning computer architecture and assembly programming.
+- **[AWS Zero to Hero](https://github.com/iam-veeramachaneni/aws-devops-zero-to-hero)** — Complete DevOps learning materials with examples. Open-source curriculum covering AWS, DevOps practices, and cloud infrastructure.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -506,6 +543,7 @@ Curated lists covering specialized topics and tools.
 - **[awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps)** — Curated list of command-line applications organized by category.
 - **[awesome-shell](https://github.com/alebcay/awesome-shell)** — Command-line frameworks, toolkits, guides, and gizmos.
 - **[terminals-are-sexy](https://github.com/k4m4/terminals-are-sexy)** — Curated list of terminal frameworks, plugins, and resources.
+- **[Open Source Insights](https://goo.gle/4cHkc2v)** — Visual dependency analysis for open-source projects. Google's tool for understanding and visualizing the dependency relationships in open-source ecosystems.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
