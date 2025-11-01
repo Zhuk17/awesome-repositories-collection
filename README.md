@@ -565,6 +565,8 @@ The `theses/` directory contains in-depth research, technical analyses, and comp
 The `projects-ideas/` directory contains curated links to repositories with ideas, templates, and inspiration for work projects and personal side projects:
 
 - **[Industrial Automation & SCADA](./projects-ideas/industrial-automation-scada.md)** — Comprehensive collection of tools for SCADA systems, PLC programming, BIM/CAD design, point cloud processing, and engineering AI applications.
+- **[Supervision](https://github.com/roboflow/supervision)** — Universal Python framework for computer vision providing reusable building blocks for modern CV projects. Model-agnostic toolkit for visualization, annotation, object counting, dataset management, and real-time video processing.
+- **[car-counter](https://github.com/serialdotai/car-counter)** — Open-source Python tool for automatic vehicle counting in traffic videos using computer vision. Combines YOLOv8 object detection with SORT tracking algorithm for accurate vehicle counting across virtual lines.
 
 ### Contributing Theses
 
