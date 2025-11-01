@@ -22,7 +22,7 @@ This repository brings together battle-tested open-source projects spanning **de
 
 ### 📊 Repository Statistics
 
-- **300+** curated tools and resources
+- **301+** curated tools and resources
 - **20** main categories
 - **4** language translations (English, Russian, Chinese, Spanish)
 - **100%** open-source tools
