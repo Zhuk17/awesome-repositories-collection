@@ -22,7 +22,7 @@ This repository brings together battle-tested open-source projects spanning **de
 
 ### 📊 Repository Statistics
 
-- **301+** curated tools and resources
+- **370+** curated tools and resources
 - **20** main categories
 - **4** language translations (English, Russian, Chinese, Spanish)
 - **100%** open-source tools
@@ -112,11 +112,22 @@ Track system resources, processes, and performance metrics in real-time.
 - **[Umami](https://github.com/umami-software/umami)** — Privacy-focused web analytics. Self-hosted alternative to Google Analytics with GDPR compliance.
 - **[Healthchecks](https://github.com/healthchecks/healthchecks)** — Cron job monitoring service. Get alerts when scheduled tasks fail or don't run on time.
 - **[coroot](https://github.com/coroot/coroot)** — Infrastructure monitoring and APM analysis. Identify performance bottlenecks and optimize application delivery.
+- **[Netdata](https://github.com/netdata/netdata)** — Real-time performance monitoring for systems and applications. Distributed, real-time, health monitoring and performance troubleshooting.
+- **[VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics)** — Fast, cost-effective monitoring solution and time series database. Long-term remote storage for Prometheus with high performance and scalability.
+- **[Signoz](https://github.com/SigNoz/signoz)** — Open-source APM and observability platform. Full-stack observability with logs, metrics, and traces in a single pane of glass.
+- **[Uptrace](https://github.com/uptrace/uptrace)** — Distributed tracing and APM tool. Open-source APM and distributed tracing solution compatible with OpenTelemetry.
+- **[Sentry](https://github.com/getsentry/sentry)** — Application monitoring and error tracking. Open-source error tracking that helps developers monitor and fix crashes in real time.
 - **[Grafana Loki](https://github.com/grafana/loki)** — Log aggregation system inspired by Prometheus. Highly efficient log storage and querying with Grafana integration for centralized logging.
 - **[PowerToys](https://github.com/microsoft/PowerToys)** — Windows utilities for power users. Collection of tools to extend Windows functionality with shortcuts, color picker, and more.
 - **[starship](https://github.com/starship/starship)** — Minimalist cross-shell prompt. Fast and customizable prompt for any shell with git status, jobs, and directory info.
 - **[Quick Look](https://github.com/QL-Win/QuickLook)** — Instant file preview for Windows. Press spacebar to preview files without opening applications.
 - **[Atlas OS](https://github.com/AtlasOS/Atlas)** — Open-source lightweight Windows optimization. Custom Windows distribution focused on performance and minimalism.
+- **[Home Assistant](https://github.com/home-assistant/core)** — Open-source home automation platform. Smart home hub with device control, automation, and extensive integration ecosystem.
+- **[Qubes OS](https://github.com/QubesOS/qubes-os)** — Security-focused desktop operating system. Xen-based OS that uses virtualization to isolate different parts of the system for enhanced security.
+- **[Whonix](https://github.com/Whonix/Whonix)** — Anonymous operating system based on Tor and Debian. Complete anonymity suite with integrated Tor networking and security features.
+- **[Tails](https://github.com/tails-project/tails)** — Portable operating system for privacy and anonymity. Live system that routes all communications through Tor with amnesia feature.
+- **[Arch Linux](https://github.com/archlinux/archlinux)** — Lightweight and flexible Linux distribution. Rolling release model with extensive package management and customization options.
+- **[NixOS](https://github.com/NixOS/nixpkgs)** — Declarative Linux distribution with reproducible builds. Purely functional package manager with atomic upgrades and rollbacks.
 
 ### Geographic Information Systems
 
@@ -150,6 +161,7 @@ Tools for testing APIs, debugging network traffic, and managing connections.
 - **[NETworkManager](https://github.com/BornToBeRoot/NETworkManager)** — Network toolkit with WiFi analyzer, port scanner, and RDP/SSH management. Professional network administration tool for Windows.
 - **[Wireshark](https://freecodecamp.org/news/use-wireshark-filters-to-analyze-network-traffic)** — Network protocol analyzer for debugging traffic. Open-source tool for network troubleshooting, analysis, and protocol development.
 - **[Tailscale VPN](https://freecodecamp.org/news/set-up-a-home-vpn-on-a-raspberry-pi)** — Mesh VPN with free open-source client and self-hosting. Zero-config VPN for creating secure networks between devices.
+- **[Pi-hole](https://github.com/pi-hole/pi-hole)** — Network-wide ad blocking via your own Linux hardware. Self-hosted DNS sinkhole that blocks ads and trackers at the network level.
 - **[Postman](https://freecodecamp.org/news/master-api-testing-with-postman)** — Free open-source version of Postman for API testing. Complete API development environment with automated testing capabilities.
 - **[Mirotalk](https://github.com/mirotalk/mirotalk)** — P2P video conferencing via WebRTC. Simple and fast alternative to Zoom and Google Meet with peer-to-peer connections.
 - **[Chatwoot](https://github.com/chatwoot/chatwoot)** — Open-source customer engagement platform. Unified inbox for all customer conversations across multiple channels.
@@ -244,6 +256,8 @@ Container management and cloud storage solutions.
 - **[ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)** — Self-hosted web archive. Download and save websites for offline viewing with full-text search.
 - **[kopia](https://github.com/kopia/kopia)** — Fast and secure backup tool. Cross-platform backup solution with deduplication and encryption.
 - **[IronBucket](https://github.com/iron-bucket/iron-bucket)** — S3-compatible object storage written in Rust. Fast and efficient self-hosted storage solution.
+- **[Rancher](https://github.com/rancherfederal/rancher)** — Enterprise Kubernetes management platform. Complete solution for deploying, managing, and securing Kubernetes clusters at scale.
+- **[OpenShift](https://github.com/openshift/origin)** — Enterprise Kubernetes platform by Red Hat. Production-ready container platform with developer tools and automated operations.
 - **[Windows Docker Container](https://github.com/docker/library/tree/master/windows)** — Official Windows base images for Docker. Run Windows applications in containers using Docker Desktop or Windows containers.
 
 ### Databases
@@ -253,6 +267,15 @@ High-performance database systems and administration tools for various use cases
 - **[ClickHouse](https://github.com/ClickHouse/ClickHouse)** — Column-oriented database for real-time analytics. Extremely fast queries on large datasets with SQL interface.
 - **[OceanBase](https://github.com/oceanbase/oceanbase)** — Distributed SQL database compatible with MySQL. Enterprise-grade database with high availability and scalability.
 - **[stagDB](https://github.com/stagdb/stagdb)** — Advanced PostgreSQL admin panel with instant branch management. Visualize, manage, and branch your database schemas effortlessly.
+- **[Neo4j](https://github.com/neo4j/neo4j)** — Native graph database for connected data. High-performance database optimized for graph data structures and complex relationship queries.
+- **[ArangoDB](https://github.com/arangodb/arangodb)** — Multi-model database supporting graphs, documents, and key-values. Unified database with flexible data modeling capabilities.
+- **[Supabase](https://github.com/supabase/supabase)** — Open-source Firebase alternative. Complete backend-as-a-service platform with real-time subscriptions, authentication, and storage.
+- **[Appwrite](https://github.com/appwrite/appwrite)** — Backend-as-a-service platform. Self-hosted solution for building web and mobile applications with authentication, databases, and storage.
+- **[PocketBase](https://github.com/pocketbase/pocketbase)** — Open-source backend in one file. Lightweight alternative to Firebase with real-time subscriptions and file storage.
+- **[Airbyte](https://github.com/airbytehq/airbyte)** — Data integration platform for ELT pipelines. Open-source solution for building data warehouses and analytics systems.
+- **[Dagster](https://github.com/dagster-io/dagster)** — Data orchestration platform for machine learning. Framework for building, testing, and monitoring ML pipelines and data workflows.
+- **[dbt](https://github.com/dbt-labs/dbt-core)** — Data transformation tool for analytics engineering. SQL-based framework for transforming data in warehouses with testing and documentation.
+- **[Prefect](https://github.com/PrefectHQ/prefect)** — Workflow orchestration framework for data pipelines. Modern solution for building, scheduling, and monitoring data workflows.
 - **[Apache Iceberg](https://iceberg.apache.org)** — Open table format for big data. Google's high-performance format for large analytic datasets with ACID transactions.
 - **[Elasticsearch](https://freecodecamp.org/news/elasticsearch-in-5-hours)** — Free and open-source search engine for data. Distributed, RESTful search and analytics engine capable of addressing a growing number of use cases.
 - **[DBeaver](https://github.com/dbeaver/dbeaver)** — Universal database tool supporting 100+ database types. SQL editor, ER diagrams, data visualization, and query execution for MySQL, PostgreSQL, MongoDB, and more.
@@ -272,6 +295,10 @@ Modern frameworks and tools for building web applications.
 - **[Angular](https://angular.io)** — Open-source framework for modern single-page applications. Google's comprehensive platform for building scalable web applications with TypeScript.
 - **[Freezed (Flutter)](https://freecodecamp.org/news/how-to-use-freezed-in-flutter)** — Code generation package for Flutter models. Open-source tool for generating data classes and union types in Dart.
 - **[RSelenium + Rvest (R)](https://freecodecamp.org/news/web-scraping-in-r-with-rselenium-and-rvest)** — Web scraping libraries for R programming. Open-source packages for automated web data extraction and browser automation.
+- **[Next.js](https://github.com/vercel/next.js)** — React framework for production. Full-stack web framework with server-side rendering, static site generation, and API routes.
+- **[Nest.js](https://github.com/nestjs/nest)** — Progressive Node.js framework for building efficient server-side applications. Enterprise-grade backend framework with dependency injection and modular architecture.
+- **[Fastify](https://github.com/fastify/fastify)** — Fast and low overhead web framework for Node.js. High-performance HTTP framework with built-in logging, routing, and validation.
+- **[Moleculer](https://github.com/moleculerjs/moleculer)** — Fast, modern, and powerful microservices framework for Node.js. Progressive microservices framework with built-in service discovery and load balancing.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -303,6 +330,9 @@ Development environments and task automation tools.
 - **[Budibase](https://github.com/Budibase/budibase)** — Low-code platform for building business applications. Create internal tools, admin panels, and workflows without coding.
 - **[Nyno](https://github.com/nyno-org/nyno)** — YAML-based workflow automation alternative to n8n. Lightweight workflow engine without cloud dependencies.
 - **[Flowcraft](https://github.com/flowcraft-io/flowcraft)** — Dependency-free automation platform. Simple and lightweight workflow automation without external dependencies.
+- **[Apache APISIX](https://github.com/apache/apisix)** — High-performance API gateway for microservices. Production-ready solution with rich plugin ecosystem and enterprise support.
+- **[Hoppscotch](https://github.com/hoppscotch/hoppscotch)** — Modern, beautiful API testing client. Self-hosted alternative to Postman with intuitive interface and powerful features.
+- **[Keploy](https://github.com/keploy/keploy)** — API testing and mocking tool. Automated end-to-end testing with intelligent mock generation and replay capabilities.
 - **[Leantime](https://github.com/Leantime/leantime)** — Simple and powerful project management and strategic planning system. Agile methodology support with kanban boards and time tracking.
 - **[Memos](https://github.com/usememos/memos)** — Lightweight note-taking service with Markdown support. Self-hosted alternative to Twitter/X for quick notes and thoughts.
 
@@ -321,6 +351,27 @@ ERP systems, helpdesk solutions, and business management tools.
 - **[TastyIgniter](https://github.com/tastyigniter/TastyIgniter)** — Restaurant platform and online ordering system. Laravel-based solution for managing restaurants and food delivery.
 - **[WAHA (WhatsApp HTTP API)](https://github.com/Waha-ai/waha)** — Self-hosted WhatsApp API alternative. Open-source HTTP API for WhatsApp Business integration without third-party services.
 - **[x402](https://github.com/x402/protocol)** — Protocol for instant internet micropayments. Open-source, free, and decentralized protocol enabling instant microtransactions on the internet.
+- **[AppFlowy](https://github.com/AppFlowy-IO/AppFlowy)** — Open-source alternative to Notion. Privacy-first workspace for notes, docs, and project management with customizable blocks and databases.
+- **[Logseq](https://github.com/logseq/logseq)** — Privacy-first, open-source knowledge management and note-taking platform. Local-first tool with bidirectional linking and graph view.
+- **[Trilium](https://github.com/zadam/trilium)** — Hierarchical note-taking application with strong encryption. Build personal knowledge base with notes, images, and web clippings.
+- **[Outline](https://github.com/outline/outline)** — Modern knowledge base and wiki platform. Fast, searchable documentation with real-time collaboration for teams.
+- **[Notabase](https://github.com/chadly/notabase)** — Powerful note-taking app designed for networked thought. Create connected notes with bidirectional links and graph visualization.
+- **[Focalboard](https://github.com/mattermost/focalboard)** — Open-source alternative to Trello, Jira, and Asana. Project management tool with kanban boards, tables, and calendars.
+- **[Plane](https://github.com/makeplane/plane)** — Open-source project management tool. Modern alternative to Jira with issue tracking, cycles, and modules for software teams.
+- **[Taiga](https://github.com/kaleidos-ventures/taiga)** — Free open-source project management platform. Agile project management with kanban, issues, and team collaboration features.
+- **[Vikunja](https://github.com/go-vikunja/vikunja)** — Self-hosted to-do app with a lot of features. Open-source task management with lists, kanban boards, and Gantt charts.
+- **[OpenProject](https://github.com/opf/openproject)** — Web-based project management software. Comprehensive solution with project planning, team collaboration, and time tracking.
+- **[GoatCounter](https://github.com/arp242/goatcounter)** — Simple web analytics. Privacy-aware, lightweight, and open-source alternative to Google Analytics.
+- **[Element](https://github.com/vector-im/element-web)** — Secure communication app for Matrix. Decentralized messaging with end-to-end encryption and modern interface.
+- **[Mattermost](https://github.com/mattermost/mattermost)** — Open-source, self-hosted Slack alternative. Secure team communication platform with file sharing and integrations.
+- **[Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)** — Free, unlimited, open-source team chat solution. Self-hosted alternative to Slack with extensive customization and integrations.
+- **[Zulip](https://github.com/zulip/zulip)** — Powerful open-source team chat. Threaded conversations, topic-based organization, and extensive integrations.
+- **[Signal](https://github.com/signalapp/Signal-Desktop)** — Private messenger with end-to-end encryption. Open-source messaging platform focused on privacy and security.
+- **[Matrix](https://github.com/matrix-org/synapse)** — Open standard for decentralized communication. Secure, decentralized messaging network with bridges to other platforms.
+- **[Nginx](https://github.com/nginx/nginx)** — High-performance web server and reverse proxy. Lightweight HTTP server with extensive configuration options and high concurrency support.
+- **[OpenWRT](https://github.com/openwrt/openwrt)** — Embedded operating system for routers. Linux distribution for embedded devices with package management and extensive customization.
+- **[pfSense](https://github.com/pfsense/pfsense)** — Free, open-source firewall and router platform. Network security appliance with firewall, VPN, and routing capabilities.
+- **[OPNsense](https://github.com/opnsense/core)** — Hardened FreeBSD-based firewall and routing platform. Enterprise-grade firewall distribution with extensive security features.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -388,6 +439,7 @@ Tools for video generation, manipulation, and analysis.
 - **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** — Feature-rich command-line video downloader. Fork of youtube-dl with additional features and fixes.
 - **[Sora Extend](https://github.com/mshumer/sora-extend)** — Tool to chain and extend OpenAI Sora 2 video generations beyond 12-second limit. Automated prompt deconstruction and segment concatenation.
 - **[HandBrake](https://github.com/HandBrake/HandBrake)** — Video transcoder with comprehensive format support. GUI and CLI versions for batch processing.
+- **[Kdenlive](https://github.com/KDE/kdenlive)** — Free and open-source video editor. Professional non-linear video editing software with multi-track editing and effects.
 - **[wunjo](https://github.com/wladradchenko/wunjo)** — Head motion-driven animation generator from video. Deep learning-based tool for creating realistic facial animations.
 - **[auto-subs](https://github.com/tmoroney/auto-subs)** — Automatic subtitle generator for videos. Offline-capable tool using speech recognition to create subtitle files.
 - **[shutter-encoder](https://github.com/paulpacifico/shutter-encoder)** — Advanced video encoder and optimizer. Professional-grade video conversion with batch processing and format optimization.
@@ -406,6 +458,10 @@ Tools for video generation, manipulation, and analysis.
 - **[Vexa](https://github.com/Vexa-ai/vexa)** — Self-hosted API for meeting transcription automation. Open-source solution for automated audio-to-text conversion and meeting summaries.
 - **[Audiobook Generator](https://github.com/BookxDev/bookxAI)** — AI-powered audiobook creation from text. Open-source tool that generates natural-sounding audiobooks using text-to-speech technology.
 - **[Eclipsa Audio](https://goo.gle/41j1MRl)** — Free open-source 3D audio format and tools. Google's spatial audio technology for immersive sound experiences.
+- **[Godot Engine](https://github.com/godotengine/godot)** — Free and open-source 2D and 3D game engine. Cross-platform game development with visual scripting and extensive feature set.
+- **[Veloren](https://github.com/veloren/veloren)** — Open-source multiplayer voxel RPG. Community-driven game with procedural world generation and cooperative gameplay.
+- **[OpenTTD](https://github.com/OpenTTD/OpenTTD)** — Open-source transportation business simulation game. Enhanced version of Transport Tycoon Deluxe with online multiplayer.
+- **[SuperTuxKart](https://github.com/supertuxkart/stk-code)** — Free 3D kart racing game. Fun racing game featuring Tux and friends with various tracks and modes.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -504,6 +560,18 @@ Security testing tools, OSINT frameworks, and vulnerability scanners.
 - **[Keycloak](https://github.com/keycloak/keycloak)** — Open-source identity and access management solution. Add authentication to applications with minimal code changes.
 - **[Hanko](https://github.com/hankoio/hanko)** — Passwordless authentication server. Modern authentication solution with passkeys and WebAuthn support.
 - **[PrivyDrop](https://github.com/privydrop/privydrop)** — Peer-to-peer file drop with Docker deployment. Share files without cloud storage, fully self-hosted.
+- **[Ory](https://github.com/ory)** — Cloud-native identity and access management platform. Enterprise-grade IAM solution with self-hosted options and extensive integrations.
+- **[Cerbos](https://github.com/cerbos/cerbos)** — Authorization as a service. Open-source policy engine for fine-grained access control and authorization decisions.
+- **[FusionAuth](https://github.com/FusionAuth/fusionauth-containers)** — Enterprise-grade authentication and authorization platform. Complete identity management solution with SSO, MFA, and user management.
+- **[Zitadel](https://github.com/zitadel/zitadel)** — Identity infrastructure for developers. Open-source identity and access management with modern protocols and cloud-native architecture.
+- **[KeeWeb](https://github.com/keeweb/keeweb)** — Cross-platform password manager compatible with KeePass. Web-based interface for managing encrypted password databases.
+- **[Falco](https://github.com/falcosecurity/falco)** — Runtime security monitoring for containers and hosts. Behavioral detection engine for threat detection in Kubernetes and cloud environments.
+- **[Wazuh](https://github.com/wazuh/wazuh)** — Enterprise-grade XDR and SIEM platform. Unified security monitoring, threat detection, and compliance management solution.
+- **[Suricata](https://github.com/OISF/suricata)** — High-performance network IDS/IPS engine. Industry-standard intrusion detection and prevention system for network traffic analysis.
+- **[Snort](https://github.com/snort3/snort3)** — Network intrusion prevention system. Powerful open-source NIDS with advanced threat detection capabilities.
+- **[Metasploit](https://github.com/rapid7/metasploit-framework)** — Penetration testing framework. Comprehensive platform for developing, testing, and executing exploits against remote systems.
+- **[Zeek](https://github.com/zeek/zeek)** — Network analysis framework. Passive network monitoring tool for security research and operational network management.
+- **[OpenVAS](https://github.com/greenbone/openvas-scanner)** — Vulnerability scanner for networks and systems. Comprehensive open-source vulnerability assessment and management solution.
 - **[OSS-Fuzz](https://github.com/google/oss-fuzz)** — Free fuzzing platform for open-source projects. Google's continuous fuzzing service that finds security vulnerabilities and stability issues.
 - **[CyberChef](https://github.com/gchq/CyberChef)** — Multi-purpose data manipulation and analysis tool. Open-source web app for encryption, encoding, compression, and data analysis.
 
