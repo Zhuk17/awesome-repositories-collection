@@ -176,9 +176,6 @@ Modern text editors optimized for productivity and extensibility.
 - **[amp](https://github.com/jmacdonald/amp)** — Vi-inspired text editor written in Rust. Minimal design with extensible plugin system.
 - **[ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)** — Chromium browser without Google integration. Enhanced privacy and security with removed Google services and telemetry.
 - **[Notepad++](https://notepad-plus-plus.org/)** — Feature-rich code and text editor for Windows. Supports all programming languages with syntax highlighting and plugins.
-- **[GIMP](https://www.gimp.org/)** — Free and open-source image editor. Professional alternative to Photoshop for photo editing, logo creation, and graphic design.
-- **[Inkscape](https://inkscape.org/)** — Professional vector graphics editor. Create scalable logos, illustrations, and print materials with precision.
-- **[Scribus](https://www.scribus.net/)** — Desktop publishing software for layout and print preparation. Create magazines, brochures, and product packaging.
 
 ### Debugging
 
@@ -389,6 +386,7 @@ Professional graphic design tools for creating images, illustrations, and visual
 
 - **[GIMP](https://www.gimp.org/)** — Free and open-source image editor. Professional alternative to Photoshop for photo editing, logo creation, and graphic design.
 - **[Inkscape](https://inkscape.org/)** — Professional vector graphics editor. Create scalable logos, illustrations, and print materials with precision.
+- **[Scribus](https://www.scribus.net/)** — Desktop publishing software for layout and print preparation. Create magazines, brochures, and product packaging.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
