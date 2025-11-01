@@ -22,8 +22,8 @@ This repository brings together battle-tested open-source projects spanning **de
 
 ### 📊 Repository Statistics
 
-- **375+** curated tools and resources
-- **20** main categories
+- **410+** curated tools and resources
+- **21** main categories
 - **4** language translations (English, Russian, Chinese, Spanish)
 - **100%** open-source tools
 
@@ -60,6 +60,7 @@ This repository brings together battle-tested open-source projects spanning **de
 - [Other Collections](#-other-awesome-collections)
 - [Research & Theses](#-research--theses)
 - [Project Ideas](#project-ideas-collection)
+- [Awesomes](#-awesomes)
 - [Contributors](#-contributors)
 - [Contributing](#-contributing)
 
@@ -673,6 +674,54 @@ Before submitting, ensure your addition meets these standards:
 ```markdown
 - **[ripgrep](https://github.com/BurntSushi/ripgrep)** — Ultra-fast recursive search tool written in Rust. Respects .gitignore by default and outperforms grep, ag, and ack on large codebases with regex support and parallel execution.
 ```
+
+---
+
+## 🌟 Awesomes
+
+Curated collections of awesome lists covering various topics in software development, tools, and technologies.
+
+- **[awesome-roadmaps](https://github.com/liuchong/awesome-roadmaps)** — Curated list of roadmaps for software development learning paths and career progression.
+- **[build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)** — Master programming by recreating your favorite technologies from scratch. Tutorials for building databases, web servers, Git, Docker, and more.
+- **[awesome-lists](https://github.com/mthcht/awesome-lists)** — Awesome list of awesome lists. Comprehensive directory of curated lists covering all aspects of technology and development.
+- **[AITreasureBox](https://github.com/superiorlu/AITreasureBox)** — Collection of AI-related tools, frameworks, and resources. Curated treasure trove of artificial intelligence technologies and applications.
+- **[Awesome-Spiking-Neural-Networks](https://github.com/TheBrainLab/Awesome-Spiking-Neural-Networks)** — Curated list of spiking neural network research, tools, and resources. Comprehensive collection for neuromorphic computing and brain-inspired AI.
+- **[awesome-naming](https://github.com/gruhn/awesome-naming)** — Curated list of tools and resources for naming things in software development. Helpful guides and tools for choosing good variable names, project names, and more.
+- **[awesome-conformal-prediction](https://github.com/valeman/awesome-conformal-prediction)** — Curated list of resources for conformal prediction in machine learning. Comprehensive collection of papers, tools, and tutorials for uncertainty quantification.
+- **[awesome-hacker-search-engines](https://github.com/edoardottt/awesome-hacker-search-engines)** — Curated list of search engines useful for hackers, pentesters, and security researchers. Privacy-focused and specialized search tools.
+- **[awesome-certificates](https://github.com/PanXProject/awesome-certificates)** — Curated list of IT, security, and development certificates. Comprehensive guide to professional certifications in tech.
+- **[favorite-link](https://github.com/guanguans/favorite-link)** — Curated collection of favorite links and resources. (Available only in Chinese)
+- **[fucking-the-book-of-secret-knowledge](https://github.com/Correia-jpv/fucking-the-book-of-secret-knowledge)** — Curated list of secret knowledge and hidden gems in tech. Alternative to "The Book of Secret Knowledge" with community contributions.
+- **[awesome-android-root](https://github.com/awesome-android-root/awesome-android-root)** — Curated list of Android rooting tools, guides, and resources. Comprehensive collection for Android customization and development.
+- **[awesome-gpt](https://github.com/awesome-gptX/awesome-gpt)** — Curated list of GPT-related tools, models, and resources. Complete guide to GPT models, applications, and development tools.
+- **[awesome-production-machine-learning](https://github.com/EthicalML/awesome-production-machine-learning)** — Curated list of MLops tools and resources for production ML. Comprehensive guide to deploying and maintaining ML in production.
+- **[awesome-mac](https://github.com/jaywcjlove/awesome-mac)** — Curated list of awesome applications, software, tools, and shiny things for macOS. Comprehensive directory of macOS software and utilities.
+- **[awesome-for-beginners](https://github.com/MunGell/awesome-for-beginners)** — Curated list of beginner-friendly projects on GitHub. Perfect starting point for new contributors to open source.
+- **[open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps)** — Curated list of open source applications for macOS. Comprehensive collection of free and open-source macOS software.
+- **[Free-Certifications](https://github.com/cloudcommunity/Free-Certifications)** — Curated list of free certifications for cloud, DevOps, and IT. Free learning paths and certification opportunities.
+- **[awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules)** — Curated list of cursor rules for AI coding assistants. Best practices and configurations for AI-powered development tools.
+- **[awesome-docker](https://github.com/veggiemonk/awesome-docker)** — Curated list of Docker resources, tools, and tutorials. Comprehensive guide to Docker ecosystem and best practices.
+- **[awesome-macos-command-line](https://github.com/herrbischoff/awesome-macos-command-line)** — Curated list of macOS command line tools and utilities. Essential command-line tools for macOS power users.
+- **[awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme)** — Curated list of GitHub profile README examples and templates. Inspiration and tools for creating amazing GitHub profiles.
+- **[awesome-vscode](https://github.com/viatsko/awesome-vscode)** — Curated list of delightful VS Code packages and resources. Essential extensions and tools for Visual Studio Code.
+- **[awesome-actions](https://github.com/sdras/awesome-actions)** — Curated list of awesome GitHub Actions. Community-curated collection of useful GitHub Actions workflows.
+- **[awesome-falsehood](https://github.com/kdeldycke/awesome-falsehood)** — Curated list of falsehoods programmers believe in. Important reminders about common programming assumptions and misconceptions.
+- **[Awesome-Linux-Software](https://github.com/luong-komorebi/Awesome-Linux-Software)** — Curated list of awesome Linux software. Comprehensive collection of applications and tools for Linux users.
+- **[h4cker](https://github.com/The-Art-of-Hacking/h4cker)** — Curated list of hacking tools and resources. Comprehensive cybersecurity toolkit for ethical hackers and security researchers.
+- **[awesome-free-chatgpt](https://github.com/LiLittleCat/awesome-free-chatgpt)** — Curated list of free ChatGPT alternatives and resources. Free AI chat and language model options.
+- **[awesome-readme](https://github.com/matiassingers/awesome-readme)** — Curated list of awesome READMEs. Examples and templates for creating excellent README files.
+- **[Self-Hosting-Guide](https://github.com/mikeroyal/Self-Hosting-Guide)** — Curated guide to self-hosting software and services. Comprehensive tutorials and resources for self-hosted applications.
+- **[awesome-macOS](https://github.com/iCHAIT/awesome-macOS)** — Curated list of awesome macOS software. Collection of productivity tools, utilities, and applications for macOS.
+- **[awesome-creative-coding](https://github.com/terkelg/awesome-creative-coding)** — Curated list of awesome creative coding resources. Tools, libraries, and frameworks for creative programming and generative art.
+- **[Marketing-for-Engineers](https://github.com/goabstract/Marketing-for-Engineers)** — Curated resources for marketing aimed at engineers and developers. Practical marketing knowledge for technical professionals.
+- **[Mind-Expanding-Books](https://github.com/hackerkid/Mind-Expanding-Books)** — Curated list of mind-expanding books. Books that challenge thinking and expand intellectual horizons.
+- **[awesome-podcasts](https://github.com/rShetty/awesome-podcasts)** — Curated list of awesome podcasts for developers and tech enthusiasts. Best podcasts covering programming, technology, and industry trends.
+- **[30-seconds-of-interviews](https://github.com/Chalarangelo/30-seconds-of-interviews)** — Curated collection of common interview questions and answers. Quick reference for technical interviews and coding challenges.
+- **[awesome-indie](https://github.com/mezod/awesome-indie)** — Curated list of resources for indie makers and developers. Tools, communities, and resources for building indie projects.
+- **[awesome-guidelines](https://github.com/Kristories/awesome-guidelines)** — Curated list of guidelines for coding, design, and development. Best practices and standards for software development.
+- **[awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture)** — Curated list of software architecture resources. Comprehensive guide to software architecture patterns, principles, and practices.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
